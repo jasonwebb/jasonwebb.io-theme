@@ -1,0 +1,60 @@
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -110vw;
+  z-index: 10;
+
+  width: calc(100vw - #{$hamburger-box-width});
+  background-color: white;
+  transition: left .5s ease;
+
+  // Class for 'open' state
+  &.is-active {
+    left: 0;
+    opacity: 1;
+  }
+
+  .mobile-menu-inner {
+    height: 200vh;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  // All menus ===============================================================
+  ul {
+    padding: 10px 0;
+
+    &:first-of-type {
+      padding-top: 30px;
+    }
+
+    li {
+      a {
+        display: block;
+        color: white;
+        padding: 0 30px;
+
+        &:focus {
+          // Add blue
+        }
+      }
+    }
+  }
+
+  // Primary pages (About, Work, etc) ========================================
+  .primary-pages {
+    a {
+      font-weight: 600;
+      font-size: 26px;
+    }
+  }
+
+  // External sites (Github, Twitter, etc) ====================================
+  .external-sites {
+    margin-top: 20px;
+
+    a {
+      opacity: .5;
+      padding: 3px 30px;
+    }
+  }
+}

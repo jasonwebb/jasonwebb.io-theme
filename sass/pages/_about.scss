@@ -1,0 +1,60 @@
+.about-page {
+
+  // Tablet sizes and below
+  // - Add horizontal padding
+  @media(max-width: $tablet-breakpoint) {
+    padding: 0 $tablet-horizontal-padding;
+  }
+
+  //==================================================================================================
+  //  Personal portrait
+  //==================================================================================================
+  .portrait {
+    @media(max-width: $mobile-breakpoint) {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  //==================================================================================================
+  //  List of highlights
+  //==================================================================================================
+  .highlights {
+    @media(max-width: $mobile-breakpoint) {
+      padding: 10px 0;
+      // margin-left: 40px;
+    }
+  }
+
+
+  //==================================================================================================
+  //  Logo box
+  //==================================================================================================
+  .logos {
+    background-color: $light-gray-background-color;
+    border: 0;
+
+    padding: 20px;
+    margin-top: 50px;
+
+    h5 {
+      opacity: .6;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    a {
+      display: inline-block;
+      margin: 20px;
+      height: 60px;
+
+      @media(max-width: $tablet-breakpoint) {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 10px;
+      }
+    }
+  }
+}

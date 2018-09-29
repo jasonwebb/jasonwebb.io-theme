@@ -1,0 +1,140 @@
+//============================================================================================
+//  Button styles leftover from previous Bootstrap v3 implementation
+//============================================================================================
+.btn {
+  margin: 20px 0;
+  padding: 10px 20px;
+
+  display: inline-block;
+  background-color: $light-gray-background-color;
+  color: $body-text-color;
+  text-decoration: none !important;
+
+  transition: all .5s ease;
+
+  // Blue
+  &.btn-primary {
+    background-color: hsl(204, 86%, 53%);
+    color: white;
+
+    &:hover {
+      background-color: darken(hsl(204, 86%, 53%), 5%);
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, .15);
+    }
+  }
+
+  // Green
+  &.btn-success {
+    background-color: hsl(141, 71%, 48%);
+    color: white;
+
+    &:hover {
+      background-color: darken(hsl(141, 71%, 48%), 5%);
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, .15);
+    }
+  }
+
+  // Red
+  &.btn-danger {
+    background-color: hsl(348, 100%, 61%);
+    color: white;
+
+    &:hover {
+      background-color: darken(hsl(348, 100%, 61%), 5%);
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, .15);
+    }
+  }
+}
+
+
+//============================================================================================
+//  Classes introduced by Contact Form 7 plugin
+//============================================================================================
+.screen-reader-response {
+  display: none;
+}
+
+// Status message underneath contact form
+.wpcf7-response-output {
+  margin: 30px 0 75px 0 !important;
+  padding: 10px 20px !important;
+  background-color: $light-gray-background-color;
+
+  &.wpcf7-mail-sent-ok {
+    background-color: hsl(141, 71%, 48%);
+    color: white;
+  }
+
+  &.wpcf7-validation-errors {
+    border-color: hsl(348, 100%, 61%);
+    background-color: hsl(348, 100%, 61%);
+    color: white;
+  }
+
+  // Used when parent div is empty (default for fresh page)
+  &.wpcf7-display-none {
+    display: none;
+  }
+}
+
+//============================================================================================
+//  Left and right floating elements
+//============================================================================================
+// Right =====================================================================================
+.is-pulled-right,
+.alignright {
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+img.is-pulled-right,
+img.alignright,
+a.is-pulled-right,
+a.alignright {
+
+  // Mobile devices and smaller
+  // - Make images full-width
+  @media(max-width: $mobile-breakpoint) {
+    float: none !important;
+    width: 100% !important;
+    margin: 30px auto;
+  }
+}
+
+// Left =======================================================================================
+.is-pulled-left,
+.alignleft {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+img.is-pulled-left,
+img.alignleft,
+a.is-pulled-left,
+a.alignleft {
+
+  // Mobile devices and smaller
+  // - Make images full-width
+  @media(max-width: $mobile-breakpoint) {
+    float: none;
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    margin: 30px auto;
+  }
+}
+
+
+//============================================================================================
+//  Accessibility helpers
+//============================================================================================
+.is-sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

@@ -1,0 +1,38 @@
+<?php get_header(); ?>
+
+<section class="about-page page" data-page-title="About me">
+    <img src="<?= get_template_directory_uri(); ?>/images/pages/about/portrait.png" alt="Teaching a DIY synthesizer workshop" class="portrait is-pulled-right">
+
+    <p>Jason is a creative technologist based in Minneapolis, MN exploring the boundaries and intersections of creativity, technology, fabrication, and the natural world through experimental project-based work.</p>
+    <p>In his personal research he is particularly focused on the exploration and application of biological processes relating to form using computational design, digital fabrication, and electronics.</p>
+    <p>By day he works as a UI developer specializing in facilitating cross-disciplinary collaboration between design and technical teams, realizing modern and clean experiences for all kinds of users.</p>
+    <p>He holds a B.Sc. in Computer Science and an M.S. Ed. in Instructional Technology from the University of Nebraska at Kearney. As a graduate student he developed close relationships with arts faculty and pursued cross-disciplinary coursework and research focused on prototyping and integrating advanced technology-based methods into existing undergraduate arts curricula.</p>
+
+    <p>His software tools of choice include <span class="tag is-light">Processing / p5.js</span> <span class="tag is-light">openFrameworks</span> <span class="tag is-light">Fusion 360</span> <span class="tag is-light">Rhino + Grasshopper</span> <span class="tag is-light">Eagle</span>, and his favorite fabrication equipment include <span class="tag is-light">3D printers</span> <span class="tag is-light">CNC routers + mills</span> <span class="tag is-light">laser cutters</span> <span class="tag is-light">DIY drawing machines</span> <span class="tag is-light">zip ties</span></p>
+    
+    <p>These interests have afforded him a few interesting opportunities over the years, including:</p>
+    <ul class="highlights">
+        <li>Teaching workshops on <a href="2015/08/circuit-bending-workshop-at-omaha-under-the-radars-soundry-camp/">circuit bending</a> and <a href="#">DIY synthesizers</a> to young adults through <a href="http://www.undertheradaromaha.com/soundry-workshop" target="_blank">SOUNDRY</a>, an educational outreach component of the <a href="http://www.undertheradaromaha.com/" target="_blank">Omaha Under the Radar Festival</a>.</li>
+        <li>Collaborating with and providing technology guidance and support to nationally- and internationally-recognized fine residency artists through the <a href="http://www.bemiscenter.org/">Bemis Center for Contemporary Art</a> in Omaha, NE. Collaborators included <a href="http://emiliebaltz.com/" target="_blank">Emilie Baltz</a>, <a href="http://dimainstone.com/" target="_blank">Di Mainstone</a>, and others.</li>
+        <li>Designing and teaching a course called "<a href="/2017/06/designing-and-teaching-how-to-build-almost-anything-at-metropolitan-community-colleges-fablab/">How to Build Almost Anything</a>" at Nebraska's first and only FabLab.</li>
+        <li>Presenting my work at <a href="/2013/07/exhibiting-open-source-assistive-technology-at-maker-faire-kansas-city-2013/">Maker Faire: Kansas City</a> and the <a href="/2013/09/open-hardware-summit-2013-experiencing-boston/">Open Hardware Summit</a> hosted at MIT.</li>
+        <li>Developing open-source assistive technology projects such as <a href="/?s=openSip%2BPuff">openSip+Puff</a>, <a href="/?s=eyewriter">Eyewriter 2.1</a> and lessons on <a href="/2014/04/use-the-makey-makey-to-make-diy-assistive-technology-for-computer-access/">using the MaKey MaKey for AT</a>.</li>
+        <li><a href="/tag/glassblowing/">Collaborating with a glass artist</a> to explore applications of 3D printing with hand-blown glass.</li>
+        <li>Applied traditional investment casting to 3D-printed objects to create bronze and aluminum parts from plastic.</li>
+        <li>Making <a href="/tag/art-851c/">3D-printed molds</a> and experimenting with <a href="/tag/casting/">DIY casting media</a>.</li>
+        <li>Designing and teaching the University of Nebraska at Kearney's first ever <a href="/2011/07/interactive-and-generative-art-course-spring-2011/">semester-long course</a> about creative coding and physical computing to a group of fellow undergraduate students, culminating in a fun, well-attended <a href="/2011/07/2011-interactive-and-generative-art-exhibition/">public exhibition</a> of student projects.</li>
+        <li>Building a pretty large and very successful <a href="/2015/01/aquaponics-experiment-2013/">aquaponics system</a> for under $300.</li>
+    </ul>
+
+    <div class="logos message has-text-centered">
+        <h5>My work has been featured on ...</h5>
+        <a href="#"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/hackaday-logo.png"></a>
+        <a href="#"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/adafruit-logo.png"></a>
+        <a href="#"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/eeweb-logo.png"></a>
+        <a href="#"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/makeymakey-logo.png"></a>
+        <a href="#"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/thingiverse-logo.png"></a>
+        <!-- add MAKE magazine -->
+    </div>
+</section>
+
+<?php get_footer(); ?>

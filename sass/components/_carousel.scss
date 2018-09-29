@@ -1,0 +1,120 @@
+/*
+  TODO:
+  - Update class names to not use BEM
+*/
+
+.carousel {
+  position: relative;
+
+  //============================================================================
+  //  Prev/next arrows
+  //============================================================================
+  &__arrow-container {
+    cursor: pointer;
+
+    z-index: 1;
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+    // Mobile devices and smaller
+    // - Hide arrows
+    @media(max-width: $mobile-breakpoint) {
+      display: none;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .carousel__arrow {
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+      margin: 0 20px;
+
+      @media(max-width: $mobile-breakpoint) {
+        margin: 0 10px;
+      }
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+      text-align: right;
+    }
+  }
+
+  //============================================================================
+  //  Dots
+  //============================================================================
+  .slick-dots {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    list-style: none;
+
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+
+    // Mobile devices and smaller
+    // - Move dots closer to bottom edge
+    @media(max-width: $mobile-breakpoint) {
+      bottom: 5px;
+    }
+
+    li {
+      display: inline;
+      padding: 0;
+
+      button {
+        margin: 7px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        border-radius: 20px;
+        outline: 0;
+        background-color: white;
+
+        opacity: .4;
+        transition: opacity .3s ease;
+
+        // Mobile devices and smaller
+        // - Make dots smaller
+        @media(max-width: $mobile-breakpoint) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      &.slick-active button,
+      &:hover button {
+        opacity: 1;
+      }
+
+      &.slick-active button {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+      }
+    }
+  }
+}

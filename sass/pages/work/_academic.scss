@@ -1,0 +1,70 @@
+.work-academic {
+  @media(max-width: $mobile-breakpoint) {
+    padding: 0 $tablet-horizontal-padding 75px $tablet-horizontal-padding;
+  }
+
+  // Temporarily hide all images leftover from migration
+  img {
+    display: none;
+  }
+
+  .degree {
+    padding-top: 20px;
+
+    &:first-of-type {
+      padding-top: 0;
+
+      .degree__title {
+        padding-top: 10px;
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 300;
+      border-bottom: 1px solid rgba(0, 0, 0, .06);
+      padding-top: 20px;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+
+      small {
+        font-size: 18px;
+        opacity: .7;
+        margin-top: 6px;
+      }
+    }
+
+    &__body {
+      padding-left: 40px;
+
+      @media(max-width: $mobile-breakpoint) {
+        padding-left: 0;
+      }
+    }
+
+    .semester {
+      &__title {
+        font-size: 20px;
+        font-weight: 300;
+        font-style: italic;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      &:first-of-type {
+
+        .class:first-of-type,
+        .project:first-of-type {
+          margin-top: 30px;
+        }
+      }
+
+      .class,
+      .project {
+        background-color: rgba(0, 0, 0, .02);
+        margin-bottom: 8px;
+        padding: 25px 40px 35px 25px;
+      }
+    }
+  }
+}

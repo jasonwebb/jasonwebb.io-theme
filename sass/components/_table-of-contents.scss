@@ -1,0 +1,17 @@
+.table-of-contents,
+.box {
+  box-shadow: none;
+  border-radius: 0;
+  padding: 25px;
+  margin: 40px 0;
+  background-color: $light-gray-background-color;
+
+  h1 {
+    margin: 0 !important;
+  }
+
+  &>ul,
+  ol {
+    margin-left: 20px;
+  }
+}

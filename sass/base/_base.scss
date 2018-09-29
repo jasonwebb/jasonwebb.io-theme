@@ -1,0 +1,55 @@
+body {
+
+  //==================================================================================================
+  //  Main responsive container
+  //==================================================================================================
+  >.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 75px;
+    transition: left .5s ease;
+
+    max-width: none;
+    width: 100vw;
+
+    // At tablet
+    @media(width: 1024px) {
+      padding-top: 40px;
+    }
+
+    // Tablets and below
+    // - Remove all padding to enable flush design        
+    @media(max-width: $tablet-breakpoint) {
+      padding-top: 0;
+    }
+
+    // Move entire container over when mobile menu is opened
+    &.has-open-mobile-menu {
+      left: calc(100vw - #{$hamburger-box-width});
+    }
+
+    // Highest level of columns ====================================================================
+    // - Contains sidebar and content
+    >.columns {
+      width: 100vw;
+      margin: 0 auto;
+
+      @media(min-width: 1900px) {
+        width: 1600px;
+      }
+
+      >.content {
+        @media(min-width: $tablet-breakpoint) and (max-width: $tablet-breakpoint + 1) {
+          width: 80%;
+        }
+
+        // Tablets and below
+        // - Remove padding to make design flush by default
+        @media(max-width: $tablet-breakpoint) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

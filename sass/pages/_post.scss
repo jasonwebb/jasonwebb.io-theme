@@ -1,0 +1,141 @@
+.post {
+    //=============================================================================================
+    //  Carousel
+    //=============================================================================================
+    .carousel {
+        margin-bottom: 30px;
+        background-color: $light-gray-background-color;
+
+        // Arrow (prev/next)
+        &__arrow {
+            margin: 50px;
+        }
+
+        // Single slide
+        &__slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            height: 500px;
+            overflow: hidden;
+
+            // Tablets and smaller
+            // - Reduce overall height
+            @media(max-width: $tablet-breakpoint) {
+                height: 400px;
+            }
+
+            // Mobile devices and smaller
+            // - Make height smaller
+            @media(max-width: $mobile-breakpoint) {
+                height: 300px;
+            }
+
+            img {
+                display: block;
+                width: auto;
+                max-width: none;
+                height: 100%;
+            }
+        }
+    }
+
+    //=============================================================================================
+    //  Header - title and details
+    //=============================================================================================
+    header {
+        // border-bottom: 1px solid rgba(0,0,0,.06);
+        padding-bottom: 40px;
+
+        // Tablets and smaller
+        // - Add horizontal padding
+        @media(max-width: $tablet-breakpoint) {
+            padding: 0 $tablet-horizontal-padding 30px $tablet-horizontal-padding;
+        }
+
+        .title {
+            margin: 0;
+            font-size: 26px !important;
+            font-weight: 600 !important;
+        }
+
+        .date {
+            margin-top: 10px;
+            opacity: .6;
+        }
+
+        .categories {
+            list-style: none;
+            margin: 15px 0 0 0;
+
+            li {
+                display: inline-block;
+                margin-right: 8px;
+                margin-bottom: 5px;
+                padding: 0;
+
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    //=============================================================================================
+    //  Article content
+    //=============================================================================================
+    &__body {
+        // Tablets and smaller
+        // - Add horizontal padding
+        @media(max-width: $tablet-breakpoint) {
+            padding: 0 $tablet-horizontal-padding;
+        }
+
+        // Table of contents
+        .table-of-contents, .box, .well {
+            box-shadow: none;
+            border-radius: 0;
+            padding: 25px;
+            margin: 40px 0;
+            background-color: $light-gray-background-color;
+            color: $body-text-color;
+        
+            h2 {
+                margin: 0 !important;
+                font-weight: 500;
+                font-size: 20px;
+                border: 0;
+            }
+        
+            & > ul, ol {
+                margin-left: 20px;
+            }
+        }
+
+        .tile {
+            
+        }
+
+        // Primary heading
+        h2 {
+            padding-bottom: 4px;
+            margin-bottom: 20px;
+            margin-top: 60px !important;
+
+            font-size: 26px;
+            font-weight: 300;
+            border-bottom: 1px solid rgba(0,0,0,.06);
+        }
+
+        // Sub-heading - level 1
+        h3 {
+            margin-top: 50px !important;
+
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+}

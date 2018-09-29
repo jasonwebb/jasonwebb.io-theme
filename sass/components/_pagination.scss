@@ -1,0 +1,35 @@
+.pagination {
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+
+  .pagination-list {
+    list-style: none;
+    margin: 0;
+
+    li {
+      margin-top: .25rem;
+    }
+
+    .pagination-link {
+      color: $body-text-color;
+      text-decoration: none;
+      background-color: white;
+      transition: all .3s ease;
+
+      &.is-current {
+        background-color: rgba(0, 0, 0, .6);
+        border-color: rgba(0, 0, 0, .6);
+        color: white;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

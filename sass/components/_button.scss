@@ -1,0 +1,42 @@
+.button {
+  border-radius: 0;
+  margin: 30px 20px 20px 0;
+  padding: 10px 20px;
+  transition: all .5s ease;
+  text-decoration: none !important;
+
+  &:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .15);
+  }
+
+  &.is-orange {
+    background-color: hsl(14, 100%, 53%);
+    color: white;
+    border: 0;
+
+    &:hover {
+      background-color: darken(hsl(14, 100%, 53%), 5%);
+    }
+  }
+
+  &.is-dark {
+    background-color: $dark-gray-background-color;
+    color: white;
+    border: 0;
+
+    &:hover {
+      background-color: lighten($dark-gray-background-color, 15%);
+    }
+  }
+
+  &.has-icon {
+    .icon {
+      width: auto;
+      height: auto;
+      font-size: 20px;
+      vertical-align: text-top;
+      margin-left: -5px !important;
+      margin-right: 9px !important;
+    }
+  }
+}

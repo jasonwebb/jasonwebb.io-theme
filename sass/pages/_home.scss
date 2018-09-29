@@ -1,0 +1,9 @@
+.home-page {
+  @media(max-width: $tablet-breakpoint) {
+    padding: 0 $tablet-horizontal-padding;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+}
