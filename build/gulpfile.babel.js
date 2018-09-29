@@ -68,7 +68,7 @@ gulp.task('build:js', () => {
 });
 
 // Build all
-gulp.task('build', ['clean', 'build:sass1', 'build:js']);
+gulp.task('build', ['clean', 'build:sass', 'build:js']);
 
 
 //=============
