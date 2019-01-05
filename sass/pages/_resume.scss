@@ -1,27 +1,79 @@
 .resume-page {
-  .message {
-    margin-top: 0 !important;
-    padding: 5px 20px;
+  .controls {
+    display: flex;
+    align-items: flex-end;
+
+    // Stack columns on mobile
+    @media screen and (max-width: $mobile-breakpoint) {
+      display: block;
+    }
+
+    .column {
+      flex: 1 auto;
+      padding: 0;
+
+      // Center content on mobile
+      @media screen and (max-width: $mobile-breakpoint) {
+        text-align: center;
+      }
+
+      &:last-of-type {
+        text-align: right;
+        
+        @media screen and (max-width: $mobile-breakpoint) {
+          margin-top: 40px;
+          text-align: center;
+        }
+      }
+    }
+
+    .version {
+      border: 0;
+  
+      .options {
+        margin-top: 10px;
+  
+        input {
+          display: none;
+  
+          &:checked + label {
+            background-color: rgba(0,0,0,.7);
+            color: #fff;
+          }
+        }
+  
+        label {
+          display: inline-block;
+          cursor: pointer;
+          background-color: #f5f5f5;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          margin: 0;
+          font-size: 16px;
+          line-height: 2;
+          color: rgba(0,0,0,.7);
+          transition: .2s all ease-in-out;
+  
+          &:first-of-type {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+  
+          &:last-of-type {
+            margin-left: -5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
   }
 
-  // Flag class to hide items that only apply to web resume (such as specific Mission)
-  .is-web-only {
-    display: none;
-  }
 
   //===========================================================================================
   //  Section
   //===========================================================================================
   section {
-    padding: 40px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .06);
-
-    // Tablets and smaller
-    // - Add horizontal padding to line up with mobile controls
-    @media(max-width: $tablet-breakpoint) {
-      padding: 40px $tablet-horizontal-padding;
-    }
-
     &:first-of-type {
       padding-top: 0;
     }
@@ -42,150 +94,11 @@
   }
 
   //===========================================================================================
-  //  Controls - 'web only' checkbox and download button
-  //===========================================================================================
-  .controls {
-    border: 0;
-    padding-bottom: 15px;
-
-    // Tablet sizes and below
-    // - Add horizontal padding
-    @media(max-width: $tablet-breakpoint) {
-      padding-left: $tablet-horizontal-padding;
-      padding-right: $tablet-horizontal-padding;
-    }
-
-    .download {
-      margin: 0; // remove padding added by Bulma
-
-      .icon {
-        @media(max-width: $tablet-breakpoint) {
-          font-size: 20px;
-        }
-
-        @media(max-width: $mobile-breakpoint) {
-          font-size: 28px;
-        }
-      }
-
-      // Mobile devices and smaller
-      // - Make full width
-      // - Increase padding (especially vertical)
-      @media(max-width: $mobile-breakpoint) {
-        width: 100%;
-        padding: 25px;
-      }
-    }
-
-    // Custom checkbox ----------------------------------------------------------------------
-    .custom-checkbox {
-      // border: 1px solid rgba(0,0,0,.15);
-      border-radius: 3px;
-      padding: 6px 20px 6px 13px;
-      padding-left: 0;
-      margin: 0;
-      font-weight: normal;
-      cursor: pointer;
-      color: rgba(0, 0, 0, .5);
-      transition: all .1s ease;
-
-      // Mobile devices and below
-      // - Make full width
-      // - Add bototm margin to seperate download link below
-      // - Increase vertical padding to match donwload link
-      @media(max-width: $mobile-breakpoint) {
-        width: 100%;
-        margin-bottom: 20px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-      }
-
-      .box {
-        float: left;
-        position: relative;
-        margin: 0;
-        margin-right: 10px;
-        margin-top: 5px;
-        padding: 0;
-
-        width: 15px;
-        height: 15px;
-
-        border: 1px solid rgba(0, 0, 0, .2);
-        border-radius: 4px;
-
-        box-shadow: none;
-
-        background-color: transparent;
-
-        &:after {
-          margin: auto;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 0;
-          height: 0;
-          transition: all .2s ease;
-          content: '';
-          background-color: rgba(0, 0, 0, .05);
-          border-radius: 50%;
-          text-align: center;
-          font-family: 'LineAwesome';
-          color: white;
-        }
-      }
-
-      &:hover {
-        // border-color: rgba(0,0,0,.3);
-        // box-shadow: 2px 2px 2px rgba(0,0,0,.03);
-        color: rgba(0, 0, 0, .7);
-
-        .box:after {
-          width: 100%;
-          height: 100%;
-          border-radius: 3px;
-        }
-      }
-
-      input[type='checkbox'] {
-        display: none;
-
-        &:checked+.box {
-          &:before {
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-align: center;
-            color: white;
-            font-family: 'FontAwesome';
-            font-size: 10px;
-            font-weight: bold;
-            line-height: .93rem;
-            background-color: rgba(0, 0, 0, .4);
-            content: '\f17b';
-          }
-        }
-      }
-    }
-  }
-
-  //===========================================================================================
   //  Skills section
   //===========================================================================================
   #skills {
     .column:first-of-type {
       border-right: 4px solid white;
-
-      // Tablets and smaller
-      // - Remove border
-      @media(max-width: $tablet-breakpoint) {
-        border: 0;
-      }
     }
 
     .skill-group {
@@ -194,8 +107,6 @@
       padding: 25px 0 !important;
 
       @media(max-width: $tablet-breakpoint) {
-        margin-left: -$tablet-horizontal-padding;
-        margin-right: -$tablet-horizontal-padding;
       }
 
       h5 {
@@ -228,15 +139,15 @@
         }
       }
 
+      small {
+        opacity: .7;
+      }
+      
       .progress {
         width: 75px;
         border-radius: 0;
         margin: 0;
         margin-top: 6px;
-
-        @media(max-width: $mobile-breakpoint) {
-          display: none;
-        }
       }
     }
   }
@@ -246,13 +157,7 @@
   //===========================================================================================
   .job,
   .degree {
-    padding-left: 40px;
-
-    @media(max-width: $tablet-breakpoint) {
-      padding-left: 0;
-    }
-
-    &__title {
+    .title {
       font-size: 18px;
       font-weight: 400;
 
@@ -260,12 +165,12 @@
       margin-top: 40px;
     }
 
-    &__details {
+    .details {
       margin: 0;
       opacity: .5;
     }
 
-    &__highlights {
+    .highlights {
       margin-top: 15px;
 
       @media(max-width: $tablet-breakpoint) {
@@ -275,8 +180,6 @@
   }
 
   .year-list {
-    display: table;
-    border-collapse: separate;
     list-style: none;
     margin-top: 30px;
     margin-left: 0;
@@ -288,27 +191,12 @@
 
     li {
       padding: 0;
-      display: table-row;
-
-      .year {
-        display: table-cell;
-        width: 60px;
-        font-weight: bold;
-
-        @media(max-width: $tablet-breakpoint) {
-          padding: 5px 0;
-        }
-
-        @media(max-width: $mobile-breakpoint) {
-          padding: 8px 0;
-        }
-      }
-
-      .details {
-        display: table-cell;
-      }
     }
 
-
+    .year {
+      display: inline-block;
+      width: 60px;
+      font-weight: bold;
+    }
   }
 }

@@ -1,33 +1,20 @@
 <?php get_header(); ?>
 
-<section class="work-page page" data-page-title="Work">
+<div class="work-page">
   <nav class="work-controls has-text-centered">
     <ul>
-      <?php
-      $categories = get_categories();
-      
-      foreach($categories as $category) {
-        if( $category->name != 'Uncategorized' &&
-          $category->name != 'Work' &&
-          $category->name != 'Other') {
-      ?>
-
-      <li>
-        <a href="#<?= $category->slug; ?>" class="tag is-light">
-          <?= $category->name; ?>
-        </a>
-      </li>
-
-      <?php
-        }
-      }
-      ?>
-
-      <li><a href="#academic" class="tag is-light">Academic</a></li>
+      <li><a href="/work" class="tag is-light">All</a></li>
+      <li><a href="#code" class="tag is-light">Code</a></li>
+      <li><a href="#creative" class="tag is-light">Creative</a></li>
+      <li><a href="#electronics" class="tag is-light">Electronics</a></li>
+      <li><a href="#fabrication" class="tag is-light">Fabrication</a></li>
+      <!-- <li><a href="#nature" class="tag is-light">Nature</a></li> -->
+      <li><a href="#teaching" class="tag is-light">Teaching</a></li>
+      <!-- <li><a href="#academic" class="tag is-light">Academic</a></li> -->
     </ul>
   </nav>
 
   <div class="work-items"></div>
-</section>
+</div>
 
 <?php get_footer(); ?>

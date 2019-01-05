@@ -1,67 +1,28 @@
 .contact-page {
 
-  // Tablets and smaller
-  // - Increase horizontal padding to line content up with mobile controls
-  @media(max-width: $tablet-breakpoint) {
-    padding: 0 $tablet-horizontal-padding;
-  }
-
-  .form {
-    margin-top: 30px;
-    max-width: 500px;
-
     // Tablets and smaller
-    // - Increase top margin
+    // - Increase horizontal padding to line content up with mobile controls
     @media(max-width: $tablet-breakpoint) {
-      margin-top: 40px;
+        padding: 0 $tablet-horizontal-padding;
     }
+    
+    .form {
+        margin-top: 30px;
 
-    .field {
-      margin: 15px 0;
-
-      .input {
-        width: 60%;
-        margin-right: 10px;
-
-        // Mobile devices and smaller
-        // - Make wider
-        @media(max-width: $mobile-breakpoint) {
-          width: 80%;
+        @media(max-width: $tablet-breakpoint) {
+            margin-top: 50px;
         }
-      }
 
-      .button {
-        margin-top: 20px;
-        // padding: 0;
-        height: auto;
-      }
+        .field {
+            margin: 15px 0;
 
-      // Copy .is-danger styling for invalid inputs
-      .wpcf7-not-valid {
-        border-color: #ff3860;
+            .input {
+                width: 60%;
+            }
 
-        &:active,
-        &:focus {
-          box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25);
-        }
-      }
-
-      .wpcf7-not-valid-tip {
-        display: inline-block;
-        margin-top: 5px;
-        font-size: 0.75rem;
-        color: white;
-        background-color: #ff3860;
-        padding: .2rem .75rem;
-        height: 2em;
-        line-height: 1.5;
-        text-align: center;
-        border-radius: 3px;
-      }
+            .button {
+                margin-top: 20px;
+            }
+        }        
     }
-
-    .wpcf7-form-control-wrap+div {
-      display: none !important;
-    }
-  }
 }

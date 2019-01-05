@@ -9,11 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.0.1",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "@babel/register": "^7.0.0",
-    "browserify": "^16.2.2",
-    "bulma": "^0.7.1",
+    "browserify": "^16.2.3",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -21,13 +20,10 @@
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^3.2.1",
-    "gulp-uglify": "^3.0.0",
-    "line-awesome": "^1.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.1",
     "run-sequence": "^2.2.0",
-    "sticky-sidebar": "^3.3.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "dependencies": {}
+  }
 }

@@ -1,35 +1,25 @@
-// Third-party libraries
-@import 'vendor/bulma';
-@import 'vendor/line-awesome';
-
-// Utilities
 @import 'utils/variables';
 @import 'utils/utilities';
 
-// Base
 @import 'base/base';
-@import 'base/typography';
+@import 'base/type';
 
-// Components
-@import 'components/button';
-@import 'components/carousel';
-@import 'components/content';
-@import 'components/dropdown';
+@import 'components/page';
+@import 'components/post';
+@import 'components/header';
+
 @import 'components/embed-responsive';
 @import 'components/gallery';
 @import 'components/message';
-@import 'components/mobile-controls';
 @import 'components/mobile-menu';
-@import 'components/overlay';
 @import 'components/pagination';
-@import 'components/sidebar';
-@import 'components/tabs';
+@import 'components/table-of-contents';
+@import 'components/work-item';
+@import 'components/loading-spinner';
 
-// Pages
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/home';
-@import 'pages/post';
 @import 'pages/resume';
 @import 'pages/results';
 @import 'pages/work';

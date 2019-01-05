@@ -1,0 +1,45 @@
+h1 {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  color: $heading-text-color !important;
+}
+
+strong {
+  color: $body-text-color;
+}
+
+ul,
+ol {
+  margin: 1rem 0 .5rem 3rem;
+
+  li {
+    padding-left: .5rem;
+    margin-bottom: 5px;    
+
+    // Second-level lists
+    ul,
+    ol {
+      margin-top: 5px;
+    }
+
+    // Make inner <ol>s use lowercase letters (a, b, c, etc)
+    ol {
+      list-style: lower-alpha;
+    }
+  }
+}
+
+ul {
+  list-style: disc;
+}
+
+ul + p,
+ol + p {
+  margin-top: 20px;
+}
+
+.button {
+  &:hover {
+    text-decoration: none !important;
+  }
+}

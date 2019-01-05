@@ -1,5 +1,7 @@
 .gallery {
-  margin: 45px 0;
+  &:first-of-type {
+    margin-top: 40px;
+  }
 
   dl.gallery-item {
     float: left;
@@ -9,18 +11,11 @@
       display: block;
 
       img {
+        transition: filter .5s ease-in-out;
+        filter: grayscale(.8);
         display: block;
         width: 100%;
         height: auto;
-
-        transition: filter .5s ease-in-out;
-        // filter: grayscale(.8);
-
-        // Mobile devices and smaller
-        // - Disable grayscale filter
-        @media(max-width: $mobile-breakpoint) {
-          filter: grayscale(0);
-        }
       }
 
       &:hover {
@@ -42,45 +37,71 @@
   &.two-wide a img,
   &.gallery-columns-2 dl {
     width: calc(100%/2 - 1px);
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      filter: grayscale(0) !important;
+    }
   }
 
   // 3 columns
   &.three-wide a img,
   &.gallery-columns-3 dl {
     width: calc(100%/3 - 1px);
+    
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      filter: grayscale(0) !important;
+    }
   }
 
   // 4 columns
   &.four-wide a img,
   &.gallery-columns-4 dl {
     width: calc(100%/4 - 1px);
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      filter: grayscale(0) !important;
+    }
   }
 
   // 5 columns
   &.five-wide a img,
   &.gallery-columns-5 dl {
     width: calc(100%/5 - 1px);
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      filter: grayscale(0) !important;
+    }
   }
 
   // 6 columns
   &.six-wide a img,
   &.gallery-columns-6 dl {
     width: calc(100%/6 - 1px);
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      filter: grayscale(0) !important;
+    }
   }
 
   //==================================================================================
   //  Tighten up whitespace for adjacent (following) siblings
   //==================================================================================
   // Multiple galleries
-  &+.gallery {
-    margin-top: -45px;
+  & + .gallery {
+    margin: 0;
   }
 
   // Embedded media (like YouTube videos) following galleries
-  &+.embed-responsive {
-    margin-top: -45px;
+  & + .embed-responsive {
+    margin: 0;
   }
 }
+
 
 
 /*
@@ -88,16 +109,3 @@
   RESPONSIVE BEHAVIORS
 ====================================================================
 */
-
-// Tablets and smaller
-@media(max-width: $mobile-breakpoint) {
-
-  // Make all galleries single-column
-  .gallery {
-
-    a img,
-    dl {
-      width: 100% !important;
-    }
-  }
-}

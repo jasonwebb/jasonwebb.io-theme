@@ -1,0 +1,1 @@
+<?php return get_category_by_slug($_POST['slug'])->cat_ID; ?>

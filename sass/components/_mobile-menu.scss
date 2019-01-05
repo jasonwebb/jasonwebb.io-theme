@@ -1,27 +1,42 @@
-#mobile-menu {
+.mobile-menu {
   position: fixed;
   top: 0;
-  left: -110vw;
+  left: -100vw;
   z-index: 10;
 
-  width: calc(100vw - #{$hamburger-box-width});
-  background-color: white;
-  transition: left .5s ease;
+  width: $mobile-menu-width;
+  height: 100vh;
+
+  background-color: #333;
+
+  transition: left .3s ease-in-out;
 
   // Class for 'open' state
-  &.is-active {
+  &.is-open {
     left: 0;
-    opacity: 1;
+    
+    .close-icon {
+      top: 0;
+    }
   }
 
-  .mobile-menu-inner {
-    height: 200vh;
-    background-color: rgba(0, 0, 0, .8);
+  .close-icon {
+    position: absolute;
+    left: $mobile-menu-width;
+    top: -100px;
+    background-color: #333;
+    font-size: 36px;
+    color: rgba(255,255,255,.6);
+    padding: 10px;
+    cursor: pointer;
+    transition: top .5s ease-in-out;
   }
 
   // All menus ===============================================================
   ul {
     padding: 10px 0;
+    margin: 0;
+    list-style: none;
 
     &:first-of-type {
       padding-top: 30px;
@@ -32,29 +47,29 @@
         display: block;
         color: white;
         padding: 0 30px;
-
-        &:focus {
-          // Add blue
-        }
       }
     }
-  }
 
-  // Primary pages (About, Work, etc) ========================================
-  .primary-pages {
-    a {
-      font-weight: 600;
-      font-size: 26px;
+    // Page links
+    &.primary-pages {
+      a {
+        font-weight: 600;
+        font-size: 26px;
+      }
     }
-  }
 
-  // External sites (Github, Twitter, etc) ====================================
-  .external-sites {
-    margin-top: 20px;
-
-    a {
-      opacity: .5;
-      padding: 3px 30px;
+    // Social media links
+    &.external-sites {
+      margin-top: 10px;
+  
+      a {
+        opacity: .5;
+        padding: 0 30px;
+  
+        span {
+          margin-right: 10px;
+        }
+      }
     }
   }
 }

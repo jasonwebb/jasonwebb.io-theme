@@ -1,191 +1,117 @@
 .results-page {
-
-  // Tablets and smaller
-  // - Add gray background
-  // - Add upper padding
-  @media(max-width: $tablet-breakpoint) {
-    background-color: $light-gray-background-color;
-    padding-top: $tablet-horizontal-padding !important;
-    min-height: calc(100vh - 80px);
-  }
-
-  // Mobile devices and smaller
-  // - Decrease upper padding
-  @media(max-width: $mobile-breakpoint) {
-    padding-top: $mobile-horizontal-padding !important;
-  }
-
-  //=========================================================================================
-  //  Media object
-  //=========================================================================================
-  .media {
-    padding: 25px 20px 5px 0 !important;
-    position: relative;
-
-    // Tablets and smaller
-    // - Tighten all padding
-    // - Visually isolate media object using border, shadow, and contrasting background
     @media(max-width: $tablet-breakpoint) {
-      padding: 0 !important;
-      margin: 12px $tablet-horizontal-padding;
-
-      border: 1px solid rgba(0, 0, 0, .15);
-      box-shadow: 2px 2px 3px rgba(0, 0, 0, .05);
-      background-color: white;
+        background-color: $light-gray-background-color;
+        padding-top: 15px;
     }
 
-    // Mobile devices and smaller
-    // - Decrease spacing between media objects
-    @media(max-width: $mobile-breakpoint) {
-      margin: 10px $mobile-horizontal-padding;
-    }
-
-    // Add larger and more even padding when no thumbnail is present
-    &.has-no-thumbnail {
-      @media(max-width: $tablet-breakpoint) {
-        padding: 5px 10px 7px 10px !important;
-      }
-    }
-
-    // Consecutive media objects
-    &+.media {
-
-      // Tablets and smaller
-      // - Eliminate top margin for tighter packing
-      @media(max-width: $tablet-breakpoint) {
-        margin-top: 1px;
-      }
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    &:first-of-type {
-      padding-top: 0 !important;
-      margin-top: 0;
-    }
-
-    // Remove grayscale filter on image when entire media object is hovered
-    &:hover {
-      .media-left {
-        .image {
-          img {
-            filter: grayscale(0);
-          }
-        }
-      }
-    }
-
-    // Touch mask =============================================================================================
-    .touch-mask {
-      display: none; // hide touch mask for larger viewports
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-
-      // Activate touch mask for mobile devices and tablets
-      @media(max-width: $tablet-breakpoint) {
-        display: block;
-      }
-    }
-
-    // Left side (image) ======================================================================================
-    .media-left {
-      margin: 0;
-
-      .image {
-        img {
-          display: block;
-          filter: grayscale(.8);
-
-          transition: filter .25s ease-in-out;
-
-          width: 175px;
-          height: 140px;
-
-          // Tablets and smaller
-          // - Lessen grayscale filter
-          // - Add thin white border using margin
-          @media(max-width: $tablet-breakpoint) {
-            filter: grayscale(.4);
-            margin: 2px;
-          }
-
-          // Mobile devices and smaller
-          // - Make image responsive
-          @media(max-width: $mobile-breakpoint) {
-            width: 100%;
-            max-width: 175px;
-            height: auto;
-          }
-        }
-      }
-
-      @media(max-width: $mobile-breakpoint) {
-        width: 25%;
-      }
-    }
-
-    // Right column (title and excerpt) ==============================================================
-    .media-content {
-      margin-left: 25px;
-
-      // Tablets and below
-      // - Decrease right margin
-      @media(max-width: $tablet-breakpoint) {
-        margin-left: 15px;
-      }
-
-      .title {
-        margin-bottom: 10px;
-
-        // Tablets and below
-        // - Increase top margin
-        // - Increase right padding
-        // - Decrease font size
-        @media(max-width: $tablet-breakpoint) {
-          margin-top: 20px;
-          padding-right: 20px;
-
-          font-size: 18px;
-        }
-
-        // Mobile devices and below
-        // - Decrease top margin
-        // - Decrease font size and line height
-        @media(max-width: $mobile-breakpoint) {
-          margin-top: 10px;
-
-          font-size: 16px;
-          line-height: 19px;
-        }
-
-        a {
-          color: $heading-text-color;
-          font-weight: 500;
-
-          @media(max-width: $tablet-breakpoint) {
-            opacity: .7;
-          }
-        }
-      }
-
-      .excerpt {
-        color: rgba(0, 0, 0, .5);
+    .media {
+        padding: 25px 20px 5px 0;
 
         // Tablets and smaller
-        // - Hide
+        // - Tighten all padding
         @media(max-width: $tablet-breakpoint) {
-          display: none;
+            padding: 0;
+
+            border: 1px solid rgba(0,0,0,.15);
+            margin: 15px $tablet-horizontal-padding;
+            box-shadow: 2px 2px 3px rgba(0,0,0,.05);
+            background-color: white;
         }
 
-        .date {
-          font-style: italic;
+        // Consecutive media objects
+        & + .media {
+            // Tablets and smaller
+            // - Eliminate top margin for tighter packing
+            @media(max-width: $tablet-breakpoint) {
+                margin-top: 1px;
+            }
         }
-      }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        &:first-of-type {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    
+        &:hover {
+            .media-left {
+                .image {
+                    img {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    
+        .media-left {
+            margin-left: 0;
+            margin-bottom: 0 !important;
+            
+            @media(max-width: $tablet-breakpoint) {
+                margin-right: 15px;
+            }
+    
+            .image {
+                img {
+                    display: block;
+                    filter: grayscale(.8);
+        
+                    transition: filter .25s ease-in-out;
+        
+                    width: 175px;
+                    height: 140px;
+
+                    @media(max-width: $tablet-breakpoint) {
+                        filter: grayscale(.4);
+                        margin: 2px;
+                    }
+                }
+            }
+        }
+    
+        .media-content {
+            .title {
+                margin-bottom: 10px;
+
+                @media(max-width: $tablet-breakpoint) {
+                    margin-top: 20px;
+                    padding-right: 20px;
+
+                    font-size: 18px;
+                }
+
+                @media(max-width: $mobile-breakpoint) {
+                    margin-top: 15px;
+
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+    
+                a {
+                    color: $heading-text-color;
+                    font-weight: 500;
+
+                    @media(max-width: $tablet-breakpoint) {
+                        display: block;
+                        opacity: .7;
+                    }
+                }
+            }
+    
+            .excerpt {
+                @media(max-width: $tablet-breakpoint) {
+                    display: none;
+                }
+
+                .date {
+                    font-style: italic;
+                }
+    
+                color: rgba(0,0,0,.5);
+            }
+        }
     }
-  }
 }

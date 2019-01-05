@@ -1,194 +1,32 @@
 .work-page {
-
-  @media(max-width: $mobile-breakpoint) {
-    padding-bottom: 0 !important;
-  }
-
-  //==========================================================================================
-  //  Pill/tag-based category filter controls
-  //==========================================================================================
   .work-controls {
-    margin-bottom: 40px;
-
-    // Mobile devices and smaller
-    // - Add horizontal padding
-    @media(max-width: $tablet-breakpoint) {
-      margin-bottom: 20px;
-    }
-
+    padding: 0 20px;
+    
     ul {
       list-style: none;
-      margin: 0 $tablet-horizontal-padding;
+      margin: 0;
 
       li {
         display: inline-block;
-        margin-right: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
 
         a {
-          text-decoration: none;
           font-size: 16px;
-          transition: all .3s ease;
+          color: rgba(0,0,0,.7);
+          transition: .2s all ease-in-out;
 
-          &.is-active,
-          &.is-active:hover {
-            background-color: rgba(0, 0, 0, .6) !important;
-            color: white !important;
-          }
-
-          &:hover {
-            background-color: rgba(0, 0, 0, .08) !important;
-            color: rgba(0, 0, 0, .7) !important;
+          &:hover,
+          &.is-active {
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, .6);
+            color: #fff;
           }
         }
       }
     }
   }
 
-  //==========================================================================================
-  //  List of work items
-  //==========================================================================================
   .work-items {
-    // opacity: 0;
-    // height: 0;
-
-    // Mobile devices and smaller
-    // - Add gray background
-    // - Add padding
-    &.has-gray-background {
-      @media(max-width: $mobile-breakpoint) {
-        background-color: $light-gray-background-color;
-        padding: $tablet-horizontal-padding;
-      }
-    }
-
-    // Loading spinner
-    .loading-spinner {
-      margin-top: 100px;
-      font-size: 48px;
-      opacity: .2;
-    }
-
-    // Single work item ====================================================================
-    .work-item {
-      margin-bottom: 10px !important;
-
-      // Mobile devices and smaller
-      // - Make work item into card
-      @media(max-width: $mobile-breakpoint) {
-        background-color: white;
-        border: 1px solid rgba(0, 0, 0, .15);
-        box-shadow: 2px 2px 3px rgba(0, 0, 0, .05);
-        margin-bottom: 24px !important;
-      }
-
-      // Bring color to image when media object is hovered
-      &:hover {
-        .slick-dots {
-          opacity: 1;
-        }
-
-        .work-item__image {
-          filter: grayscale(0);
-        }
-
-        .work-item__right-column.column {
-          opacity: .9;
-        }
-      }
-
-      // Hide dots by default, to be faded in on hover
-      .slick-dots {
-        opacity: 0;
-        transition: opacity .3s ease;
-
-        @media(max-width: $tablet-breakpoint + 1) {
-          opacity: 1;
-        }
-      }
-
-      // Image(s) used for carousel
-      &__image {
-        width: 100%;
-        display: block;
-        filter: grayscale(.8);
-        transition: filter .3s ease-in-out;
-
-        // Turn off grayscale filter for mobile
-        @media(max-width: $mobile-breakpoint) {
-          filter: grayscale(0);
-        }
-
-        img {
-          width: 100%;
-          display: block;
-        }
-      }
-
-      // Title, date, and excerpt
-      &__right-column.column {
-        padding: 10px 20px !important;
-        opacity: .75;
-        transition: opacity .2s ease;
-
-        // Tablets and smaller
-        // - Bring opacity back to 100% to disable hover interaction
-        @media(max-width: $tablet-breakpoint + 1) {
-          opacity: 1;
-          padding-top: 5px !important;
-        }
-
-        @media(max-width: $mobile-breakpoint) {
-          padding: 0 !important;
-        }
-
-        .work-item__title {
-          margin: 0;
-          margin-bottom: 15px;
-          font-weight: 600;
-
-          @media(max-width: $tablet-breakpoint + 1) {
-            margin-bottom: 10px;
-          }
-
-          @media(max-width: $mobile-breakpoint) {
-            margin: 0;
-          }
-
-          a {
-            color: $heading-text-color;
-            text-decoration: none;
-
-            @media(max-width: $mobile-breakpoint) {
-              display: block;
-              font-size: 20px;
-              padding: 20px;
-              padding-bottom: 30px;
-            }
-          }
-        }
-
-        .work-item__description {
-          color: rgba(0, 0, 0, .5);
-          display: block;
-          transition: color .2s ease;
-          text-decoration: none;
-
-          // Mobile devices and smaller
-          // - Hide date and excerpt
-          @media(max-width: $mobile-breakpoint) {
-            display: none;
-          }
-
-          .date {
-            font-style: italic;
-          }
-
-          &:hover {
-            color: rgba(0, 0, 0, .6);
-          }
-        }
-      }
-    }
+    margin-top: 50px;
   }
 }

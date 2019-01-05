@@ -1,0 +1,105 @@
+body {
+  & > header {
+    width: $content-width-desktop;
+    margin: 0 auto;
+    padding: 40px 0;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      width: 90%;
+      padding-top: 20px;
+    }
+
+    // "Jason Webb" on left
+    .name {
+      font-size: 32px;
+      font-weight: 700;
+      color: rgba(0,0,0,.9);
+      flex: 0 auto;
+    }
+
+    & > nav {
+      flex: 0 auto;
+      margin-top: 10px;
+
+      @media screen and (max-width: $tablet-breakpoint) {
+        display: none;
+      }
+
+      ul {
+        display: inline-block;
+        margin: 0;
+
+        li {
+          display: inline-block;
+          margin-bottom: 0;
+          
+          a {
+            color: rgba(0,0,0,.5);
+            transition: .1s color linear;
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+
+      // Social media icons
+      .social {
+        margin-right: 30px;
+        padding-right: 30px;
+        border-right: 1px solid rgba(0,0,0,.15);
+
+        li {
+          margin-left: 5px;
+
+          a {
+            color: rgba(0,0,0,.4);
+            font-size: 28px;            
+          }
+        }
+      }
+
+      // Page links
+      .pages {
+        position: relative;
+        top: -3px;
+
+        li {
+          margin-right: 25px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+          
+          a {
+            
+
+            &:hover {
+              border-bottom: 1px dashed black;
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger-icon {
+      font-size: 36px;
+      color: rgba(0,0,0,.2);
+      cursor: pointer;
+    }
+
+    // Description under name
+    .tagline {
+      flex: 1 auto;
+      margin-top: 20px;
+      color: rgba(0,0,0,.35);
+    }
+  }
+}

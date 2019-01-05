@@ -1,9 +1,39 @@
 .home-page {
-  @media(max-width: $tablet-breakpoint) {
-    padding: 0 $tablet-horizontal-padding;
+  .introduction {
+    margin-top: -10px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: rgba(0,0,0,.03);
+    font-size: 18px;    
+    color: rgba(0,0,0,.6);
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      padding: 20px;
+      margin-top: -20px;
+      margin-bottom: 40px;
+
+      ul {
+        margin-left: 25px;
+        
+        li {
+          padding-left: 0;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: rgba(0,0,0,.6);
+    }
   }
 
-  .title {
-    margin-bottom: 20px;
+  .see-more {
+    display: block;
+    width: auto;
+    margin: 0 auto;
   }
 }
