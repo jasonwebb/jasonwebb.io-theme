@@ -1,28 +1,77 @@
 .contact-page {
+  .form {
+    width: 60%;
+    margin-top: 30px;
 
-    // Tablets and smaller
-    // - Increase horizontal padding to line content up with mobile controls
-    @media(max-width: $tablet-breakpoint) {
-        padding: 0 $tablet-horizontal-padding;
+    // Mobile - make full-width
+    @media(max-width: $mobile-breakpoint) {
+      width: 100%;
     }
-    
-    .form {
-        margin-top: 30px;
 
-        @media(max-width: $tablet-breakpoint) {
-            margin-top: 50px;
+    .field {
+      margin: 15px 0;
+
+      // "Name" and "Email" fields
+      .input {
+        width: 60%;
+
+        // "Required" box next to fields when input is invalid
+        & + span {
+          display: inline-block;
         }
+      }
 
-        .field {
-            margin: 15px 0;
+      // "Message" field
+      .textarea {
+        & + span {
+          display: inline-block;
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
 
-            .input {
-                width: 60%;
-            }
+      // Invalid fields get red border
+      .wpcf7-not-valid {
+        border-color: hsl(348, 80%, 61%);
+      }
 
-            .button {
-                margin-top: 20px;
-            }
-        }        
+      // All "Required" boxes next to fields
+      .wpcf7-not-valid-tip {
+        background-color: hsl(348, 100%, 61%);
+        margin-left: 10px;
+        color: white;
+        padding: 5px 15px;
+      }
+
+      .button {
+        margin-top: 20px;
+      }
     }
+  }
+
+  // Hide the form when message is successfully sent so that only the output message is shown
+  .sent {
+    h1,
+    .title,
+    .title + p,
+    .form {
+      display: none;
+    }
+  }
+
+  // Result messages
+  .wpcf7-response-output {
+    margin: 0;
+    padding: 10px 20px;
+    border: 0 !important;
+
+    &.wpcf7-validation-errors {
+      background-color: hsl(48, 100%, 67%);
+    }
+
+    &.wpcf7-mail-sent-ok {
+      background-color: hsl(141, 71%, 37%);
+      color: white;
+    }
+  }
 }
