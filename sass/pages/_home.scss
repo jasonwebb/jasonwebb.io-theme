@@ -32,8 +32,55 @@
   }
 
   .see-more {
-    display: block;
-    width: auto;
-    margin: 0 auto;
+    flex: 1;
+    flex-basis: calc(100% / 4 - 5px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 300px;
+    margin-left: 5px;
+    background-color: rgba(0,0,0,.03);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(0,0,0,.2);
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+      background-color: rgba(0,0,0,.05);
+      color: rgba(0,0,0,.4);
+    }
+
+    .fas {
+      font-family: FontAwesome;
+      font-size: 80px;
+      font-weight: normal;
+      opacity: .5;
+      margin-bottom: 15px;
+    }
+
+    // For small desktops - turn into 3-column layout
+    @media screen and (max-width: $small-desktop-breakpoint) {
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+      height: 400px;
+    }
+
+    // For tablets - use 2-column layout
+    @media screen and (max-width: $tablet-breakpoint) {
+      flex-basis: calc(100% / 2);
+      max-width: calc(100% / 2);
+    }
+
+    // For mobile - stack vertically with other blocks
+    @media screen and (max-width: $mobile-breakpoint) {
+      height: 225px;
+      flex: none;
+      max-width: none;
+    }
   }
 }
