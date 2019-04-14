@@ -1,0 +1,26 @@
+.button {
+  padding: 1.3rem 1.5rem;
+
+  .icon {
+    width: auto;
+    height: auto;
+    font-size: 28px;
+
+    &:first-child {
+      margin-left: calc(-.375em - 1px);
+      margin-right: .5rem !important;
+    }
+  }
+
+  &.is-dark,
+  &.is-link,
+  &.is-info {
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+
+.buttons {
+  margin-top: 3rem;
+}
