@@ -4,7 +4,6 @@ const isHomePage = document.querySelector('.home-page') != undefined ? true : fa
 const isWorkPage = document.querySelector('.work-page') != undefined ? true : false;
 const isResumePage = document.querySelector('.resume-page') != undefined ? true : false;
 
-
 //======================================
 //  Mobile menu functionality
 //======================================
@@ -34,18 +33,23 @@ mobileMenuCloseIcon.addEventListener('click', () => {
 
 // Home page - load all work items
 if(isHomePage) {
-  loadWorkItems(undefined, 8);
+  loadWorkItems(undefined, 3);
 
-// Work page = load work items by category based on selected tag (hash)
+// Work page = load work items by category based on selected tag
 } else if(isWorkPage) {
-  loadWorkItemsFromHash();
+  // Select appropriate radio based on hash on load
+  if(location.hash != undefined && location.hash != '#') {
+    document.querySelector('[name="category"][value="' + location.hash.substr(1, location.hash.length) + '"]').setAttribute('checked', true);
+  }
 
-  window.addEventListener('hashchange', () => {
-    document.querySelectorAll('.work-controls .tag').forEach((element) => {
-      element.classList.remove('is-active');
+  // Load initial work items for whichever category is selected on load
+  loadWorkItems(document.querySelector('[name="category"]:checked').getAttribute('value'));
+
+  // Load new work items when category changes
+  document.querySelectorAll('[name="category"]').forEach(function(element) {
+    element.addEventListener('change', e => {
+      loadWorkItems(e.target.getAttribute('value'));
     });
-
-    loadWorkItemsFromHash();
   });
 
 // Resume page = toggle full and web-only versions
@@ -84,21 +88,6 @@ if(isHomePage) {
 }
 
 
-//===================================================
-//  Load appropriate work items based on hash
-//===================================================
-
-function loadWorkItemsFromHash() {
-  if(location.hash.length == 0) {
-    document.querySelector('.work-controls .tag[href*="/work"]').classList.add('is-active');
-  } else {
-    document.querySelector('.work-controls .tag[href*="' + location.hash + '"]').classList.add('is-active');
-  }
-
-  loadWorkItems(location.hash.slice(1, location.hash.length));
-}
-
-
 //==============================================
 //  Load work items with provided category
 //==============================================
@@ -118,9 +107,28 @@ function loadWorkItems(category = undefined, count = undefined) {
       let container = document.createElement('a');
       container.classList.add('work-item');
       container.setAttribute('href', item.url);
+      container.setAttribute('aria-label', 'Read about ' + item.title);
       container.innerHTML = innerHTML;
 
       document.querySelector('.work-items').appendChild(container);
+    }
+
+    // Set the location hash based on selected category for bookmarking
+    if(category == undefined || category == '') {
+      location.hash = '';
+    } else {
+      location.hash = category;
+    }
+
+    // Add a "see more" block link at the end for the home page
+    if(isHomePage) {    
+      let seeMoreEl = document.createElement('a');
+      seeMoreEl.setAttribute('href', '/work');
+      seeMoreEl.classList.add('see-more');
+      seeMoreEl.innerHTML = '<span class="fas fa-arrow-circle-right" aria-hidden="true"></span><br>See more<br> of my work';
+      seeMoreEl.setAttribute('title', 'See more of my work ...');
+
+      document.querySelector('.work-items').append(seeMoreEl);
     }
   });
 }
@@ -128,7 +136,7 @@ function loadWorkItems(category = undefined, count = undefined) {
 // Template data into a "work item" component
 function createWorkItem(data) {
   return `
-    <img src="${data.thumbnail}" alt="${data.title}">
+    <img src="${data.thumbnail}" alt="${data.title}" title="${data.title}">
 
     <div class="details">
       <h2>${data.title}</h2>

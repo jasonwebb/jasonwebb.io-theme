@@ -2,7 +2,6 @@ class ItemLoader {
   constructor() {}
 
   static load(category = undefined, count = undefined) {
-    console.log(count);
     return fetch('/wp-content/themes/minimal-for-jasonwebbio-v2/php/getItems.php', {
       method: 'POST',
       body: JSON.stringify({
