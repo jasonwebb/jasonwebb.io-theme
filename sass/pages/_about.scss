@@ -36,22 +36,34 @@
     padding: 20px;
     margin-top: 50px;
 
-    h5 {
+    h2 {
       opacity: .6;
-      margin-top: 10px;
+      margin-top: 10px !important;
       margin-bottom: 20px;
+      font-size: 24px;
       font-weight: 500;
+      border: 0;
+      padding: 0;
     }
 
-    a {
-      display: inline-block;
-      margin: 10px;
-      height: 60px;
+    ul {
+      list-style: none;
+      margin: 0;
 
-      @media(max-width: $tablet-breakpoint) {
-        max-width: 100%;
-        height: auto;
-        margin: 20px 10px;
+      li {
+        display: inline;
+
+        a {
+          display: inline-block;
+          margin: 10px;
+          height: 60px;
+
+          @media(max-width: $tablet-breakpoint) {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 10px;
+          }
+        }
       }
     }
   }
