@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <nav class="mobile-menu">
+  <nav class="mobile-menu" aria-label="Mobile menu" aria-hidden="true">
     <ul class="primary-pages">
       <li><a href="/about">About</a></li>
       <li><a href="/work">Work</a></li>
@@ -45,14 +45,14 @@
   </nav>
 
   <header>
-    <a href="/" class="name">Jason Webb</a>
+    <a href="/" class="name" aria-label="Go to home page">Jason Webb</a>
 
-    <nav>
+    <nav aria-label="Main menu">
       <ul class="social">
-        <li><a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter"><span class="fa fa-twitter"></span></a></li>
-        <li><a href="https://www.instagram.com/zenwebb/" target="_blank" title="@zenwebb on Instagram"><span class="fa fa-instagram"></span></a></li>
-        <li><a href="http://github.com/jasonwebb" target="_blank" title="jasonwebb on Github"><span class="fa fa-github"></span></a></li>
-        <li><a href="https://www.pinterest.com/jasonw2368/" target="_blank" title="jasonw2368 on Pinterest"><span class="fa fa-pinterest"></span></a></li>
+        <li><a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+        <li><a href="https://www.instagram.com/zenwebb/" target="_blank" title="@zenwebb on Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+        <li><a href="http://github.com/jasonwebb" target="_blank" title="jasonwebb on Github"><span class="fa fa-github" aria-hidden="true"></span></a></li>
+        <li><a href="https://www.pinterest.com/jasonw2368/" target="_blank" title="jasonw2368 on Pinterest"><span class="fa fa-pinterest" aria-hidden="true"></span></a></li>
       </ul>
 
       <ul class="pages">
@@ -67,5 +67,3 @@
 
     <div class="tagline"><?php bloginfo("description"); ?></div>
   </header>
-
-  <main>

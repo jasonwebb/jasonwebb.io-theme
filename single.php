@@ -32,7 +32,7 @@
           <?php
             foreach($categories as $category) {
               if($category->slug != "portfolio" && $category->slug != "work")
-                echo '<li><a href="/category/' . $category->slug . '" class="tag is-light">' . $category->name . '</a></li>';
+                echo '<li><a href="/category/' . $category->slug . '" class="tag is-light" aria-label="See all posts in the ' . $category->name . ' category">' . $category->name . '</a></li>';
             }
           ?>
 
@@ -44,9 +44,9 @@
     </div>
   </header>
 
-  <section class="body">
+  <main class="body">
     <?php the_content(); ?>
-  </section>
+  </main>
 </article>
 
 <?php get_footer(); ?>
