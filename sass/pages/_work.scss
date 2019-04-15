@@ -3,8 +3,9 @@
     padding: 0 20px;
     
     label {
+      display: inline-block;
       cursor: pointer;
-      margin-right: 10px;
+      margin: 0 5px 10px 5px;
 
       input {
         position: absolute;
