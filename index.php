@@ -11,6 +11,9 @@
       <li><a href="/work/#fabrication" title="Go to my digital fabrication projects">Digital fabrication</a> using both conventional and experimental methods.</li>
       <li><a href="/work/#electronics" title="Go to my electronics projects">Physical computing</a> with the Arduino platform and custom circuit boards.</li>
     </ul>
+
+    <p>In essence, I am a <strong>creative technologist for hire</strong> focused on realizing creative professionals' visions using code, electronics, and digital fabrication. If you are an artist, agency, venue, or creative institution of any kind seeking a partner to help create a new project, product, or experience, <a href="/contact">send me a message!</a></p>
+    <p>I am available for one-off commissions and collaborations, but currently prefer full-time opportunities.</p>
   </section>
 
   <section class="work-items" aria-label="Portfolio samples"></section>
