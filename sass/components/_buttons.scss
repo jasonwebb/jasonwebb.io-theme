@@ -1,6 +1,6 @@
 .button {
   padding: 0.5rem 1.5rem;
-  height: auto;
+  height: 46px;
 
   .icon {
     width: auto;
@@ -23,5 +23,9 @@
 }
 
 .buttons {
-  margin-top: 3rem;
+  margin: 2rem 0;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
