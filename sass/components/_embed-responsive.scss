@@ -11,6 +11,11 @@
     margin-top: 1px;
   }
 
+  &.is-full-width {
+    margin-left: -$media-breakout-offset;
+    width: calc(100% + #{$media-breakout-offset}*2);
+  }
+
   &.embed-responsive-16by9 {
     padding-bottom: 56.25%;
   }
