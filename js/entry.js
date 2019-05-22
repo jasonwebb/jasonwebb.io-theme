@@ -33,7 +33,7 @@ mobileMenuCloseIcon.addEventListener('click', () => {
 
 // Home page - load all work items
 if(isHomePage) {
-  loadWorkItems(undefined, 3);
+  loadWorkItems(undefined, 7);
 
 // Work page = load work items by category based on selected tag
 } else if(isWorkPage) {
