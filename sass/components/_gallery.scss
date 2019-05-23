@@ -3,6 +3,11 @@
   margin-left: -$media-breakout-offset;
   width: calc(100% + #{$media-breakout-offset}*2);
 
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin-left: 0;
+    width: 100%;
+  }
+
   dl.gallery-item {
     float: left;
     margin: 0 1px 1px 0;
@@ -112,6 +117,10 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  & + p {
+    margin-top: 40px;
+  }
 }
 
 img[class*="wp-image"].has-border {
@@ -122,4 +131,9 @@ img[class*="wp-image"].has-border {
   margin-left: -$media-breakout-offset;
   width: calc(100% + #{$media-breakout-offset}*2);
   max-width: none;
+  
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
