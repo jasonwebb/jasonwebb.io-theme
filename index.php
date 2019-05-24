@@ -6,7 +6,7 @@
     
     <p>My areas of research include:</p>
     <ul>
-      <li>Computational and generative design, particularly focused on the exploration of form-producing processes found in nature.</li>
+      <li>Digital morphogenesis informed by research from the natural sciences</li>
       <li><a href="/work/#code" title="Go to my creative coding projects">Creative coding</a> with JavaScript, p5.js, Processing, and more.</li>
       <li><a href="/work/#fabrication" title="Go to my digital fabrication projects">Digital fabrication</a> using both conventional and experimental methods.</li>
       <li><a href="/work/#electronics" title="Go to my electronics projects">Physical computing</a> with the Arduino platform and custom circuit boards.</li>
