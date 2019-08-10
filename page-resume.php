@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="resume-page page">
+<main class="resume-page page" role="main">
   <div class="controls">
     <div class="column">
       <fieldset class="version">
@@ -9,13 +9,13 @@
         <div class="options">
           <input id="full" type="radio" name="version" value="full" checked>
           <label for="full">Full</label>
-            
+
           <input id="web" type="radio" name="version" value="web">
           <label for="web">Web only</label>
         </div>
       </fieldset>
     </div>
-    
+
     <div class="column">
       <a href="/wp-content/themes/minimal-for-jasonwebbio/resumes/Jason-Webb-resume.pdf" class="download button is-link">
         <span class="icon">

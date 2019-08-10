@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <nav class="mobile-menu" aria-label="Mobile menu" aria-hidden="true">
+  <nav class="mobile-menu" role="navigation" aria-label="Mobile menu" aria-hidden="true">
     <ul class="primary-pages">
       <li><a href="/about">About</a></li>
       <li><a href="/work">Work</a></li>
@@ -44,10 +44,10 @@
     <span class="close-icon fa fa-times"></span>
   </nav>
 
-  <header>
+  <header role="banner">
     <a href="/" class="name" aria-label="Go to home page">Jason Webb</a>
 
-    <nav aria-label="Main menu">
+    <nav role="navigation" aria-label="Main menu">
       <ul class="social">
         <li><a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
         <li><a href="https://www.instagram.com/zenwebb/" target="_blank" title="@zenwebb on Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>

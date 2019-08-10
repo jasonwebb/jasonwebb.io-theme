@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<main class="home-page">
+<main class="home-page" role="main">
   <section class="introduction page" aria-label="Introduction">
     <p>I am a chronically curious person with deep passions for creative and scientific inquiry, the natural world, and the mindful application of advanced and emerging technologies.</p>
-    
+
     <p>My areas of research include:</p>
     <ul>
       <li>Digital morphogenesis informed by research from the natural sciences</li>

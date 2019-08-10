@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="page about-page">
+<main class="page about-page" role="main">
   <img src="<?= get_template_directory_uri(); ?>/images/pages/about/portrait.png" class="portrait is-pulled-right" alt="Image of Jason teaching a DIY synthesizer workshop">
 
   <p>Jason is a creative technologist based in Minneapolis, MN who continually explores the boundaries and intersections of creativity, technology, fabrication, science, and the natural world through experimental project-based work.</p>

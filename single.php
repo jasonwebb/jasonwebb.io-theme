@@ -2,12 +2,12 @@
 
 <?php the_post(); ?>
 
-<article class="post">
+<article class="post" role="main">
   <header>
     <?php
     if( has_post_thumbnail() ) {
     ?>
-    
+
       <div class="banner">
         <img src="<?php the_post_thumbnail_url('banner'); ?>" alt="<?php the_title(); ?>">
       </div>
@@ -19,7 +19,7 @@
     <h1 class="title"><?php the_title(); ?></h1>
 
     <div class="details">
-      Added on <?php the_date(); ?> in 
+      Added on <?php the_date(); ?> in
 
       <?php
         $categories = get_the_category();
@@ -37,7 +37,7 @@
           ?>
 
         </ul>
-        
+
       <?php
         }
       ?>

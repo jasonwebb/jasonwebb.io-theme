@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main class="work-page">
-  <nav class="work-controls has-text-centered" aria-label="Work categories">
+<main class="work-page" role="main">
+  <nav class="work-controls has-text-centered" role="navigation" aria-label="Work categories">
     <div role="group" aria-label="Select category">
       <label>
         <input type="radio" name="category" value="">

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="search-page results-page page">
+<main class="search-page results-page page" role="main">
   <?php
   get_search_query();
 
@@ -21,7 +21,7 @@
         <div class="media-content">
           <h4 class="title"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h4>
           <a href="<?php the_permalink(); ?>" class="excerpt">
-            <span class="date"><?php the_time('F jS, Y'); ?></span> &ndash; 
+            <span class="date"><?php the_time('F jS, Y'); ?></span> &ndash;
             <?= get_the_excerpt(); ?>
           </a>
         </div>
@@ -32,7 +32,7 @@
   }
 
   // See functions.php for custom_pagination() function
-  custom_pagination(); 
+  custom_pagination();
   ?>
 </main>
 
