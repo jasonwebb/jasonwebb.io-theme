@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <main class="work-page" role="main">
+  <h1 class="visually-hidden">Work</h1>
+
   <nav class="work-controls has-text-centered" role="navigation" aria-label="Work categories">
     <div role="group" aria-label="Select category">
       <label>

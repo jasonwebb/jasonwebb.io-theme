@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <main class="home-page" role="main">
+  <h1 class="visually-hidden">Home page</h1>
+
   <section class="introduction page" aria-label="Introduction">
     <p>I am a chronically curious person with deep passions for creative and scientific inquiry, the natural world, and the mindful application of advanced and emerging technologies.</p>
 

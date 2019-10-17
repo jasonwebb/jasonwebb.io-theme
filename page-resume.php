@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <main class="resume-page page" role="main">
+  <h1 class="visually-hidden">Resume</h1>
+
   <div class="controls">
     <div class="column">
       <fieldset class="version">
