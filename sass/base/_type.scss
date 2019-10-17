@@ -14,7 +14,7 @@ ol {
 
   li {
     padding-left: .5rem;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
 
     // Second-level lists
     ul,
@@ -42,4 +42,8 @@ ol + p {
   &:hover {
     text-decoration: none !important;
   }
+}
+
+a {
+  color: #2a6cd8;
 }
