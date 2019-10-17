@@ -3,7 +3,7 @@
 <main class="page about-page" role="main">
   <h1 class="visually-hidden">About me</h1>
 
-  <img src="<?= get_template_directory_uri(); ?>/images/pages/about/portrait.png" class="portrait is-pulled-right" alt="Image of Jason teaching a DIY synthesizer workshop">
+  <img src="<?= get_template_directory_uri(); ?>/images/pages/about/portrait.png" class="portrait is-pulled-right" alt="Jason teaching a DIY synthesizer workshop">
 
   <p>Jason is a creative technologist based in Minneapolis, MN who continually explores the boundaries and intersections of creativity, technology, fabrication, science, and the natural world through experimental project-based work.</p>
   <p>In his personal research he is particularly focused on the exploration and application of biological processes relating to form using computational design, digital fabrication, and electronics.</p>
@@ -22,15 +22,39 @@
     <li>Building a pretty large and very successful <a href="/2015/01/aquaponics-experiment-2013/" title="Read about my aquaponics experiment from 2013">aquaponics system</a> for under $300.</li>
   </ul>
 
-  <section class="logos message has-text-centered" aria-label="Media mentions">
-    <h2 aria-label="Media mentions">My work has been featured on ...</h2>
+  <section class="logos message has-text-centered">
+    <h2>My work has been featured on <span aria-hidden="true">...</span></h2>
 
     <ul>
-      <li><a href="https://hackaday.com/" title="Hackaday" target="_blank"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/hackaday-logo.png" alt=""></a></li>
-      <li><a href="https://blog.adafruit.com/" title="Adafruit" target="_blank"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/adafruit-logo.png" alt=""></a></li>
-      <li><a href="https://www.eeweb.com/" title="E E Web" target="_blank"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/eeweb-logo.png" alt=""></a></li>
-      <li><a href="https://makeymakey.com/" title="Makey Makey" target="_blank"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/makeymakey-logo.png" alt=""></a></li>
-      <li><a href="https://www.thingiverse.com/" title="Thingiverse" target="_blank"><img src="<?= get_template_directory_uri(); ?>/images/pages/about/thingiverse-logo.png" alt=""></a></li>
+      <li>
+        <a href="https://hackaday.com/" target="_blank">
+          <img src="<?= get_template_directory_uri(); ?>/images/pages/about/hackaday-logo.png" alt="Hackaday">
+        </a>
+      </li>
+
+      <li>
+        <a href="https://blog.adafruit.com/" target="_blank">
+          <img src="<?= get_template_directory_uri(); ?>/images/pages/about/adafruit-logo.png" alt="Adafruit">
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.eeweb.com/" target="_blank">
+          <img src="<?= get_template_directory_uri(); ?>/images/pages/about/eeweb-logo.png" alt="EE Web">
+        </a>
+      </li>
+
+      <li>
+        <a href="https://makeymakey.com/" target="_blank">
+          <img src="<?= get_template_directory_uri(); ?>/images/pages/about/makeymakey-logo.png" alt="MaKey MaKey">
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.thingiverse.com/" target="_blank">
+          <img src="<?= get_template_directory_uri(); ?>/images/pages/about/thingiverse-logo.png" alt="Thingiverse">
+        </a>
+      </li>
     </ul>
   </section>
 </main>
