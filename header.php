@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <nav class="mobile-menu" role="navigation" aria-label="Mobile menu" aria-hidden="true">
+  <nav class="mobile-menu" role="navigation" aria-label="mobile menu" aria-hidden="true">
     <ul class="primary-pages">
       <li><a href="/about">About</a></li>
       <li><a href="/work">Work</a></li>
@@ -35,27 +35,73 @@
     </ul>
 
     <ul class="external-sites">
-      <li><a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter"><span class="fa fa-twitter"></span>Twitter</a></li>
-      <li><a href="https://www.instagram.com/zenwebb/" target="_blank" title="@zenwebb on Instagram"><span class="fa fa-instagram"></span>Instagram</a></li>
-      <li><a href="http://github.com/jasonwebb" target="_blank" title="jasonwebb on Github"><span class="fa fa-github"></span>Github</a></li>
-      <li><a href="https://www.pinterest.com/jasonw2368/" target="_blank" title="jasonw2368 on Pinterest"><span class="fa fa-pinterest"></span>Pinterest</a></li>
+      <li>
+        <a href="http://twitter.com/jasonwebb" target="_blank">
+          <span class="fa fa-twitter" aria-hidden="true"></span>
+          Twitter
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.instagram.com/zenwebb/" target="_blank">
+          <span class="fa fa-instagram" aria-hidden="true"></span>
+          Instagram
+        </a>
+      </li>
+
+      <li>
+        <a href="http://github.com/jasonwebb" target="_blank">
+          <span class="fa fa-github" aria-hidden="true"></span>
+          Github
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.pinterest.com/jasonw2368/" target="_blank">
+          <span class="fa fa-pinterest" aria-hidden="true"></span>
+          Pinterest
+        </a>
+      </li>
     </ul>
 
     <span class="close-icon fa fa-times"></span>
   </nav>
 
   <header role="banner">
-    <a href="/" class="name" aria-label="Go to home page">Jason Webb</a>
+    <a href="/" class="name" aria-label="go to home page">Jason Webb</a>
 
-    <nav role="navigation" aria-label="Main menu">
-      <ul class="social">
-        <li><a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-        <li><a href="https://www.instagram.com/zenwebb/" target="_blank" title="@zenwebb on Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
-        <li><a href="http://github.com/jasonwebb" target="_blank" title="jasonwebb on Github"><span class="fa fa-github" aria-hidden="true"></span></a></li>
-        <li><a href="https://www.pinterest.com/jasonw2368/" target="_blank" title="jasonw2368 on Pinterest"><span class="fa fa-pinterest" aria-hidden="true"></span></a></li>
+    <nav role="navigation">
+      <ul class="social" aria-label="social media">
+        <li>
+          <a href="http://twitter.com/jasonwebb" target="_blank">
+            <span class="fa fa-twitter" aria-hidden="true"></span>
+            <span class="visually-hidden">@jasonwebb on Twitter</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/zenwebb/" target="_blank">
+            <span class="fa fa-instagram" aria-hidden="true"></span>
+            <span class="visually-hidden">@zenwebb on Instagram</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="http://github.com/jasonwebb" target="_blank">
+            <span class="fa fa-github" aria-hidden="true"></span>
+            <span class="visually-hidden">jasonwebb on Github</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.pinterest.com/jasonw2368/" target="_blank">
+            <span class="fa fa-pinterest" aria-hidden="true"></span>
+            <span class="visually-hidden">jasonw2368 on Pinterest</span>
+          </a>
+        </li>
       </ul>
 
-      <ul class="pages">
+      <ul class="pages" aria-label="pages">
         <li><a href="/about">About</a></li>
         <li><a href="/work">Work</a></li>
         <li><a href="/resume">Resum&eacute;</a></li>
