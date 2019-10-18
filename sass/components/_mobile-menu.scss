@@ -4,6 +4,8 @@
   left: -100vw;
   z-index: 10;
 
+  display: none;
+
   width: $mobile-menu-width;
   height: 100vh;
 
@@ -13,8 +15,9 @@
 
   // Class for 'open' state
   &.is-open {
+    display: block;
     left: 0;
-    
+
     .close-icon {
       top: 0;
     }
@@ -61,11 +64,11 @@
     // Social media links
     &.external-sites {
       margin-top: 10px;
-  
+
       a {
         opacity: .5;
         padding: 0 30px;
-  
+
         span {
           margin-right: 10px;
         }
