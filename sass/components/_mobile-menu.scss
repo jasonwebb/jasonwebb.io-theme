@@ -18,12 +18,12 @@
     display: block;
     left: 0;
 
-    .close-icon {
+    .close-button {
       top: 0;
     }
   }
 
-  .close-icon {
+  .close-button {
     position: absolute;
     left: $mobile-menu-width;
     top: -100px;
@@ -33,6 +33,7 @@
     padding: 10px;
     cursor: pointer;
     transition: top .5s ease-in-out;
+    border: 0;
   }
 
   // All menus ===============================================================

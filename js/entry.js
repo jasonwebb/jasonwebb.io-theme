@@ -9,7 +9,7 @@ const isResumePage = document.querySelector('.resume-page') != undefined ? true 
 //======================================
 
 let mobileMenuOpenIcon = document.querySelector('body > header .hamburger-icon');
-let mobileMenuCloseIcon = document.querySelector('body > .mobile-menu > .close-icon');
+let mobileMenuCloseIcon = document.querySelector('body > .mobile-menu > .close-button');
 let mobileMenu = document.querySelector('body > .mobile-menu');
 let mainAppEl = document.querySelector('body > main');
 let headerEl = document.querySelector('body > header');
