@@ -103,13 +103,10 @@ function loadWorkItems(category = undefined, count = undefined) {
   // Templateize and inject items onto page
   itemStream.then(items => {
     for(const item of items) {
-      let innerHTML = createWorkItem(item);
-      let container = document.createElement('a');
-      container.classList.add('tile');
-      container.setAttribute('href', item.url);
-      container.innerHTML = innerHTML;
+      let listItem = document.createElement('li');
+      listItem.innerHTML = createWorkItem(item);
 
-      document.querySelector('.tiles').appendChild(container);
+      document.querySelector('.tiles').appendChild(listItem);
     }
 
     // Set the location hash based on selected category for bookmarking
@@ -134,13 +131,15 @@ function loadWorkItems(category = undefined, count = undefined) {
 // Template data into a "work item" component
 function createWorkItem(data) {
   return `
-    <img src="${data.thumbnail}" alt="">
+    <a href="${data.url}" class="tile" role="group">
+      <img src="${data.thumbnail}" alt="">
 
-    <div class="overlay">
-      <span>
-        <b>${data.title}</b>
-        <small>(${data.year})</small>
-      </span>
-    </div>
+      <div class="overlay">
+        <span>
+          <b>${data.title}</b>
+          <small>(${data.year})</small>
+        </span>
+      </div>
+    </a>
   `;
 }

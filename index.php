@@ -18,7 +18,7 @@
     <p>I am available for one-off commissions and collaborations, but currently prefer full-time opportunities.</p>
   </section>
 
-  <section class="tiles" aria-label="portfolio samples"></section>
+  <ul class="tiles" aria-label="portfolio samples"></ul>
 </main>
 
 <?php get_footer(); ?>

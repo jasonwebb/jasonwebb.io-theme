@@ -37,7 +37,7 @@
     </div>
   </nav>
 
-  <section class="tiles" aria-live="polite" aria-atomic="true"></section>
+  <ul class="tiles" aria-live="polite" aria-atomic="true"></ul>
 </main>
 
 <?php get_footer(); ?>

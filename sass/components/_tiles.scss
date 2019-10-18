@@ -9,6 +9,8 @@
   width: 100%;
   max-width: 1900px;
 
+  list-style: none;
+
   @media screen and (max-width: $small-desktop-breakpoint) {
     width: 100%;
   }
@@ -24,27 +26,19 @@
     display: block;
   }
 
-  .tile {
+  li {
     flex: 1;
     flex-basis: calc(100% / 3 - 2px);
 
     max-width: calc(100% / 3 - 2px);
-    height: 450px;
     margin: 0 1px 1px 0;
-
-    position: relative;
+    padding: 0;
 
     // For small desktops - turn into 3-column layout
     @media screen and (max-width: $small-desktop-breakpoint) {
       flex-basis: calc(100% / 3 - 2px);
       max-width: calc(100% / 3 - 2px);
       height: 275px;
-
-      .overlay {
-        font-size: 28px !important;
-        line-height: 32px !important;
-        padding: 30px !important;
-      }
     }
 
     // For tablets - use 2-column layout
@@ -59,6 +53,11 @@
       max-width: calc(100%);
       height: 300px;
     }
+  }
+
+  .tile {
+    position: relative;
+    height: 475px;
 
     img {
       filter: grayscale(30%);
@@ -84,6 +83,13 @@
       padding: 50px;
 
       text-shadow: 3px 3px 0 rgba(0,0,0,.2);
+
+      // For small desktops - turn into 3-column layout
+      @media screen and (max-width: $small-desktop-breakpoint) {
+        font-size: 28px !important;
+        line-height: 32px !important;
+        padding: 30px !important;
+      }
 
       small {
         font-size: 28px;
