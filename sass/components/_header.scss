@@ -42,8 +42,9 @@ body {
             color: rgba(0,0,0,.54);
             transition: .1s color linear;
 
-            &:hover {
-              color: #000;
+            &:hover,
+            &:focus {
+              color: #2a6cd8;
             }
           }
         }
@@ -51,16 +52,17 @@ body {
 
       // Social media icons
       .social {
-        margin-right: 30px;
+        margin-right: 10px;
         padding-right: 30px;
         border-right: 1px solid rgba(0,0,0,.15);
 
         li {
-          margin-left: 5px;
+          padding: 0;
 
           a {
             color: rgba(0,0,0,.54);
             font-size: 28px;
+            padding: 5px;
           }
         }
       }
@@ -71,15 +73,18 @@ body {
         top: -3px;
 
         li {
-          margin-right: 25px;
+          margin-right: 10px;
 
           &:last-of-type {
             margin-right: 0;
           }
 
           a {
-            &:hover {
-              border-bottom: 1px dashed black;
+            padding: 5px 10px;
+
+            &:hover span,
+            &:focus span {
+              border-bottom: 1px dashed #2a6cd8;
             }
           }
         }

@@ -104,10 +104,29 @@
       </ul>
 
       <ul class="pages" aria-label="pages">
-        <li><a href="/about">About</a></li>
-        <li><a href="/work">Work</a></li>
-        <li><a href="/resume">Resum&eacute;</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li>
+          <a href="/about">
+            <span>About</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/work">
+            <span>Work</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/resume">
+            <span>Resum&eacute;</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/contact">
+            <span>Contact</span>
+          </a>
+        </li>
       </ul>
     </nav>
 
