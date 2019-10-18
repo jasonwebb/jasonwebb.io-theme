@@ -1,7 +1,7 @@
 .work-page {
-  .work-controls {
+  .controls {
     padding: 0 20px;
-    
+
     label {
       display: inline-block;
       cursor: pointer;
@@ -19,14 +19,14 @@
       }
 
       span {
-        font-size: 16px;
+        font-size: 18px;
         color: rgba(0,0,0,.7);
         transition: .2s background-color ease-in-out;
       }
     }
   }
 
-  .work-items {
+  .tiles {
     margin-top: 50px;
   }
 }

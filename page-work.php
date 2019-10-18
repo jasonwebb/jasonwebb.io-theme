@@ -3,7 +3,7 @@
 <main class="work-page" id="main" role="main">
   <h1 class="visually-hidden">Work</h1>
 
-  <nav class="work-controls has-text-centered" role="navigation" aria-label="Work categories">
+  <nav class="controls has-text-centered" role="navigation" aria-label="Work categories">
     <div role="group" aria-label="Select category">
       <label>
         <input type="radio" name="category" value="">
@@ -37,7 +37,7 @@
     </div>
   </nav>
 
-  <section class="work-items" aria-label="Portfolio items" aria-live="polite" aria-atomic="true"></section>
+  <section class="tiles" aria-live="polite" aria-atomic="true"></section>
 </main>
 
 <?php get_footer(); ?>

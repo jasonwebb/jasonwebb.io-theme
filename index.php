@@ -3,7 +3,7 @@
 <main class="home-page" id="main" role="main">
   <h1 class="visually-hidden">Home page</h1>
 
-  <section class="introduction page" aria-label="Introduction">
+  <section class="introduction page" aria-label="introduction">
     <p>I am a chronically curious person with deep passions for creative and scientific inquiry, the natural world, and the mindful application of advanced and emerging technologies.</p>
 
     <p>My areas of research include:</p>
@@ -18,7 +18,7 @@
     <p>I am available for one-off commissions and collaborations, but currently prefer full-time opportunities.</p>
   </section>
 
-  <section class="work-items" aria-label="Portfolio samples"></section>
+  <section class="tiles" aria-label="portfolio samples"></section>
 </main>
 
 <?php get_footer(); ?>

@@ -33,7 +33,7 @@ mobileMenuCloseIcon.addEventListener('click', () => {
 
 // Home page - load all work items
 if(isHomePage) {
-  loadWorkItems(undefined, 7);
+  loadWorkItems(undefined, 9);
 
 // Work page = load work items by category based on selected tag
 } else if(isWorkPage) {
@@ -94,7 +94,7 @@ if(isHomePage) {
 
 function loadWorkItems(category = undefined, count = undefined) {
   // Remove all previously-loaded work items
-  document.querySelector('.work-items').innerHTML = '';
+  document.querySelector('.tiles').innerHTML = '';
 
   // Load new items using hash
   let itemStream;
@@ -105,12 +105,11 @@ function loadWorkItems(category = undefined, count = undefined) {
     for(const item of items) {
       let innerHTML = createWorkItem(item);
       let container = document.createElement('a');
-      container.classList.add('work-item');
+      container.classList.add('tile');
       container.setAttribute('href', item.url);
-      container.setAttribute('aria-label', 'Read about ' + item.title);
       container.innerHTML = innerHTML;
 
-      document.querySelector('.work-items').appendChild(container);
+      document.querySelector('.tiles').appendChild(container);
     }
 
     // Set the location hash based on selected category for bookmarking
@@ -120,15 +119,14 @@ function loadWorkItems(category = undefined, count = undefined) {
       location.hash = category;
     }
 
-    // Add a "see more" block link at the end for the home page
-    if(isHomePage) {    
+    // Add a "see more" button link at the end for the home page
+    if(isHomePage) {
       let seeMoreEl = document.createElement('a');
       seeMoreEl.setAttribute('href', '/work');
-      seeMoreEl.classList.add('see-more');
-      seeMoreEl.innerHTML = '<span class="fas fa-arrow-circle-right" aria-hidden="true"></span><br>See more<br> of my work';
-      seeMoreEl.setAttribute('title', 'See more of my work ...');
+      seeMoreEl.classList = 'see-more button is-link';
+      seeMoreEl.innerHTML = 'See more of my work';
 
-      document.querySelector('.work-items').append(seeMoreEl);
+      document.querySelector('.tiles').append(seeMoreEl);
     }
   });
 }
@@ -136,11 +134,13 @@ function loadWorkItems(category = undefined, count = undefined) {
 // Template data into a "work item" component
 function createWorkItem(data) {
   return `
-    <img src="${data.thumbnail}" alt="${data.title}" title="${data.title}">
+    <img src="${data.thumbnail}" alt="">
 
-    <div class="details">
-      <h2>${data.title}</h2>
-      <span class="date">(${data.year})</span>
+    <div class="overlay">
+      <span>
+        <b>${data.title}</b>
+        <small>(${data.year})</small>
+      </span>
     </div>
   `;
 }
