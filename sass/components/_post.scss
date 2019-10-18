@@ -52,8 +52,8 @@
 
           .tag {
             border-radius: 3px;
-            font-size: 14px;
-            color: rgba(0, 0, 0, .5);
+            font-size: 16px;
+            color: rgba(0, 0, 0, .55);
             transition: .2s all ease-in-out;
 
             &:hover {
@@ -99,6 +99,18 @@
       &:hover {
         color: #3273dc;
         text-decoration: underline;
+      }
+    }
+
+    blockquote {
+      color: $body-text-color;
+
+      p {
+        color: $body-text-color;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
     }
   }
