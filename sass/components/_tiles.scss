@@ -3,9 +3,11 @@
   flex-wrap: wrap;
   justify-content: left;
 
-  padding: 0 30px;
-  width: 1900px;
   margin: 0 auto;
+  padding: 0 30px;
+
+  width: 100%;
+  max-width: 1900px;
 
   @media screen and (max-width: $small-desktop-breakpoint) {
     width: 100%;
