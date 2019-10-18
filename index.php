@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="home-page" role="main">
+<main class="home-page" id="main" role="main">
   <h1 class="visually-hidden">Home page</h1>
 
   <section class="introduction page" aria-label="Introduction">

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="search-page results-page page" role="main">
+<main class="search-page results-page page" id="main" role="main">
   <h1 class="visually-hidden">Search results for <?php get_search_query(); ?></h1>
 
   <?php

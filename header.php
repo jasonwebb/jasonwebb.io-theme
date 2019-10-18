@@ -26,6 +26,8 @@
 </head>
 
 <body>
+  <a href="#main" class="visually-hidden visually-hidden-focusable">Skip to main content</a>
+
   <nav class="mobile-menu" role="navigation" aria-label="mobile menu" aria-hidden="true">
     <ul class="primary-pages">
       <li><a href="/about">About</a></li>

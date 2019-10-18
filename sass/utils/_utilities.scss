@@ -25,6 +25,11 @@
   }
 }
 
+
+/**
+  Improved SR only classes from Gael Poupard
+  - Source: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
+*/
 .visually-hidden {
   border: 0 !important;
 	clip: rect(1px, 1px, 1px, 1px) !important;
@@ -36,4 +41,15 @@
 	position: absolute !important;
 	width: 1px !important;
 	white-space: nowrap !important;
+}
+
+.visually-hidden-focusable:focus,
+.visually-hidden-focusable:active {
+  clip: auto !important;
+  clip-path: none !important;
+	height: auto !important;
+	margin: auto !important;
+	overflow: visible !important;
+	width: auto !important;
+	white-space: normal !important;
 }

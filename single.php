@@ -2,7 +2,7 @@
 
 <?php the_post(); ?>
 
-<article class="post" role="main">
+<article class="post" id="main" role="main">
   <header>
     <?php
     if( has_post_thumbnail() ) {
