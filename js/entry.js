@@ -115,23 +115,13 @@ function loadWorkItems(category = undefined, count = undefined) {
     } else {
       location.hash = category;
     }
-
-    // Add a "see more" button link at the end for the home page
-    if(isHomePage) {
-      let seeMoreEl = document.createElement('a');
-      seeMoreEl.setAttribute('href', '/work');
-      seeMoreEl.classList = 'see-more button is-link';
-      seeMoreEl.innerHTML = 'See more of my work';
-
-      document.querySelector('.tiles').append(seeMoreEl);
-    }
   });
 }
 
 // Template data into a "work item" component
 function createWorkItem(data) {
   return `
-    <a href="${data.url}" class="tile" role="group">
+    <a href="${data.url}" class="tile">
       <img src="${data.thumbnail}" alt="">
 
       <div class="overlay">

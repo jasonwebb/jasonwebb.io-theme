@@ -19,6 +19,10 @@
   </section>
 
   <ul class="tiles" aria-label="portfolio samples"></ul>
+
+  <div class="see-more-wrapper">
+    <a href="/work" class="see-more button is-link">See more of my work</a>
+  </div>
 </main>
 
 <?php get_footer(); ?>

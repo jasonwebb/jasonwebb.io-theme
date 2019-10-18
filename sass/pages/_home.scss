@@ -31,10 +31,12 @@
     }
   }
 
-  .see-more {
-    margin: 0 auto;
+  .see-more-wrapper {
+    text-align: center;
     margin-top: 50px;
 
-    font-size: 18px;
+    .see-more {
+      font-size: 18px;
+    }
   }
 }
