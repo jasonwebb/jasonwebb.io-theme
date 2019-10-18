@@ -3,7 +3,7 @@
 <?php the_post(); ?>
 
 <article class="post" id="main" role="main">
-  <header>
+  <div class="header">
     <?php
     if( has_post_thumbnail() ) {
     ?>
@@ -42,11 +42,11 @@
         }
       ?>
     </div>
-  </header>
+  </div>
 
-  <main class="body">
+  <div class="content">
     <?php the_content(); ?>
-  </main>
+  </div>
 </article>
 
 <?php get_footer(); ?>
