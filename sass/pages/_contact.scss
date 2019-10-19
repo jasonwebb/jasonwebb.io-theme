@@ -1,4 +1,9 @@
 .contact-page {
+  .intro {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
   .form {
     width: 60%;
     margin-top: 30px;
@@ -10,6 +15,25 @@
 
     .field {
       margin: 15px 0;
+
+      // Labels
+      .label {
+        & + p {
+          display: none;
+        }
+      }
+
+      // Icons embedded within text inputs
+      .icon {
+        font-size: 24px;
+        width: auto;
+        height: auto;
+
+        &.is-left {
+          left: 7px;
+          top: 5px;
+        }
+      }
 
       // "Name" and "Email" fields
       .input {
