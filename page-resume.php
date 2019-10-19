@@ -9,10 +9,10 @@
         <legend>Version</legend>
 
         <div class="options">
-          <input id="full" type="radio" name="version" value="full" checked>
+          <input type="radio" id="full" class="visually-hidden" name="version" value="full" checked>
           <label for="full">Full</label>
 
-          <input id="web" type="radio" name="version" value="web">
+          <input type="radio" id="web" class="visually-hidden" name="version" value="web">
           <label for="web">Web only</label>
         </div>
       </fieldset>
