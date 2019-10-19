@@ -37,7 +37,7 @@
       margin-top: 5px;
       margin-bottom: 30px;
       font-style: italic;
-      color: rgba(0,0,0,.5);
+      color: $body-text-color;
     }
   }
 
@@ -63,7 +63,7 @@
   &.three-wide a img,
   &.gallery-columns-3 dl {
     width: calc(100%/3 - 1px);
-    
+
     @media screen and (max-width: $mobile-breakpoint) {
       width: 100%;
       filter: grayscale(0) !important;
@@ -131,7 +131,7 @@ img[class*="wp-image"].has-border {
   margin-left: -$media-breakout-offset;
   width: calc(100% + #{$media-breakout-offset}*2);
   max-width: none;
-  
+
   @media screen and (max-width: $tablet-breakpoint) {
     margin-left: 0;
     width: 100%;
