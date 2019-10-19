@@ -79,6 +79,15 @@ body {
             margin-right: 0;
           }
 
+          // Current page indicator (matches hover/focus styles)
+          &[aria-current="page"] a {
+            color: #2a6cd8;
+
+            span {
+              border-bottom: 1px dashed #2a6cd8;
+            }
+          }
+
           a {
             padding: 5px 10px;
 

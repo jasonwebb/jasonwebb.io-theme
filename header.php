@@ -73,7 +73,7 @@
   </nav>
 
   <header role="banner">
-    <a href="/" class="name" aria-label="go to home page">Jason Webb</a>
+    <?php echo '<a href="/" class="name" aria-label="go to home page"', (is_home() ? ' aria-current="page"' : ''), '>Jason Webb</a>'; ?>
 
     <nav role="navigation">
       <ul class="social" aria-label="social media">
@@ -107,25 +107,25 @@
       </ul>
 
       <ul class="pages" aria-label="pages">
-        <li>
+        <?php echo '<li', (is_page('about') ? ' aria-current="page"' : ''), '>'; ?>
           <a href="/about">
             <span>About</span>
           </a>
         </li>
 
-        <li>
+        <?php echo '<li', (is_page('work') ? ' aria-current="page"' : ''), '>'; ?>
           <a href="/work">
             <span>Work</span>
           </a>
         </li>
 
-        <li>
+        <?php echo '<li', (is_page('resume') ? ' aria-current="page"' : ''), '>'; ?>
           <a href="/resume">
             <span>Resum&eacute;</span>
           </a>
         </li>
 
-        <li>
+        <?php echo '<li', (is_page('contact') ? ' aria-current="page"' : ''), '>'; ?>
           <a href="/contact">
             <span>Contact</span>
           </a>
