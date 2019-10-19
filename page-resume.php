@@ -50,7 +50,7 @@
     <div class="columns is-gapless is-multiline">
       <div class="column is-half">
         <div class="skill-group">
-          <h5 class="has-text-centered">Web</h5>
+          <h3 class="has-text-centered">Web</h3>
 
           <ul>
             <li>HTML <progress class="progress is-info is-pulled-right" value="10" max="10">10/10</progress></li>
@@ -87,7 +87,7 @@
         </div>
 
         <div class="skill-group is-non-web">
-          <h5 class="has-text-centered">Fabrication</h5>
+          <h3 class="has-text-centered">Fabrication</h3>
 
           <ul>
             <li>Woodworking <progress class="progress is-info is-pulled-right" value="3" max="10">3/10</progress></li>
@@ -101,7 +101,7 @@
 
       <div class="column is-half">
         <div class="skill-group">
-          <h5 class="has-text-centered">Design</h5>
+          <h3 class="has-text-centered">Design</h3>
 
           <ul>
             <li>2D
@@ -123,7 +123,7 @@
         </div>
 
         <div class="skill-group is-non-web">
-          <h5 class="has-text-centered">Code</h5>
+          <h3 class="has-text-centered">Code</h3>
 
           <ul>
             <li>Processing <progress class="progress is-info is-pulled-right" value="9" max="10">9/10</progress></li>
@@ -134,7 +134,7 @@
         </div>
 
         <div class="skill-group is-non-web">
-          <h5 class="has-text-centered">Hardware</h5>
+          <h3 class="has-text-centered">Hardware</h3>
 
           <ul>
             <li>Eagle <progress class="progress is-info is-pulled-right" value="6" max="10">6/10</progress></li>
@@ -190,7 +190,7 @@
     <h2>Education</h2>
 
     <div class="degree">
-      <h5 class="title">Master of Science in Education (M.S. Ed.) in Instructional Technology</h5>
+      <h3 class="title">Master of Science in Education (M.S. Ed.) in Instructional Technology</h3>
       <div class="details">University of Nebraska at Kearney &mdash; August 2011 to May 2014</div>
       <ul class="highlights">
         <li>Pursued self-directed, project-based courses and research focused on the integration of advanced and
@@ -202,7 +202,7 @@
     </div>
 
     <div class="degree">
-      <h5 class="title">Bachelor of Science (B.Sc.) in Computer Science</h5>
+      <h3 class="title">Bachelor of Science (B.Sc.) in Computer Science</h3>
       <div class="details">University of Nebraska at Kearney &mdash; August 2005 to May 2011</div>
       <ul class="highlights">
         <li>Designed and taught a full semester-long course to a group of fellow undergraduates entitled “Interactive
@@ -217,7 +217,7 @@
     <h2>Experience</h2>
 
     <div class="job">
-      <h5 class="title">UI Developer (consultant) at Concord</h5>
+      <h3 class="title">UI Developer (consultant) at Concord</h3>
       <div class="details">Minneapolis, MN &mdash; July 2017 to present</div>
       <ul class="highlights">
         <li>Provide on-going client coaching and support regarding modern CSS architecture and technologies (Sass/SCSS, ITCSS, BEM, etc), software design patterns, source control practices (Gitflow model), and accessibility (Section 508c and WCAG AA).</li>
@@ -229,7 +229,7 @@
     </div>
 
     <div class="job">
-      <h5 class="title">Front End Developer (contractor) at Connexions Loyalty</h5>
+      <h3 class="title">Front End Developer (contractor) at Connexions Loyalty</h3>
       <div class="details">Minneapolis, MN &mdash; February 2017 to May 2017 (4 months)</div>
       <ul class="highlights">
         <li>Developed new features using company's custom Javascript (ES5) front-end framework, based loosely on
@@ -242,7 +242,7 @@
     </div>
 
     <div class="job">
-      <h5 class="title">Web Designer/Developer at Securities America, Inc.</h5>
+      <h3 class="title">Web Designer/Developer at Securities America, Inc.</h3>
       <div class="details">Omaha, NE &mdash; October 2015 to July 2016 (9 months)</div>
       <ul class="highlights">
         <li>Designed, wireframed and prototyped web applications in collaboration with developers and business owners
@@ -255,7 +255,7 @@
     </div>
 
     <div class="job is-non-web">
-      <h5 class="title">Adjunct Professor at Metropolitan Community College</h5>
+      <h3 class="title">Adjunct Professor at Metropolitan Community College</h3>
       <div class="details">Omaha, NE &mdash; August 2015 to November 2015 (3 months)</div>
       <ul class="highlights">
         <li>Designed and taught an intensive 11-week, hands-on, project-based course titled “How to Build Almost
@@ -267,7 +267,7 @@
     </div>
 
     <div class="job">
-      <h5 class="title">Freelance Creative Technology Consultant</h5>
+      <h3 class="title">Freelance Creative Technology Consultant</h3>
       <div class="details">Omaha, NE &mdash; June 2014 to present</div>
       <ul class="highlights">
         <li>Provide custom design-build and consulting services to local and international fine artists and
@@ -278,7 +278,7 @@
     </div>
 
     <div class="job">
-      <h5 class="title">Web Developer (contractor) at Creighton University</h5>
+      <h3 class="title">Web Developer (contractor) at Creighton University</h3>
       <div class="details">Omaha, NE &mdash; March 2015 to June 2015 (4 months)</div>
       <ul class="highlights">
         <li>Contract full-stack web development of a custom internal content management system for faculty activity.</li>
@@ -288,7 +288,7 @@
     </div>
 
     <div class="job">
-      <h5 class="title">Graduate Assistant at University of Nebraska at Kearney</h5>
+      <h3 class="title">Graduate Assistant at University of Nebraska at Kearney</h3>
       <div class="details">Kearney, NE &mdash; August 2011 to May 2014 (2 years 10 months)</div>
       <ul class="highlights">
         <li>Digitized educational videos for online distribution using Adobe Premiere.</li>
@@ -297,7 +297,7 @@
     </div>
 
     <div class="job">
-      <h5 class="title">Undergraduate Researcher at University of Nebraska at Kearney</h5>
+      <h3 class="title">Undergraduate Researcher at University of Nebraska at Kearney</h3>
       <div class="details">Kearney, NE &mdash; May 2010 to May 2011 (1 year 1 month)</div>
       <ul class="highlights">
         <li>Designed and taught a full semester-long course to a group of fellow undergraduates entitled “Interactive
@@ -306,7 +306,7 @@
     </div>
 
     <div class="job">
-      <h5 class="title">Web Programmer at Kearney Hub</h5>
+      <h3 class="title">Web Programmer at Kearney Hub</h3>
       <div class="details">Kearney, NE &mdash; November 2008 to June 2010 (1 year 8 months)</div>
       <ul class="highlights">
         <li>Redesigned entire website in collaboration with business owners and marketing personnel using Photoshop,
