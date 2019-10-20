@@ -12,27 +12,27 @@
     <button id="teaching-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="teaching-panel" tabindex="-1">Teaching</button>
   </div>
 
-  <div role="tabpanel" id="all-panel" class="is-active" aria-labelledby="all-button" tabindex="0">
+  <div role="tabpanel" id="all-panel" class="is-active" aria-labelledby="all-button">
     <ul class="tiles"></ul>
   </div>
 
-  <div role="tabpanel" id="code-panel" aria-labelledby="code-button" tabindex="0">
+  <div role="tabpanel" id="code-panel" aria-labelledby="code-button">
     <ul class="tiles"></ul>
   </div>
 
-  <div role="tabpanel" id="creative-panel" aria-labelledby="creative-button" tabindex="0">
+  <div role="tabpanel" id="creative-panel" aria-labelledby="creative-button">
     <ul class="tiles"></ul>
   </div>
 
-  <div role="tabpanel" id="electronics-panel" aria-labelledby="electronics-button" tabindex="0">
+  <div role="tabpanel" id="electronics-panel" aria-labelledby="electronics-button">
     <ul class="tiles"></ul>
   </div>
 
-  <div role="tabpanel" id="fabrication-panel" aria-labelledby="fabrication-button" tabindex="0">
+  <div role="tabpanel" id="fabrication-panel" aria-labelledby="fabrication-button">
     <ul class="tiles"></ul>
   </div>
 
-  <div role="tabpanel" id="teaching-panel" aria-labelledby="teaching-button" tabindex="0">
+  <div role="tabpanel" id="teaching-panel" aria-labelledby="teaching-button">
     <ul class="tiles"></ul>
   </div>
 </main>

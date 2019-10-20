@@ -133,7 +133,7 @@ if(isHomePage) {
 //  Load work items with provided category
 //==============================================
 
-function loadWorkItems(category = undefined, count = undefined, target = undefined) {  // Remove all previously-loaded work items
+function loadWorkItems(category = undefined, count = undefined, target = undefined, focus = false) {
   if(target != undefined) {
     target.innerHTML = '';
   } else {
@@ -154,6 +154,14 @@ function loadWorkItems(category = undefined, count = undefined, target = undefin
         target.appendChild(listItem);
       } else {
         document.querySelector('.tiles').appendChild(listItem);
+      }
+    }
+
+    if(focus) {
+      if(target !== undefined) {
+        target.querySelector('.tile').focus();
+      } else {
+        document.querySelector('.tile').focus();
       }
     }
 
@@ -210,13 +218,9 @@ function activateTab(tab, focus = false) {
   loadWorkItems(
     category === 'all' ? undefined : category,
     undefined,
-    document.querySelector('[role="tabpanel"].is-active .tiles')
+    document.querySelector('[role="tabpanel"].is-active .tiles'),
+    focus
   );
-
-  // Focus on the tabpanel, if requested
-  if(focus) {
-    tabpanel.focus();
-  }
 }
 
 function focusPreviousTab() {
