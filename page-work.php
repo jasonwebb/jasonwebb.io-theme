@@ -3,41 +3,38 @@
 <main class="work-page" id="main" role="main">
   <h1 class="visually-hidden">Work</h1>
 
-  <nav class="controls has-text-centered" role="navigation" aria-label="Work categories">
-    <div role="group" aria-label="Select category">
-      <label>
-        <input type="radio" name="category" value="">
-        <span class="tag is-light">All</span>
-      </label>
+  <div class="tabs has-text-centered" role="tablist" aria-label="categories">
+    <button id="all-button" class="tag is-light" role="tab" aria-selected="true" aria-controls="all-panel">All</button>
+    <button id="code-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="code-panel" tabindex="-1">Code</button>
+    <button id="creative-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="creative-panel" tabindex="-1">Creative</button>
+    <button id="electronics-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="electronics-panel" tabindex="-1">Electronics</button>
+    <button id="fabrication-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="fabrication-panel" tabindex="-1">Fabrication</button>
+    <button id="teaching-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="teaching-panel" tabindex="-1">Teaching</button>
+  </div>
 
-      <label>
-        <input type="radio" name="category" value="code">
-        <span class="tag is-light">Code</span>
-      </label>
+  <div role="tabpanel" id="all-panel" class="is-active" aria-labelledby="all-button" tabindex="0">
+    <ul class="tiles"></ul>
+  </div>
 
-      <label>
-        <input type="radio" name="category" value="creative">
-        <span class="tag is-light">Creative</span>
-      </label>
+  <div role="tabpanel" id="code-panel" aria-labelledby="code-button" tabindex="0">
+    <ul class="tiles"></ul>
+  </div>
 
-      <label>
-        <input type="radio" name="category" value="electronics">
-        <span class="tag is-light">Electronics</span>
-      </label>
+  <div role="tabpanel" id="creative-panel" aria-labelledby="creative-button" tabindex="0">
+    <ul class="tiles"></ul>
+  </div>
 
-      <label>
-        <input type="radio" name="category" value="fabrication">
-        <span class="tag is-light">Fabrication</span>
-      </label>
+  <div role="tabpanel" id="electronics-panel" aria-labelledby="electronics-button" tabindex="0">
+    <ul class="tiles"></ul>
+  </div>
 
-      <label>
-        <input type="radio" name="category" value="teaching">
-        <span class="tag is-light">Teaching</span>
-      </label>
-    </div>
-  </nav>
+  <div role="tabpanel" id="fabrication-panel" aria-labelledby="fabrication-button" tabindex="0">
+    <ul class="tiles"></ul>
+  </div>
 
-  <ul class="tiles" aria-live="polite" aria-atomic="true"></ul>
+  <div role="tabpanel" id="teaching-panel" aria-labelledby="teaching-button" tabindex="0">
+    <ul class="tiles"></ul>
+  </div>
 </main>
 
 <?php get_footer(); ?>
