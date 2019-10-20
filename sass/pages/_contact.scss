@@ -1,7 +1,15 @@
 .contact-page {
-  .intro {
-    font-weight: bold;
+  .message {
+    margin-top: 0;
     font-size: 18px;
+
+    p {
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .form {
