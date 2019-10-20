@@ -135,7 +135,10 @@
       </ul>
     </nav>
 
-    <span class="hamburger-icon is-hidden-desktop fa fa-bars"></span>
+    <button class="hamburger-icon is-hidden-desktop">
+      <span class="fa fa-bars" aria-hidden="true"></span>
+      <span class="visually-hidden">Open mobile menu</span>
+    </button>
 
     <div class="tagline"><?php bloginfo("description"); ?></div>
   </header>

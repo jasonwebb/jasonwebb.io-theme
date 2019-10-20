@@ -51,6 +51,10 @@
         display: block;
         color: white;
         padding: 0 30px;
+
+        &:focus {
+          box-shadow: 0 0 0 3px hsl(204, 86%, 53%);
+        }
       }
     }
 

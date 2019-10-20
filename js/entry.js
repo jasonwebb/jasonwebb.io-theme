@@ -11,22 +11,24 @@ let tabPanels = document.querySelectorAll('[role="tabpanel"]');
 //  Mobile menu functionality
 //======================================
 
-let mobileMenuOpenIcon = document.querySelector('body > header .hamburger-icon');
-let mobileMenuCloseIcon = document.querySelector('body > .mobile-menu > .close-button');
+let mobileMenuOpenButton = document.querySelector('body > header .hamburger-icon');
+let mobileMenuCloseButton = document.querySelector('body > .mobile-menu > .close-button');
 let mobileMenu = document.querySelector('body > .mobile-menu');
 let mainAppEl = document.querySelector('body > main');
 let headerEl = document.querySelector('body > header');
 
-mobileMenuOpenIcon.addEventListener('click', () => {
+mobileMenuOpenButton.addEventListener('click', () => {
   mobileMenu.classList.add('is-open');
   mainAppEl.classList.add('is-mobile-menu-open');
   headerEl.classList.add('is-mobile-menu-open');
+  mobileMenuCloseButton.focus();
 });
 
-mobileMenuCloseIcon.addEventListener('click', () => {
+mobileMenuCloseButton.addEventListener('click', () => {
   mobileMenu.classList.remove('is-open');
   mainAppEl.classList.remove('is-mobile-menu-open');
   headerEl.classList.remove('is-mobile-menu-open');
+  mobileMenuOpenButton.focus();
 });
 
 
