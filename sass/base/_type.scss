@@ -38,12 +38,11 @@ ol + p {
   margin-top: 20px;
 }
 
-.button {
-  &:hover {
-    text-decoration: none !important;
-  }
-}
-
 a {
   color: #2a6cd8;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px hsl(204, 86%, 53%);
+  }
 }
