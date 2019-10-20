@@ -20,31 +20,27 @@
 
     <div class="column">
       <a href="/wp-content/themes/minimal-for-jasonwebbio/resumes/Jason-Webb-resume.pdf" class="download button is-link">
-        <span class="icon">
-          <span class="fa fa-file-pdf-o"></span>
-        </span>
-
-        <span>Download resume as PDF</span>
+        <span class="icon fa fa-file-pdf-o" aria-hidden="true"></span>
+        Download resume as PDF
       </a>
     </div>
   </div>
 
-  <section id="mission" aria-label="Mission statement">
+  <section id="mission">
     <h2>Mission</h2>
 
     <p class="is-web-only is-hidden">Front-end and UI developer with a passion for design, armed with a background in computer
       science and the arts. Seeking to work at the intersection of technical and creative perspectives to realize
       meaningful and modern interfaces and experiences using state-of-the-art skills and tools.</p>
 
-    <!-- TODO: toggle aria-hidden based on which is on screen -->
-    <p class="is-non-web-only is-non-web" aria-hidden="true">Creative technologist, maker, open-source hardware engineer, community
+    <p class="is-non-web-only is-non-web">Creative technologist, maker, open-source hardware engineer, community
       educator and lover of learning with a passion for the creative interplay between fine art, science and
       technology. With a background in both computer science and education, as well strong experience in the arts, I am
       keenly interested in working at the intersection of a diverse array of fields and helping others learn how to
       cross traditional borders and expand their skillsets.</p>
   </section>
 
-  <section id="skills" aria-label="Skills">
+  <section id="skills">
     <h2>Skills</h2>
 
     <div class="columns is-gapless is-multiline">
@@ -153,7 +149,7 @@
     </div>
   </section>
 
-  <section id="exhibitions" class="is-non-web" aria-label="Exhibitions">
+  <section id="exhibitions" class="is-non-web">
     <h2>Exhibitions</h2>
 
     <ul class="year-list">
@@ -163,7 +159,7 @@
     </ul>
   </section>
 
-  <section id="collaborations" class="is-non-web" aria-label="Collaborations">
+  <section id="collaborations" class="is-non-web">
     <h2>Collaborations</h2>
 
     <ul class="year-list">
@@ -173,7 +169,7 @@
     </ul>
   </section>
 
-  <section id="teaching" class="is-non-web" aria-label="Teaching experience">
+  <section id="teaching" class="is-non-web">
     <h2>Teaching</h2>
 
     <ul class="year-list">
@@ -186,7 +182,7 @@
     </ul>
   </section>
 
-  <section id="education" aria-label="Education">
+  <section id="education">
     <h2>Education</h2>
 
     <div class="degree">
@@ -213,7 +209,7 @@
     </div>
   </section>
 
-  <section id="experience" aria-label="Work experience">
+  <section id="experience">
     <h2>Experience</h2>
 
     <div class="job">
