@@ -12,6 +12,7 @@
       border: 0;
       font-size: 18px;
       color: rgba(0,0,0,.7);
+      transition: box-shadow .15s linear;
 
       &[aria-selected="true"] {
         background-color: rgba(0, 0, 0, .6);
