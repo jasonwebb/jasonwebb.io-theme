@@ -25,6 +25,11 @@
           height: auto;
         }
 
+        &:after {
+          content: '';
+          transition: all .1s linear;
+        }
+
         &:hover,
         &:focus {
           box-shadow: none;
