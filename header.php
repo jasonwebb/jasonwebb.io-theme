@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <a href="#main" class="visually-hidden visually-hidden-focusable">Skip to main content</a>
+  <a href="#main" class="skip-to-main-link visually-hidden visually-hidden-focusable">Skip to main content</a>
 
   <nav class="mobile-menu" role="navigation" aria-label="mobile menu">
     <button class="close-button">
