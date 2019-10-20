@@ -349,39 +349,6 @@
     </div>
   </section>
 
-  <section id="exhibitions" class="is-non-web">
-    <h2>Exhibitions</h2>
-
-    <ul class="year-list">
-      <li><span class="year">2017</span> 'Obscuron', <em>light</em>, KANEKO, Omaha, NE (group exhibition).</li>
-      <li><span class="year">2015</span> 'Real life Minecraft interface', <em>PLAY</em>, KANEKO, Omaha, NE (group exhibition).</li>
-      <li><span class="year">2012</span> <em>Artist-in-Residence</em>, University of Nebraska at Kearney, Kearney, NE (two-person exhibition).</li>
-    </ul>
-  </section>
-
-  <section id="collaborations" class="is-non-web">
-    <h2>Collaborations</h2>
-
-    <ul class="year-list">
-      <li><span class="year">2015</span> <em>Circus of the Senses</em>, Bemis Center for Contemporary Arts, Omaha, NE (collaboration with Emilie Baltz).</li>
-      <li><span class="year">2015</span> <em>Circuit of the Senses</em>, Bemis Center for Contemporary Arts, Omaha, NE (collaboration with Emilie Baltz).</li>
-      <li><span class="year">2015</span> <em>Human Harp</em>, Bemis Center for Contemporary Arts, Omaha, NE (collaboration with Di Maintsone).</li>
-    </ul>
-  </section>
-
-  <section id="teaching" class="is-non-web">
-    <h2>Teaching</h2>
-
-    <ul class="year-list">
-      <li><span class="year">2016</span> DIY synthesizer build workshop at SOUNDRY at KANEKO</li>
-      <li><span class="year">2015</span> How to Make Almost Anything at MCC FabLab</li>
-      <li><span class="year">2015</span> Circuit bending worskshop at SOUNDRY at KANEKO</li>
-      <li><span class="year">2014</span> Maker Corps Mentor at Omaha Children's Museum</li>
-      <li><span class="year">2012</span> STEAM microworkshop for Girl Scouts at UNK</li>
-      <li><span class="year">2011</span> Interactive and Generative Art at UNK.</li>
-    </ul>
-  </section>
-
   <section id="education">
     <h2>Education</h2>
 
@@ -516,6 +483,39 @@
         <li>Created interactive and animated web advertisements using Adobe Flash and Actionscript (2 and 3).</li>
       </ul>
     </div>
+  </section>
+
+  <section id="exhibitions" class="is-non-web">
+    <h2>Exhibitions</h2>
+
+    <ul class="year-list">
+      <li><span class="year">2017</span> 'Obscuron', <em>light</em>, KANEKO, Omaha, NE (group exhibition).</li>
+      <li><span class="year">2015</span> 'Real life Minecraft interface', <em>PLAY</em>, KANEKO, Omaha, NE (group exhibition).</li>
+      <li><span class="year">2012</span> <em>Artist-in-Residence</em>, University of Nebraska at Kearney, Kearney, NE (two-person exhibition).</li>
+    </ul>
+  </section>
+
+  <section id="collaborations" class="is-non-web">
+    <h2>Collaborations</h2>
+
+    <ul class="year-list">
+      <li><span class="year">2015</span> <em>Circus of the Senses</em>, Bemis Center for Contemporary Arts, Omaha, NE (collaboration with Emilie Baltz).</li>
+      <li><span class="year">2015</span> <em>Circuit of the Senses</em>, Bemis Center for Contemporary Arts, Omaha, NE (collaboration with Emilie Baltz).</li>
+      <li><span class="year">2015</span> <em>Human Harp</em>, Bemis Center for Contemporary Arts, Omaha, NE (collaboration with Di Maintsone).</li>
+    </ul>
+  </section>
+
+  <section id="teaching" class="is-non-web">
+    <h2>Teaching</h2>
+
+    <ul class="year-list">
+      <li><span class="year">2016</span> DIY synthesizer build workshop at SOUNDRY at KANEKO</li>
+      <li><span class="year">2015</span> How to Make Almost Anything at MCC FabLab</li>
+      <li><span class="year">2015</span> Circuit bending worskshop at SOUNDRY at KANEKO</li>
+      <li><span class="year">2014</span> Maker Corps Mentor at Omaha Children's Museum</li>
+      <li><span class="year">2012</span> STEAM microworkshop for Girl Scouts at UNK</li>
+      <li><span class="year">2011</span> Interactive and Generative Art at UNK.</li>
+    </ul>
   </section>
 </main>
 
