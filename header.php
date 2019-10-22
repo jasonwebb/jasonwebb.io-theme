@@ -36,14 +36,14 @@
       <span class="visually-hidden">Close menu</span>
     </button>
 
-    <ul class="primary-pages">
+    <ul class="primary-pages" aria-label="pages">
       <li><a href="/about">About</a></li>
       <li><a href="/work">Work</a></li>
       <li><a href="/resume">Resum&eacute;</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
 
-    <ul class="external-sites">
+    <ul class="external-sites" aria-label="social media">
       <li>
         <a href="http://twitter.com/jasonwebb" target="_blank">
           <span class="fa fa-twitter" aria-hidden="true"></span>
