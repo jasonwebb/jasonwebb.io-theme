@@ -9,13 +9,12 @@ add_theme_support('post-thumbnails');
 // - used on 'blog' and 'search' pages
 set_post_thumbnail_size(175, 140, true);
 
-// Custom thumbnail sizes for galleries
+// Custom thumbnail sizes for galleries and tiles
 add_image_size('gallery-image-large', 888, 618, true);      // full width (1-wide)
 add_image_size('gallery-image-medium', 444, 309, true);     // half width (2-wide)
 add_image_size('gallery-image-small', 296, 206, true);      // one-third width (3-wide)
 
 // Custom sizes for pages and posts
-add_image_size('work-thumbnail', 510, 364, true);
 add_image_size('post-banner', 888, 500, true);
 
 // Enable cropping on all Medium images
@@ -33,7 +32,7 @@ if(!get_option("large_crop")) {
 }
 
 // Make all custom image sizes available as options in the WP admin interface
-add_filter( 'image_size_names_choose', 'add_custom_image_sizes' );
+add_filter('image_size_names_choose', 'add_custom_image_sizes');
 
 function add_custom_image_sizes($sizes) {
   return array_merge($sizes, array(

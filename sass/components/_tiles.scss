@@ -21,11 +21,6 @@
     margin: 0 auto;
   }
 
-  // For mobile devices - stack all work items
-  @media screen and (max-width: $mobile-breakpoint) {
-    display: block;
-  }
-
   li {
     flex: 1;
     flex-basis: calc(100% / 3 - 2px);
@@ -54,6 +49,7 @@
   }
 
   .tile {
+    display: flex;
     position: relative;
     height: 475px;
 

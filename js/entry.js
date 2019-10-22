@@ -180,7 +180,16 @@ function loadWorkItems(category = undefined, count = undefined, target = undefin
 function createWorkItem(data) {
   return `
     <a href="${data.url}" class="tile">
-      <img src="${data.thumbnail}" alt="">
+      <img
+        srcset="${data.image_small} 296w,
+                ${data.image_medium} 444w,
+                ${data.image_large} 888w"
+        sizes="(max-width: 768px) 296px,
+               (max-width: 1023px) 444px,
+               888px"
+        src="${data.image_large}"
+        alt=""
+      >
 
       <div class="overlay">
         <span>

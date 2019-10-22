@@ -39,7 +39,9 @@ if(have_posts()) {
         "title" => get_the_title(),
         "year" => get_the_date('Y'),
         "url" => get_the_permalink(),
-        "thumbnail" => get_the_post_thumbnail_url(get_the_ID(), 'large')
+        "image_large" => get_the_post_thumbnail_url(get_the_ID(), 'gallery-image-large'),
+        "image_medium" => get_the_post_thumbnail_url(get_the_ID(), 'gallery-image-medium'),
+        "image_small" => get_the_post_thumbnail_url(get_the_ID(), 'gallery-image-small')
       );
 
       array_push($posts, $post_data);
