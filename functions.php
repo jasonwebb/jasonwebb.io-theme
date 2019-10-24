@@ -2,17 +2,14 @@
 //============================================================================================
 //  Set image sizes
 //============================================================================================
-// Enable support for custom sizes through admin interface
+// Enable Featured Image functionality
 add_theme_support('post-thumbnails');
 
-// Default post thumbnail size
-// - used on 'blog' and 'search' pages
-set_post_thumbnail_size(175, 140, true);
-
 // Custom thumbnail sizes for galleries and tiles
-add_image_size('gallery-image-large', 888, 618, true);      // full width (1-wide)
-add_image_size('gallery-image-medium', 444, 309, true);     // half width (2-wide)
-add_image_size('gallery-image-small', 296, 206, true);      // one-third width (3-wide)
+// NOTE (10/23/2019) - these sizes have been transitioned directly to Wordpress's built-in small, medium, and large sizes under Settings > Media
+// add_image_size('gallery-image-large', 888, 618, true);      // full width (1-wide)
+// add_image_size('gallery-image-medium', 444, 309, true);     // half width (2-wide)
+// add_image_size('gallery-image-small', 296, 206, true);      // one-third width (3-wide)
 
 // Custom sizes for pages and posts
 add_image_size('post-banner', 888, 500, true);
