@@ -4,10 +4,10 @@
   justify-content: left;
 
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
 
   width: 100%;
-  max-width: 1900px;
+  max-width: 1902px;
 
   list-style: none;
 
@@ -23,11 +23,15 @@
 
   li {
     flex: 1;
-    flex-basis: calc(100% / 3 - 2px);
+    flex-basis: calc(100% / 3 - 1px);
 
-    max-width: calc(100% / 3 - 2px);
+    max-width: calc(100% / 3 - 1px);
     margin: 0 1px 1px 0;
     padding: 0;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
 
     // For small desktops - turn into 3-column layout
     @media screen and (max-width: $small-desktop-breakpoint) {
@@ -79,7 +83,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #2a6cd8;
+      // background-color: #2a6cd8;
+      background-color: rgba(30,30,30,1);
       color: white;
 
       font-size: 36px;
@@ -114,8 +119,11 @@
       }
     }
 
-    &:nth-of-type(3n) {
-      margin-right: 0;
+    &:focus {
+      .overlay {
+        outline: 4px dashed rgba(255,255,255,.8);
+        outline-offset: -10px;
+      }
     }
   }
 }
