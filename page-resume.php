@@ -43,7 +43,7 @@
   <section id="skills">
     <h2>Skills</h2>
 
-    <div class="columns is-gapless is-multiline">
+    <div class="columns is-gapless is-multiline is-full-width">
       <div class="column is-half">
         <div class="skill-group">
           <h3 class="has-text-centered">Web</h3>
@@ -380,10 +380,32 @@
     <h2>Experience</h2>
 
     <div class="job">
-      <h3 class="title">UI Developer (consultant) at Concord</h3>
-      <div class="details">Minneapolis, MN &mdash; July 2017 to present</div>
+      <h3 class="title">Developer Advocate at Accessible360</h3>
+      <div class="details">Minneapolis, MN &mdash; July 2019 to present</div>
       <ul class="highlights">
-        <li>Provide on-going client coaching and support regarding modern CSS architecture and technologies (Sass/SCSS, ITCSS, BEM, etc), software design patterns, source control practices (Gitflow model), and accessibility (Section 508c and WCAG AA).</li>
+        <li>Focus on educating developers about modern accessibility practices through friendly, developer-oriented articles and code samples.</li>
+        <li>Work with internal auditing team to help identify, communicate, and help resolve advanced accessibility issues through pair programming, mentoring, and code samples.</li>
+        <li>Engage with the broader front-end development community (locally and beyond) to advocate for accessibility through talks and workshops at conferences, meetups, and more.</li>
+        <li>Contribute accessibility-related fixes for popular open-source UI packages and frameworks.</li>
+      </ul>
+    </div>
+
+    <!-- <div class="job">
+      <h3 class="title">Creative Technologist (freelance)</h3>
+      <div class="details">June 2014 to present</div>
+      <ul class="highlights">
+        <li>Provide custom design-build and consulting services to local and international fine artists and
+          institutions, specializing in physical computing, creative coding and digital fabrication using tools and
+          skills such as Arduino, circuit board design and fabrication, Processing (Java), CAD, CNC routing/milling, 3D
+          printing and laser cutting.</li>
+      </ul>
+    </div> -->
+
+    <div class="job">
+      <h3 class="title">UI Developer (consultant) at Concord</h3>
+      <div class="details">Minneapolis, MN &mdash; July 2017 to July 2019 (2 years)</div>
+      <ul class="highlights">
+        <li>Provide on-going client coaching and support regarding modern CSS architecture and technologies (Sass/SCSS, ITCSS, BEM, etc), software design patterns, source control practices (Gitflow model), and accessibility (Section 508 and WCAG 2.0 AA).</li>
         <li>Work closely with client designers and downstream developers to evaluate and refine design mockups based on feasibility within existing tooling, project timelines, accessibility and usability implications, and more.</li>
         <li>Perform deep-dive analysis of CSS, JavaScript, and markup currently in use and provide actionable insight to leadership to inform key decision-making and planning.</li>
         <li>Helping client to transition to a more cross-functional Agile workflow using the SAFe 4.0 framework by serving as the UI development lead for one of two core feature development scrum teams.</li>
@@ -426,17 +448,6 @@
           cutting, hand and power tools and more.</li>
         <li>Duties also include collaborating with on-campus instructional designers to generate actionable course
           materials for students to use to engage in relevant content more fully both within and beyond the course.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3 class="title">Freelance Creative Technology Consultant</h3>
-      <div class="details">Omaha, NE &mdash; June 2014 to present</div>
-      <ul class="highlights">
-        <li>Provide custom design-build and consulting services to local and international fine artists and
-          institutions, specializing in physical computing, creative coding and digital fabrication using tools and
-          skills such as Arduino, circuit board design and fabrication, Processing (Java), CAD, CNC routing/milling, 3D
-          printing and laser cutting.</li>
       </ul>
     </div>
 
@@ -489,6 +500,8 @@
     <h2>Exhibitions</h2>
 
     <ul class="year-list">
+      <li><span class="year">2019</span> 'Strange Growths', <em>ESC</em>, REM5 VR, Minneapolis, MN (group exhibition).</li>
+      <li><span class="year">2019</span> 'Voronoi experiments', <em>Art+Tech Experience</em>, Minneapolis Telecommunications Network (MTN), Minneapolis, MN (group exhibition).</li>
       <li><span class="year">2017</span> 'Obscuron', <em>light</em>, KANEKO, Omaha, NE (group exhibition).</li>
       <li><span class="year">2015</span> 'Real life Minecraft interface', <em>PLAY</em>, KANEKO, Omaha, NE (group exhibition).</li>
       <li><span class="year">2012</span> <em>Artist-in-Residence</em>, University of Nebraska at Kearney, Kearney, NE (two-person exhibition).</li>

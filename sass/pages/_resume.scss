@@ -103,6 +103,19 @@
   //  Skills section
   //===========================================================================================
   #skills {
+    .columns {
+      margin-left: -50px;
+
+      @media(max-width: $tablet-breakpoint) {
+        margin-left: 0;
+      }
+
+      @media(max-width: $mobile-breakpoint) {
+        display: block;
+        margin-left: 0;
+      }
+    }
+
     .column:first-of-type {
       border-right: 4px solid white;
     }
@@ -117,7 +130,7 @@
 
       h3 {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 22px;
         font-style: normal;
         color: $body-text-color;
         margin-bottom: 10px;
