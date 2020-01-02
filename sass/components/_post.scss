@@ -1,6 +1,7 @@
 .post {
   width: $content-width-desktop;
   margin: 0 auto;
+  margin-bottom: 100px;
 
   @media screen and (max-width: $tablet-breakpoint) {
     width: 90%;
