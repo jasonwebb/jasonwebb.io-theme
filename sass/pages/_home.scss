@@ -32,11 +32,32 @@
   }
 
   .see-more-wrapper {
+    background-color: rgba(0,0,0,.9);
     text-align: center;
-    margin-top: 50px;
+    padding: 70px 0;
+    margin: 0 auto;
 
-    .see-more {
+    width: 100%;
+    max-width: 1920px;
+
+    .is-ghost {
       font-size: 18px;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 10px 20px;
+      opacity: .8;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+        text-decoration: underline;
+      }
+
+      &:focus {
+        box-shadow: none;
+        outline: 2px dashed #fff;
+        outline-offset: 7px;
+      }
     }
   }
 }
