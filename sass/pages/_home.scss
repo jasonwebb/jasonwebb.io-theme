@@ -32,7 +32,7 @@
   }
 
   .see-more-wrapper {
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.03);
     text-align: center;
     padding: 70px 0;
     margin: 0 auto;
@@ -42,20 +42,21 @@
 
     .is-ghost {
       font-size: 18px;
-      border: 1px solid #fff;
-      color: #fff;
-      padding: 10px 20px;
-      opacity: .8;
+      border: 2px solid black;
+      color: rgba(0,0,0,.8);
+      font-weight: bold;
+      padding: 10px 25px;
 
       &:hover,
       &:focus {
-        opacity: 1;
+        background-color: black;
+        color: white;
         text-decoration: underline;
       }
 
       &:focus {
         box-shadow: none;
-        outline: 2px dashed #fff;
+        outline: 2px dashed black;
         outline-offset: 7px;
       }
     }
