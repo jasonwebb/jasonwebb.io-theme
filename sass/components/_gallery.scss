@@ -3,13 +3,15 @@
   margin-left: -$media-breakout-offset;
   width: calc(100% + #{$media-breakout-offset}*2);
 
+  display: flex;
+  flex-wrap: wrap;
+
   @media screen and (max-width: $tablet-breakpoint) {
     margin-left: 0;
     width: 100%;
   }
 
   dl.gallery-item {
-    float: left;
     margin: 0 1px 1px 0;
 
     dt.gallery-icon {
@@ -77,17 +79,17 @@
   // 1 column
   &.single-wide a img,
   &.gallery-columns-1 dl {
-    width: 100%;
+    flex: 0 0 100%;
     filter: grayscale(0) !important;
   }
 
   // 2 columns
   &.two-wide a img,
   &.gallery-columns-2 dl {
-    width: calc(100%/2 - 1px);
+    flex: 0 0 calc(100%/2 - 1px);
 
     @media screen and (max-width: $mobile-breakpoint) {
-      width: 100%;
+      flex: 0 0 100%;
       filter: grayscale(0) !important;
     }
   }
@@ -95,10 +97,10 @@
   // 3 columns
   &.three-wide a img,
   &.gallery-columns-3 dl {
-    width: calc(100%/3 - 1px);
+    flex: 0 0 calc(100%/3 - 1px);
 
     @media screen and (max-width: $mobile-breakpoint) {
-      width: 100%;
+      flex: 0 0 100%;
       filter: grayscale(0) !important;
     }
   }
