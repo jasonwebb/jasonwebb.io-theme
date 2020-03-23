@@ -106,12 +106,86 @@
     blockquote {
       color: $body-text-color;
 
+      &.is-large {
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Merriweather', serif;
+        line-height: 48px;
+
+        background: none;
+        border: 0;
+
+        margin: 40px 0;
+        padding: 0;
+        width: 100%;
+
+        p {
+          color: black;
+        }
+      }
+
       p {
         color: $body-text-color;
 
         &:last-of-type {
           margin-bottom: 0;
         }
+      }
+    }
+
+    .is-inverted-section {
+      margin: 40px -9999px 0 -9999px;
+      padding: 40px 9999px 60px 9999px;
+
+      background-color: rgba(0,0,0,.9);
+
+      &:last-child {
+        position: relative;
+        margin-bottom: -100px;
+      }
+
+      h2, h3, h4, h5, h6 {
+        color: rgba(255,255,255,1) !important;
+        border-color: rgba(255,255,255,.3);
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      p, span, div {
+        color: rgba(255,255,255,.6) !important;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: rgba(255,255,255,1) !important;
+          font-weight: bold;
+        }
+      }
+
+      blockquote {
+        &.is-large {
+          p {
+            color: white !important;
+          }
+        }
+      }
+
+      .gallery, .embed-responsive {
+        box-shadow: 0 0 0 2px rgba(0,0,0,.8),
+                    0 0 40px 0 rgba(255,255,255,.1);
       }
     }
   }

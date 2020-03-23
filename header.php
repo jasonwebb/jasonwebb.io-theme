@@ -20,6 +20,7 @@
 
   <link href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" rel="stylesheet">
   <link href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900i&display=swap" rel="stylesheet">
   <link href="<?= get_template_directory_uri(); ?>/dist/styles.min.css" rel="stylesheet">
 
 	<?php wp_head(); ?>
