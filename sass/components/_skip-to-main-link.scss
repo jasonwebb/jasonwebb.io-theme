@@ -1,9 +1,13 @@
-.skip-to-main-link:focus {
-  margin-left: 10px !important;
-  margin-top: 10px !important;
+.skip-to-main-link {
+  position: absolute;
+  left: 15px;
+  top: -50px;
   padding: 5px 15px !important;
-
-  span {
-    border-bottom: 2px dotted #2a6cd8;
-  }
+  background-color: rgba(0,0,0,1);
+  color: white;
+  transition: top .2s linear;
 }
+
+  .skip-to-main-link:focus {
+    top: 15px;
+  }
