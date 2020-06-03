@@ -2,7 +2,7 @@
 
 <?php the_post(); ?>
 
-<article class="post" id="main" role="main">
+<article class="post" id="main" tabindex="-1">
   <div class="header">
     <?php
     if( has_post_thumbnail() ) {

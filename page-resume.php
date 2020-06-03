@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="resume-page page" id="main" role="main">
+<main class="resume-page page" id="main" tabindex="-1">
   <h1 class="visually-hidden">Resum&eacute;</h1>
 
   <div class="controls">
