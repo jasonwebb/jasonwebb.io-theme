@@ -20,18 +20,18 @@
 
   <link href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" rel="stylesheet">
   <link href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,500,600,700,900&display=swap" rel="stylesheet">
   <link href="<?= get_template_directory_uri(); ?>/dist/styles.min.css" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
 
 <body>
-  <a href="#main" class="skip-to-main-link visually-hidden visually-hidden-focusable">
+  <a href="#main" class="skip-to-main-link">
     <span>Skip to main content</span>
   </a>
 
-  <nav class="mobile-menu" role="navigation" aria-label="mobile menu">
+  <nav class="mobile-menu" aria-label="mobile menu">
     <button class="close-button">
       <span class="fa fa-times" aria-hidden="true"></span>
       <span class="visually-hidden">Close menu</span>
@@ -75,7 +75,7 @@
     </ul>
   </nav>
 
-  <header role="banner">
+  <header>
     <?php echo '<a href="/" class="name" aria-label="go to home page"', (is_home() ? ' aria-current="page"' : ''), '>Jason Webb</a>'; ?>
 
     <nav role="navigation">
@@ -141,5 +141,5 @@
       <span class="visually-hidden">Open mobile menu</span>
     </button>
 
-    <div class="tagline"><?php bloginfo("description"); ?></div>
+    <!-- <div class="tagline"><?php bloginfo("description"); ?></div> -->
   </header>
