@@ -38,7 +38,7 @@ mobileMenuCloseButton.addEventListener('click', () => {
 
 // Home page - load all work items
 if(isHomePage) {
-  loadWorkItems(undefined, 9);
+  loadWorkItems(undefined, 6, 1);
 
 // Work page = load work items by category based on selected tag
 } else if(isWorkPage) {
@@ -135,7 +135,7 @@ if(isHomePage) {
 //  Load work items with provided category
 //==============================================
 
-function loadWorkItems(category = undefined, count = undefined, target = undefined, focus = false) {
+function loadWorkItems(category = undefined, count = undefined, offset = undefined, target = undefined, focus = false) {
   if(target != undefined) {
     target.innerHTML = '';
   } else {
@@ -144,7 +144,7 @@ function loadWorkItems(category = undefined, count = undefined, target = undefin
 
   // Load new items using hash
   let itemStream;
-  itemStream = ItemLoader.load(category, count);
+  itemStream = ItemLoader.load(category, count, offset);
 
   // Templatize and inject items onto page
   itemStream.then(items => {
@@ -180,6 +180,15 @@ function loadWorkItems(category = undefined, count = undefined, target = undefin
 function createWorkItem(data) {
   return `
     <a href="${data.url}" class="tile">
+      <div class="title">
+        <h2>
+          <span>
+            <b>${data.title}</b>
+            <small>(${data.year})</small>
+          </span>
+        </h2>
+      </div>
+
       <img
         srcset="${data.image_small} 296w,
                 ${data.image_medium} 444w,
@@ -190,13 +199,6 @@ function createWorkItem(data) {
         src="${data.image_large}"
         alt=""
       >
-
-      <div class="overlay">
-        <span>
-          <b>${data.title}</b>
-          <small>(${data.year})</small>
-        </span>
-      </div>
     </a>
   `;
 }

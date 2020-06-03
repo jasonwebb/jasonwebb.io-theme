@@ -1,12 +1,13 @@
 class ItemLoader {
   constructor() {}
 
-  static load(category = undefined, count = undefined) {
+  static load(category = undefined, count = undefined, offset = undefined) {
     return fetch('/wp-content/themes/minimal-for-jasonwebbio-v2/php/getItems.php', {
       method: 'POST',
       body: JSON.stringify({
         category: category,
-        count: count
+        count: count,
+        offset: offset
       })
     })
       .then(response => {

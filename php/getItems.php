@@ -21,10 +21,19 @@ if(isset($data->count) && $data->count != null) {
   $count = $data->count;
 }
 
+// Don't skip any items by default
+$offset = 0;
+
+// If an offset is provided, use it
+if(isset($data->offset) && $data->offset != null) {
+  $offset = $data->offset;
+}
+
 // Retrieve the WP posts matching the categories requested
 query_posts(array(
   'category__and' => $categories,
   'posts_per_page' => $count,
+  'offset' => $offset,
   'meta_query' => array(array('key' => '_thumbnail_id'))
 ));
 
