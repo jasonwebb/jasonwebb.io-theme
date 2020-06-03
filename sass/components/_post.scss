@@ -1,7 +1,6 @@
 .post {
   width: $content-width-desktop;
   margin: 0 auto;
-  margin-bottom: 100px;
 
   @media screen and (max-width: $tablet-breakpoint) {
     width: 90%;
@@ -70,8 +69,8 @@
 
   .content {
     h2 {
-      font-size: 26px;
-      font-weight: 500;
+      font-size: 1.6rem;
+      font-weight: 700;
       border-bottom: 1px solid rgba(0, 0, 0, .1);
       padding-bottom: 4px;
       margin-bottom: 30px;
@@ -81,7 +80,7 @@
     h3 {
       font-style: italic;
       font-size: 1.35rem;
-      font-weight: bold;
+      font-weight: 600;
       color: $body-text-color;
       margin-top: 60px;
       margin-bottom: 20px;
