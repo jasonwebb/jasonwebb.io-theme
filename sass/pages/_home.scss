@@ -1,20 +1,16 @@
 .home-page {
+  //====================================================
+  //  Introduction
+  //====================================================
   .introduction {
-    margin-top: -10px;
-    margin-bottom: 50px;
-    padding: 30px;
-    background-color: rgba(0,0,0,.03);
-    font-size: 18px;
-    color: rgba(0,0,0,.6);
+    margin-bottom: 100px;
 
-    @media screen and (max-width: $tablet-breakpoint) {
-      width: 90%;
-    }
+    font-family: 'Merriweather';
+    font-size: 1.3rem;
+    line-height: 2.3rem;
 
-    @media screen and (max-width: $mobile-breakpoint) {
-      padding: 20px;
-      margin-top: -20px;
-      margin-bottom: 40px;
+    @media screen and (max-width: $small-desktop-breakpoint) {
+      margin-bottom: 60px;
 
       ul {
         margin-left: 25px;
@@ -26,13 +22,189 @@
     }
 
     p {
-      margin-bottom: 10px;
+      margin: 25px 0;
+      letter-spacing: 0.05rem;
       color: rgba(0,0,0,.6);
+
+      @media screen and (max-width: $tablet-breakpoint) {
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+
+    ul {
+      li {
+        color: rgba(0,0,0,.6);
+      }
+    }
+
+    b, strong {
+      font-weight: 900;
+      color: rgba(0,0,0,.8);
+    }
+
+    .button {
+      font-size: 1.5rem;
+      height: auto;
+      margin-top: 20px;
+      padding: 10px 40px;
     }
   }
 
+
+  //====================================================
+  //  Featured project
+  //====================================================
+  .featured {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto 5px auto;
+    padding: 0;
+
+    @media screen and (max-width: $small-desktop-breakpoint) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      height: 450px;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      height: 375px;
+    }
+
+    // Pseudo-element used for focus indicator (dashed outline)
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      outline: none;
+    }
+
+    .title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      padding: 10%;
+      margin-bottom: 0;
+
+      @media screen and (max-width: $tablet-breakpoint) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+      }
+
+      h2 {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        z-index: 1;
+        max-width: 50%;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          position: static;
+          max-width: none;
+        }
+
+        span {
+          background-color: black;
+          box-shadow: 0 0 0 8px black;
+          box-decoration-break: clone;
+
+          font-family: 'Merriweather', serif;
+          font-size: 3.0rem;
+          font-weight: 900;
+          line-height: 4.2rem;
+          color: white;
+          transition: all .2s linear;
+
+          @media screen and (max-width: $small-desktop-breakpoint) {
+            color: black;
+            background-color: white;
+            box-shadow: 0 0 0 8px white;
+
+            font-size: 2.0rem;
+            line-height: 3.0rem;
+          }
+
+          @media screen and (max-width: $mobile-breakpoint) {
+            font-size: 1.5rem;
+            line-height: 2.0rem;
+          }
+
+          small {
+            font-size: 1.6rem;
+            opacity: .6;
+            text-shadow: none;
+
+            @media screen and (max-width: $mobile-breakpoint) {
+              font-size: 1.2rem;
+              line-height: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: transform .5s ease-in-out;
+
+      // For phones - use 1-column layout
+      @media screen and (max-width: $tablet-breakpoint) {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      h2 {
+        span {
+          background-color: white;
+          box-shadow: 0 0 0 8px white;
+          color: black;
+        }
+      }
+
+      img {
+        transform: scale(1.05);
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+
+      &:before {
+        outline: 6px dashed white;
+        outline-offset: -15px;
+      }
+    }
+  }
+
+
+  //====================================================
+  //  "See more of my work" link
+  //====================================================
   .see-more-wrapper {
-    background-color: rgba(0,0,0,.03);
     text-align: center;
     padding: 70px 0;
     margin: 0 auto;
@@ -40,25 +212,10 @@
     width: 100%;
     max-width: 1920px;
 
-    .is-ghost {
-      font-size: 18px;
-      border: 2px solid black;
-      color: rgba(0,0,0,.8);
-      font-weight: bold;
-      padding: 10px 25px;
-
-      &:hover,
-      &:focus {
-        background-color: black;
-        color: white;
-        text-decoration: underline;
-      }
-
-      &:focus {
-        box-shadow: none;
-        outline: 2px dashed black;
-        outline-offset: 7px;
-      }
+    .button {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5rem;
+      height: auto;
     }
   }
 }

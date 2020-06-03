@@ -15,95 +15,132 @@
     width: 100%;
   }
 
-  @media screen and (max-width: $tablet-breakpoint) {
-    width: 90%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
   li {
     flex: 1;
-    flex-basis: calc(100% / 3 - 1px);
+    flex-basis: calc(100% / 2 - 2px);
 
-    max-width: calc(100% / 3 - 1px);
-    margin: 0 1px 1px 0;
+    max-width: calc(100% / 2 - 2px);
+    margin: 0 4px 4px 0;
     padding: 0;
 
-    &:nth-of-type(3n) {
+    &:nth-of-type(2n) {
       margin-right: 0;
-    }
-
-    // For small desktops - turn into 3-column layout
-    @media screen and (max-width: $small-desktop-breakpoint) {
-      flex-basis: calc(100% / 3 - 2px);
-      max-width: calc(100% / 3 - 2px);
-    }
-
-    // For tablets - use 2-column layout
-    @media screen and (max-width: $tablet-breakpoint) {
-      flex-basis: calc(100% / 2 - 2px);
-      max-width: calc(100% / 2 - 2px);
     }
 
     // For phones - use 1-column layout
     @media screen and (max-width: $tablet-breakpoint) {
       flex-basis: calc(100%);
       max-width: calc(100%);
+      margin-right: 0;
     }
   }
 
   .tile {
-    display: flex;
     position: relative;
-    height: 475px;
+    height: 550px;
+    overflow: hidden;
 
-    // For small desktops - turn into 3-column layout
     @media screen and (max-width: $small-desktop-breakpoint) {
-      height: 275px;
+      height: 340px;
     }
 
-    // For phones - use 1-column layout
     @media screen and (max-width: $tablet-breakpoint) {
-      height: 300px;
+      height: 450px;
     }
 
-    img {
-      filter: grayscale(30%);
-
-      width: 100%;
-      height: auto;
-
-      object-fit: cover;
+    @media screen and (max-width: $mobile-breakpoint) {
+      height: 375px;
     }
 
-    .overlay {
+    &:before {
+      content: '';
       position: absolute;
-      left: -9999px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 2;
+      transition: all .2s linear;
+    }
+
+    .title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      padding: 10%;
+      margin-bottom: 0;
 
       display: flex;
       justify-content: center;
       align-items: center;
-      // background-color: #2a6cd8;
-      background-color: rgba(30,30,30,1);
-      color: white;
 
-      font-size: 36px;
-      line-height: 38px;
-      padding: 50px;
+      text-align: center;
 
-      text-shadow: 3px 3px 0 rgba(0,0,0,.2);
+      &:before {
+        background: rgba(0,0,0,1);
+        content: '';
 
-      // For small desktops - turn into 3-column layout
-      @media screen and (max-width: $small-desktop-breakpoint) {
-        font-size: 28px !important;
-        line-height: 32px !important;
-        padding: 30px !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+
+        transition: opacity .3s linear;
       }
 
-      small {
-        font-size: 28px;
-        opacity: .6;
-        text-shadow: none;
+      h2 {
+        z-index: 1;
+        opacity: 0;
+        transition: all .15s ease-in-out;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          opacity: 1;
+        }
+
+        span {
+          font-family: 'Merriweather';
+          font-size: 2.0rem;
+          line-height: 3.0rem;
+          color: black;
+          background-color: white;
+          box-shadow: 0 0 0 8px white;
+          box-decoration-break: clone;
+          transition: all .2s linear;
+
+          @media screen and (max-width: $mobile-breakpoint) {
+            font-size: 1.5rem;
+            line-height: 2.0rem;
+          }
+
+          small {
+            font-size: 1.6rem;
+            opacity: .6;
+            text-shadow: none;
+
+            @media screen and (max-width: $mobile-breakpoint) {
+              font-size: 1.2rem;
+              line-height: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform .5s ease-in-out;
+
+      // For phones - use 1-column layout
+      @media screen and (max-width: $tablet-breakpoint) {
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -111,18 +148,27 @@
     &:focus {
       box-shadow: none;
 
-      .overlay {
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+      .title {
+        &:before {
+          opacity: .6;
+        }
+
+        h2 {
+          opacity: 1;
+        }
+      }
+
+      img {
+        transform: scale(1.05);
       }
     }
 
     &:focus {
-      .overlay {
-        outline: 4px dashed rgba(255,255,255,.8);
-        outline-offset: -10px;
+      box-shadow: none;
+
+      &:before {
+        outline: 6px dashed white;
+        outline-offset: -15px;
       }
     }
   }
