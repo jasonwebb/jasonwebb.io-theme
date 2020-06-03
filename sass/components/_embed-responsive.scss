@@ -2,10 +2,10 @@
   position: relative;
   height: 0;
   display: block;
+  margin: 40px 0;
   padding: 0;
   overflow: hidden;
-
-  margin: 40px 0;
+  border: 1px solid rgba(0,0,0,.1);
 
   & + .embed-responsive {
     margin-top: 1px;
@@ -14,7 +14,7 @@
   &.is-full-width {
     margin-left: -$media-breakout-offset;
     width: calc(100% + #{$media-breakout-offset}*2);
-  
+
     @media screen and (max-width: $tablet-breakpoint) {
       margin-left: 0;
       width: 100%;
