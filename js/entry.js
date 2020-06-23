@@ -56,6 +56,7 @@ if(isHomePage) {
   loadWorkItems(
     category === 'all' ? undefined : category,
     undefined,
+    undefined,
     document.querySelector('[role="tabpanel"].is-active .tiles')
   );
 
@@ -208,7 +209,6 @@ function activateTab(tab, focus = false) {
 
   // Deactivate any active tab
   tabs.forEach(function(tab) {
-    tab.setAttribute('tabindex', -1);
     tab.setAttribute('aria-selected', false);
     tab.classList.remove('is-highlighted');
   });
@@ -219,7 +219,6 @@ function activateTab(tab, focus = false) {
   });
 
   // Activate the provided tab
-  tab.removeAttribute('tabindex');
   tab.setAttribute('aria-selected', true);
   tab.classList.add('is-highlighted');
 
@@ -230,6 +229,7 @@ function activateTab(tab, focus = false) {
   // Load initial work items for whichever category is selected on load
   loadWorkItems(
     category === 'all' ? undefined : category,
+    undefined,
     undefined,
     document.querySelector('[role="tabpanel"].is-active .tiles'),
     focus
