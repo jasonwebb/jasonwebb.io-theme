@@ -6,11 +6,11 @@
   <div class="tabs-wrapper">
     <div class="tabs has-text-centered" role="tablist" aria-label="categories">
       <button id="all-button" class="tag is-light" role="tab" aria-selected="true" aria-controls="all-panel">All</button>
-      <button id="code-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="code-panel" tabindex="-1">Code</button>
-      <button id="creative-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="creative-panel" tabindex="-1">Creative</button>
-      <button id="electronics-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="electronics-panel" tabindex="-1">Electronics</button>
-      <button id="fabrication-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="fabrication-panel" tabindex="-1">Fabrication</button>
-      <button id="teaching-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="teaching-panel" tabindex="-1">Teaching</button>
+      <button id="code-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="code-panel">Code</button>
+      <button id="creative-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="creative-panel">Creative</button>
+      <button id="electronics-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="electronics-panel">Electronics</button>
+      <button id="fabrication-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="fabrication-panel">Fabrication</button>
+      <button id="teaching-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="teaching-panel">Teaching</button>
     </div>
   </div>
 
