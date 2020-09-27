@@ -2,7 +2,7 @@ class ItemLoader {
   constructor() {}
 
   static load(category = undefined, count = undefined, offset = undefined) {
-    return fetch('/wp-content/themes/minimal-for-jasonwebbio-v2/php/getItems.php', {
+    return fetch('/wp-content/themes/jasonwebb.io-theme/php/getItems.php', {
       method: 'POST',
       body: JSON.stringify({
         category: category,
