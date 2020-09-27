@@ -3,11 +3,7 @@
   //  Introduction
   //====================================================
   .introduction {
-    margin-bottom: 100px;
-
-    font-family: 'Merriweather';
-    font-size: 1.3rem;
-    line-height: 2.3rem;
+    margin-bottom: 60px;
 
     @media screen and (max-width: $small-desktop-breakpoint) {
       margin-bottom: 60px;
@@ -23,8 +19,10 @@
 
     p {
       margin: 25px 0;
-      letter-spacing: 0.05rem;
-      color: rgba(0,0,0,.6);
+
+      &:first-of-type {
+        margin-top: 0;
+      }
 
       @media screen and (max-width: $tablet-breakpoint) {
         &:first-of-type {
@@ -39,16 +37,17 @@
       }
     }
 
-    b, strong {
-      font-weight: 900;
-      color: rgba(0,0,0,.8);
-    }
-
     .button {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       height: auto;
       margin-top: 20px;
       padding: 10px 40px;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline !important;
+      }
     }
   }
 
@@ -126,12 +125,10 @@
           box-shadow: 0 0 0 8px black;
           box-decoration-break: clone;
 
-          font-family: 'Merriweather', serif;
-          font-size: 3.0rem;
+          font-size: 2.3rem;
           font-weight: 900;
-          line-height: 4.2rem;
+          line-height: 3.5rem;
           color: white;
-          transition: all .2s linear;
 
           @media screen and (max-width: $small-desktop-breakpoint) {
             color: black;
@@ -147,10 +144,16 @@
             line-height: 2.0rem;
           }
 
+          b, strong {
+            color: white;
+          }
+
           small {
+            font-weight: 400;
             font-size: 1.6rem;
             opacity: .6;
             text-shadow: none;
+            margin-left: -10px;
 
             @media screen and (max-width: $mobile-breakpoint) {
               font-size: 1.2rem;
@@ -182,6 +185,10 @@
           background-color: white;
           box-shadow: 0 0 0 8px white;
           color: black;
+
+          b, strong {
+            color: black;
+          }
         }
       }
 
@@ -213,9 +220,14 @@
     max-width: 1920px;
 
     .button {
-      font-family: 'Merriweather', serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      padding: 10px 40px;
       height: auto;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline !important;
+      }
     }
   }
 }

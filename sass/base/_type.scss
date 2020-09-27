@@ -1,3 +1,15 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+  }
+}
+
 h1 {
   font-size: 22px !important;
   font-weight: 500 !important;
@@ -13,7 +25,7 @@ ol {
   margin: 1rem 0 .5rem 3rem;
 
   li {
-    padding-left: .5rem;
+    padding-left: .2rem;
     margin-bottom: 5px;
 
     // Second-level lists
@@ -38,11 +50,7 @@ ol + p {
   margin-top: 20px;
 }
 
-a {
-  color: #2a6cd8;
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px hsl(204, 86%, 53%);
-  }
+b, strong {
+  font-weight: 500;
+  color: black;
 }
