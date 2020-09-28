@@ -56,6 +56,7 @@ if(isHomePage) {
   loadWorkItems(
     category === 'all' ? undefined : category,
     undefined,
+    undefined,
     document.querySelector('[role="tabpanel"].is-active .tiles')
   );
 
