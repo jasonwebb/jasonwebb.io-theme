@@ -1,6 +1,6 @@
 .post {
   width: $content-width-desktop;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 
   @media screen and (max-width: $tablet-breakpoint) {
     width: 90%;
@@ -52,7 +52,7 @@
 
           .tag {
             border-radius: 3px;
-            font-size: 16px;
+            font-size: 14px;
             color: rgba(0, 0, 0, .55);
             transition: .2s all ease-in-out;
 
@@ -78,27 +78,42 @@
     }
 
     h3 {
-      font-style: italic;
-      font-size: 1.35rem;
+      color: black;
+      font-size: 1.3rem;
       font-weight: 600;
-      color: $body-text-color;
       margin-top: 60px;
       margin-bottom: 20px;
     }
 
     p {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
       color: $body-text-color;
+    }
+
+    ul, ol {
+      margin-left: 3rem;
     }
 
     li {
       color: $body-text-color;
+      margin-bottom: 15px;
+
+      ul, ol {
+        margin-top: 10px;
+
+        li {
+          margin-bottom: 5px;
+        }
+      }
     }
 
-    a {
+    a:not(.button) {
+      font-weight: 500;
+      color: black;
+      text-decoration: underline;
+
       &:hover {
         color: #3273dc;
-        text-decoration: underline;
       }
     }
 
@@ -109,7 +124,6 @@
         font-size: 40px;
         font-weight: bold;
         font-style: italic;
-        font-family: 'Merriweather', serif;
         line-height: 48px;
 
         background: none;

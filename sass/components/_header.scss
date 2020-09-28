@@ -20,6 +20,12 @@ body {
       font-weight: 700;
       color: rgba(0,0,0,.9);
       flex: 0 auto;
+
+      &:hover,
+      &:focus {
+        color: #3273dc;
+        text-decoration: underline;
+      }
     }
 
     & > nav {
@@ -40,7 +46,6 @@ body {
 
           a {
             color: rgba(0,0,0,.54);
-            transition: .1s color linear;
 
             &:hover,
             &:focus {
@@ -73,8 +78,6 @@ body {
         top: -3px;
 
         li {
-          margin-right: 10px;
-
           &:last-of-type {
             margin-right: 0;
           }
@@ -84,7 +87,7 @@ body {
             color: #2a6cd8;
 
             span {
-              border-bottom: 2px dotted #2a6cd8;
+              text-decoration: underline;
             }
           }
 
@@ -93,7 +96,7 @@ body {
 
             &:hover span,
             &:focus span {
-              border-bottom: 2px dotted #2a6cd8;
+              text-decoration: underline;
             }
           }
         }

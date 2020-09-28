@@ -19,6 +19,10 @@
   //  List of highlights
   //==================================================================================================
   .highlights {
+    li {
+      margin-bottom: 20px;
+    }
+
     @media(max-width: $mobile-breakpoint) {
       padding: 10px 0;
       margin-left: 40px;

@@ -1,6 +1,6 @@
 .page {
   width: $content-width-desktop;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 
   @media screen and (max-width: $tablet-breakpoint) {
     width: 90%;
@@ -29,9 +29,12 @@
   }
 
   a {
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+
     &:hover {
       color: #3273dc;
-      text-decoration: underline;
     }
   }
 }
