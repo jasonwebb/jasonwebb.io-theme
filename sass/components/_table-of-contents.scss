@@ -7,16 +7,12 @@
   background-color: $light-gray-background-color;
 
   h2,
-  h4 {
-    margin: 0 !important;
+  h4,
+  .heading {
+    margin: 0 0 30px 0 !important;
     padding: 0 !important;
     border: 0 !important;
-    font-size: 20px !important;
-    font-weight: bold;
-  }
-
-  & > ul,
-  ol {
-    margin-left: 20px;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
   }
 }
