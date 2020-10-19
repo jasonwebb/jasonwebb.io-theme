@@ -102,9 +102,9 @@
         </li>
 
         <li>
-          <a href="https://www.pinterest.com/jasonw2368/" target="_blank">
-            <span class="fa fa-pinterest" aria-hidden="true"></span>
-            <span class="visually-hidden">jasonw2368 on Pinterest</span>
+          <a href="https://medium.com/@jason.webb" target="_blank">
+            <span class="fa fa-medium" aria-hidden="true"></span>
+            <span class="visually-hidden">@jason.webb on Medium</span>
           </a>
         </li>
       </ul>
