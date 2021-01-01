@@ -65,13 +65,6 @@
           Github
         </a>
       </li>
-
-      <li>
-        <a href="https://www.pinterest.com/jasonw2368/" target="_blank">
-          <span class="fa fa-pinterest" aria-hidden="true"></span>
-          Pinterest
-        </a>
-      </li>
     </ul>
   </nav>
 
