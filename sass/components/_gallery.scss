@@ -20,8 +20,6 @@
         position: relative;
 
         img {
-          transition: filter .5s ease-in-out;
-          filter: grayscale(.8);
           display: block;
           width: 100%;
           height: auto;
@@ -36,10 +34,6 @@
         &:hover,
         &:focus {
           box-shadow: none;
-
-          img {
-            filter: grayscale(0);
-          }
         }
 
         &:hover {
@@ -81,7 +75,6 @@
   &.single-wide a img,
   &.gallery-columns-1 dl {
     flex: 0 0 100%;
-    filter: grayscale(0) !important;
   }
 
   // 2 columns
@@ -91,7 +84,6 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
       flex: 0 0 100%;
-      filter: grayscale(0) !important;
     }
   }
 
@@ -102,7 +94,6 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
       flex: 0 0 100%;
-      filter: grayscale(0) !important;
     }
   }
 
@@ -113,7 +104,6 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
       width: 100%;
-      filter: grayscale(0) !important;
     }
   }
 
@@ -124,7 +114,6 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
       width: 100%;
-      filter: grayscale(0) !important;
     }
   }
 
@@ -135,7 +124,6 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
       width: 100%;
-      filter: grayscale(0) !important;
     }
   }
 
