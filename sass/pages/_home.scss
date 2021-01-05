@@ -61,9 +61,9 @@
     position: relative;
     overflow: hidden;
     height: 800px;
-    width: 100%;
+    width: calc(100% - 16px);
     max-width: 1920px;
-    margin: 0 auto 5px auto;
+    margin: 0 auto 8px auto;
     padding: 0;
 
     @media screen and (max-width: $small-desktop-breakpoint) {
