@@ -13,7 +13,7 @@
 		if( is_front_page() ) {
 			echo "Jason Webb";
 		} else {
-			wp_title('-','true','right');
+			the_title('','- Jason Webb',true);
 		}
 	?>
   </title>
