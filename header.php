@@ -31,38 +31,45 @@
     <span>Skip to main content</span>
   </a>
 
-  <nav class="mobile-menu" aria-label="mobile menu">
-    <button class="close-button">
+  <nav class="mobile-menu" aria-label="mobile menu" role="dialog" aria-modal="true">
+    <button class="close-button first-focusable-element">
       <span class="fa fa-times" aria-hidden="true"></span>
       <span class="visually-hidden">Close menu</span>
     </button>
 
     <ul class="primary-pages" aria-label="pages">
-      <li><a href="/about">About</a></li>
-      <li><a href="/work">Work</a></li>
-      <li><a href="/resume">Resum&eacute;</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/about"><span>About</span></a></li>
+      <li><a href="/work"><span>Work</span></a></li>
+      <li><a href="/resume"><span>Resum&eacute;</span></a></li>
+      <li><a href="/contact"><span>Contact</span></a></li>
     </ul>
 
     <ul class="external-sites" aria-label="social media">
       <li>
         <a href="http://twitter.com/jasonwebb" target="_blank">
           <span class="fa fa-twitter" aria-hidden="true"></span>
-          Twitter
+          <span>Twitter</span>
         </a>
       </li>
 
       <li>
         <a href="https://www.instagram.com/zenwebb/" target="_blank">
           <span class="fa fa-instagram" aria-hidden="true"></span>
-          Instagram
+          <span>Instagram</span>
         </a>
       </li>
 
       <li>
         <a href="http://github.com/jasonwebb" target="_blank">
           <span class="fa fa-github" aria-hidden="true"></span>
-          Github
+          <span>Github</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://medium.com/@jason.webb" target="_blank" class="last-focusable-element">
+          <span class="fa fa-medium" aria-hidden="true"></span>
+          <span>Medium</span>
         </a>
       </li>
     </ul>
@@ -74,28 +81,28 @@
     <nav role="navigation">
       <ul class="social" aria-label="social media">
         <li>
-          <a href="http://twitter.com/jasonwebb" target="_blank">
+          <a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter">
             <span class="fa fa-twitter" aria-hidden="true"></span>
             <span class="visually-hidden">@jasonwebb on Twitter</span>
           </a>
         </li>
 
         <li>
-          <a href="https://www.instagram.com/zenwebb/" target="_blank">
+          <a href="https://www.instagram.com/zenwebb/" target="_blank" title="@zenwebb on Instagram">
             <span class="fa fa-instagram" aria-hidden="true"></span>
             <span class="visually-hidden">@zenwebb on Instagram</span>
           </a>
         </li>
 
         <li>
-          <a href="http://github.com/jasonwebb" target="_blank">
+          <a href="http://github.com/jasonwebb" target="_blank" title="jasonwebb on Github">
             <span class="fa fa-github" aria-hidden="true"></span>
             <span class="visually-hidden">jasonwebb on Github</span>
           </a>
         </li>
 
         <li>
-          <a href="https://medium.com/@jason.webb" target="_blank">
+          <a href="https://medium.com/@jason.webb" target="_blank" title="@jason.webb on Medium">
             <span class="fa fa-medium" aria-hidden="true"></span>
             <span class="visually-hidden">@jason.webb on Medium</span>
           </a>
@@ -133,6 +140,4 @@
       <span class="fa fa-bars" aria-hidden="true"></span>
       <span class="visually-hidden">Open mobile menu</span>
     </button>
-
-    <!-- <div class="tagline"><?php bloginfo("description"); ?></div> -->
   </header>

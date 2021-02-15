@@ -50,7 +50,7 @@
       a {
         display: block;
         color: white;
-        padding: 0 30px;
+        padding: 10px 30px;
 
         &:focus {
           box-shadow: 0 0 0 3px hsl(204, 86%, 53%);
@@ -63,6 +63,14 @@
       a {
         font-weight: 600;
         font-size: 26px;
+
+        span {
+          border-bottom: 5px dashed transparent;
+        }
+
+        &:focus span {
+          border-color: white;
+        }
       }
     }
 
@@ -71,11 +79,24 @@
       margin-top: 10px;
 
       a {
-        opacity: .5;
-        padding: 0 30px;
+        opacity: .7;
+        padding: 10px 30px;
+        font-size: 18px;
 
         span {
           margin-right: 10px;
+        }
+
+        span:last-of-type {
+          border-bottom: 3px dashed transparent
+        }
+
+        &:focus {
+          opacity: 1;
+
+          & > span:last-of-type {
+            border-color: white;
+          }
         }
       }
     }
