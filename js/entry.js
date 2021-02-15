@@ -16,6 +16,8 @@ let mobileMenuCloseButton = document.querySelector('body > .mobile-menu > .close
 let mobileMenu = document.querySelector('body > .mobile-menu');
 let mainAppEl = document.querySelector('body > main');
 let headerEl = document.querySelector('body > header');
+let firstFocusableElement = mobileMenu.querySelector('.first-focusable-element');
+let lastFocusableElement = mobileMenu.querySelector('.last-focusable-element');
 
 mobileMenuOpenButton.addEventListener('click', () => {
   mobileMenu.classList.add('is-open');
@@ -31,6 +33,29 @@ mobileMenuCloseButton.addEventListener('click', () => {
   mobileMenuOpenButton.focus();
 });
 
+mobileMenu.addEventListener('keyup', (e) => {
+  if(e.key == 'Escape') {
+    mobileMenu.classList.remove('is-open');
+    mainAppEl.classList.remove('is-mobile-menu-open');
+    headerEl.classList.remove('is-mobile-menu-open');
+    mobileMenuOpenButton.focus();
+  }
+});
+
+firstFocusableElement.addEventListener('keydown', (e) => {
+  if(e.shiftKey && e.key == 'Tab') {
+    e.preventDefault();
+    lastFocusableElement.focus();
+  }
+});
+
+lastFocusableElement.addEventListener('keydown', (e) => {
+  if(!e.shiftKey && e.key == 'Tab') {
+    e.preventDefault();
+    firstFocusableElement.focus();
+  }
+});
+
 
 //======================================
 //  Page functionality
@@ -38,7 +63,7 @@ mobileMenuCloseButton.addEventListener('click', () => {
 
 // Home page - load all work items
 if(isHomePage) {
-  loadWorkItems(undefined, 6, 1);
+  loadWorkItems(undefined, 8, 1);
 
 // Work page = load work items by category based on selected tag
 } else if(isWorkPage) {
