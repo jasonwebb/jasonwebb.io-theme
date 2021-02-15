@@ -1,13 +1,17 @@
 .skip-to-main-link {
   position: absolute;
   left: 15px;
-  top: -50px;
-  padding: 5px 15px !important;
+  top: -80px;
+  z-index: 100;
+  padding: 20px !important;
   background-color: rgba(0,0,0,1);
+  font-size: 24px;
+  font-weight: 600;
   color: white;
   transition: top .2s linear;
 }
 
   .skip-to-main-link:focus {
     top: 15px;
+    outline-offset: 4px;
   }
