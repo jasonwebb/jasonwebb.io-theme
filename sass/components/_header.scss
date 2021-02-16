@@ -26,6 +26,10 @@ body {
         color: #3273dc;
         text-decoration: underline;
       }
+
+      &:focus {
+        outline-offset: 6px;
+      }
     }
 
     & > nav {

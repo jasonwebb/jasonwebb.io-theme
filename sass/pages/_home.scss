@@ -146,6 +146,10 @@
 
           b, strong {
             color: white;
+
+            @media screen and (max-width: $small-desktop-breakpoint) {
+              color: black;
+            }
           }
 
           small {
@@ -231,6 +235,8 @@
 
       &:focus {
         outline-color: black;
+        outline-width: 6px;
+        outline-offset: 3px;
       }
     }
   }
