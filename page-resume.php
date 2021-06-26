@@ -379,10 +379,13 @@
       <h3 class="title">Developer Advocate at Accessible360</h3>
       <div class="details">Minneapolis, MN &mdash; July 2019 to present</div>
       <ul class="highlights">
-        <li>Focus on educating developers about modern accessibility practices through friendly, developer-oriented articles and code samples.</li>
-        <li>Work with internal auditing team to help identify, communicate, and help resolve advanced accessibility issues through pair programming, mentoring, and code samples.</li>
-        <li>Engage with the broader front-end development community (locally and beyond) to advocate for accessibility through talks and workshops at conferences, meetups, and more.</li>
-        <li>Contribute accessibility-related fixes for popular open-source UI packages and frameworks.</li>
+        <li>Provide personalized technical and strategic accessibility consultation for clients with complex products.</li>
+        <li>Redesigned customer-facing Knowledge Base to improve readability and overall developer experience.</li>
+        <li>Contribute high-quality documentation and code samples explaining how to design and build common web components (like autocompletes and carousels) with accessibility considerations. These docs were informed heavily by research and hands-on testing with live users with disabilities.</li>
+        <li>Provide individualized support and guidance to testers around advanced troubleshooting, technical solutioning, and customer service.</li>
+        <li>Work closely with entire team of Customer Success Managers (CSMs) to help boost client satisfaction.</li>
+        <li>Identify internal process gaps affecting client satisfaction and facilitate cross-disciplinary discussions to resolve them.</li>
+        <li>Engage with the development community both locally and beyond to advocate for accessibility through talks and workshops at conferences, meetups, and more.</li>
       </ul>
     </div>
 
