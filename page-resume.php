@@ -46,7 +46,7 @@
     <div class="columns is-gapless is-multiline is-full-width">
       <div class="column is-half">
         <div class="skill-group">
-          <h3 class="has-text-centered">Web</h3>
+          <h3 class="has-text-centered">Code (web)</h3>
 
           <ul>
             <li>
@@ -60,7 +60,7 @@
               <ul>
                 <li>
                   Preprocessors
-                  <small>(Sass + LESS)</small>
+                  <small>(Sass/SCSS, LESS)</small>
                   <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
                   <span class="visually-hidden">(8 out of 10)</span>
                 </li>
@@ -85,21 +85,15 @@
               JavaScript
               <ul>
                 <li>
-                  Vanilla ES5
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
+                  Vanilla ES5 / ES6+
+                  <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
                   <span class="visually-hidden">(6 out of 10)</span>
                 </li>
 
                 <li>
-                  ES6 syntax
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
-                </li>
-
-                <li>
-                  Backbone
-                  <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-                  <span class="visually-hidden">(5 out of 10)</span>
+                  ThreeJS and WebGL
+                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                  <span class="visually-hidden">(4 out of 10)</span>
                 </li>
 
                 <li>
@@ -130,9 +124,13 @@
 
             <li>
               Accessibility
-              <small>(Section 508, WCAG, ARIA)</small>
               <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
               <span class="visually-hidden">(9 out of 10)</span>
+              <ul>
+                <li>WCAG 2.0 and 2.1 interpretation and application</li>
+                <li>Proper usage of ARIA</li>
+                <li>Testing <small>(manual, automated, and usability)</small></li>
+              </ul>
             </li>
 
             <li>
@@ -147,9 +145,7 @@
               <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
               <span class="visually-hidden">(8 out of 10)</span>
             </li>
-          </ul>
 
-          <ul>
             <li>
               Wordpress
               <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
@@ -178,98 +174,7 @@
         </div>
 
         <div class="skill-group is-non-web">
-          <h3 class="has-text-centered">Fabrication</h3>
-
-          <ul>
-            <li>
-              Woodworking
-              <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
-              <span class="visually-hidden">(3 out of 10)</span>
-            </li>
-
-            <li>
-              Welding
-              <small>(MIG)</small>
-              <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
-              <span class="visually-hidden">(2 out of 10)</span>
-            </li>
-
-            <li>
-              CNC routing + milling
-              <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-              <span class="visually-hidden">(6 out of 10)</span>
-            </li>
-
-            <li>
-              3D printing
-              <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
-              <span class="visually-hidden">(9 out of 10)</span>
-            </li>
-
-            <li>
-              Laser cutting
-              <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
-              <span class="visually-hidden">(8 out of 10)</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="skill-group">
-          <h3 class="has-text-centered">Design</h3>
-
-          <ul>
-            <li>
-              2D
-              <ul>
-                <li>
-                  Wireframing
-                  <small>(Zeplin, Axure)</small>
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
-                </li>
-
-                <li>
-                  Photoshop
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
-                </li>
-
-                <li>
-                  Illustrator
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
-                </li>
-
-                <li>
-                  Inkscape
-                  <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-                  <span class="visually-hidden">(5 out of 10)</span>
-                </li>
-              </ul>
-            </li>
-
-            <li class="is-non-web">3D
-              <ul>
-                <li>
-                  Fusion 360
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
-                </li>
-
-                <li>
-                  OpenSCAD
-                  <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-                  <span class="visually-hidden">(7 out of 10)</span>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group is-non-web">
-          <h3 class="has-text-centered">Code</h3>
+          <h3 class="has-text-centered">Code (non-web)</h3>
 
           <ul>
             <li>
@@ -297,6 +202,60 @@
             </li>
           </ul>
         </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="skill-group">
+          <h3 class="has-text-centered">Design</h3>
+
+          <ul>
+            <li>
+              2D
+              <ul>
+                <li>
+                  Wireframing
+                  <small>(Zeplin, Axure)</small>
+                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                  <span class="visually-hidden">(4 out of 10)</span>
+                </li>
+
+                <li>
+                  Photoshop
+                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                  <span class="visually-hidden">(4 out of 10)</span>
+                </li>
+
+                <li>
+                  Illustrator
+                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                  <span class="visually-hidden">(4 out of 10)</span>
+                </li>
+
+                <li>
+                  Inkscape
+                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                  <span class="visually-hidden">(4 out of 10)</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="is-non-web">3D
+              <ul>
+                <li>
+                  Fusion 360
+                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
+                  <span class="visually-hidden">(6 out of 10)</span>
+                </li>
+
+                <li>
+                  OpenSCAD
+                  <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
+                  <span class="visually-hidden">(7 out of 10)</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
         <div class="skill-group is-non-web">
           <h3 class="has-text-centered">Hardware</h3>
@@ -304,8 +263,8 @@
           <ul>
             <li>
               Eagle
-              <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-              <span class="visually-hidden">(6 out of 10)</span>
+              <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
+              <span class="visually-hidden">(5 out of 10)</span>
             </li>
 
             <li>
@@ -316,8 +275,8 @@
 
             <li>
               Raspberry Pi
-              <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-              <span class="visually-hidden">(5 out of 10)</span>
+              <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+              <span class="visually-hidden">(2 out of 10)</span>
             </li>
 
             <li>
@@ -331,17 +290,54 @@
 
                 <li>
                   Fabrication
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
+                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                  <span class="visually-hidden">(4 out of 10)</span>
                 </li>
 
                 <li>
                   Assembly
                   <small>(incl. SMD)</small>
-                  <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-                  <span class="visually-hidden">(7 out of 10)</span>
+                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                  <span class="visually-hidden">(4 out of 10)</span>
                 </li>
               </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group is-non-web">
+          <h3 class="has-text-centered">Fabrication</h3>
+
+          <ul>
+            <li>
+              Woodworking
+              <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
+              <span class="visually-hidden">(3 out of 10)</span>
+            </li>
+
+            <li>
+              Welding
+              <small>(MIG)</small>
+              <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+              <span class="visually-hidden">(2 out of 10)</span>
+            </li>
+
+            <li>
+              CNC routing and milling
+              <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
+              <span class="visually-hidden">(5 out of 10)</span>
+            </li>
+
+            <li>
+              3D printing <small>(FDM and resin)</small>
+              <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+              <span class="visually-hidden">(9 out of 10)</span>
+            </li>
+
+            <li>
+              Laser cutting
+              <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+              <span class="visually-hidden">(8 out of 10)</span>
             </li>
           </ul>
         </div>
