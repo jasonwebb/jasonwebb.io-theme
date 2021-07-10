@@ -19,25 +19,19 @@
     </div>
 
     <div class="column">
-      <a href="/wp-content/themes/minimal-for-jasonwebbio/resumes/Jason-Webb-resume.pdf" class="download button is-link">
+      <!-- <a href="/wp-content/themes/minimal-for-jasonwebbio/resumes/Jason-Webb-resume.pdf" class="download button is-link">
         <span class="icon fa fa-file-pdf-o" aria-hidden="true"></span>
         Download resum&eacute; as PDF
-      </a>
+      </a> -->
     </div>
   </div>
 
   <section id="mission">
-    <h2>Mission</h2>
+    <h2>Summary</h2>
 
-    <p class="is-web-only is-hidden">Front-end and UI developer with a passion for design, armed with a background in computer
-      science and the arts. Seeking to work at the intersection of technical and creative perspectives to realize
-      meaningful and modern interfaces and experiences using state-of-the-art skills and tools.</p>
+    <p class="is-web-only is-hidden">Front-end and UI developer with a passion for design, armed with a background in computer science and the arts. Seeking to work at the intersection of technical and creative perspectives to realize meaningful and modern interfaces and experiences using state-of-the-art skills and tools.</p>
 
-    <p class="is-non-web-only is-non-web">Creative technologist, maker, open-source hardware engineer, community
-      educator and lover of learning with a passion for the creative interplay between fine art, science and
-      technology. With a background in both computer science and education, as well strong experience in the arts, I am
-      keenly interested in working at the intersection of a diverse array of fields and helping others learn how to
-      cross traditional borders and expand their skillsets.</p>
+    <p class="is-non-web-only is-non-web">Creative coder and front-end developer focused on the intersection of art, science, and technology. With a formal background in both computer science and education, along with strong real-world experience in the arts and accessibility, I am uniquely positioned for and keenly interested in crafting world-class experiences that everyone can enjoy.</p>
   </section>
 
   <section id="skills">
