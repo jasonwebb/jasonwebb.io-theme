@@ -1,5 +1,3 @@
-const ItemLoader = require('../js/ItemLoader');
-
 const isHomePage = document.querySelector('.home-page') != undefined ? true : false;
 const isWorkPage = document.querySelector('.work-page') != undefined ? true : false;
 const isResumePage = document.querySelector('.resume-page') != undefined ? true : false;
@@ -115,7 +113,7 @@ if(isHomePage) {
         case ' ':
           e.preventDefault();
           let selectedTab = document.activeElement;
-          activateTab(selectedTab, true);
+          activateTab(selectedTab);
           break;
       }
     })
@@ -170,7 +168,7 @@ function loadWorkItems(category = undefined, count = undefined, offset = undefin
 
   // Load new items using hash
   let itemStream;
-  itemStream = ItemLoader.load(category, count, offset);
+  itemStream = load(category, count, offset);
 
   // Templatize and inject items onto page
   itemStream.then(items => {
@@ -182,14 +180,6 @@ function loadWorkItems(category = undefined, count = undefined, offset = undefin
         target.appendChild(listItem);
       } else {
         document.querySelector('.tiles').appendChild(listItem);
-      }
-    }
-
-    if(focus) {
-      if(target !== undefined) {
-        target.querySelector('.tile').focus();
-      } else {
-        document.querySelector('.tile').focus();
       }
     }
 
@@ -229,7 +219,7 @@ function createWorkItem(data) {
   `;
 }
 
-function activateTab(tab, focus = false) {
+function activateTab(tab) {
   let category = tab.innerText.toLowerCase();
 
   // Deactivate any active tab
@@ -292,3 +282,28 @@ function focusNextTab() {
     tabs[0].focus();
   }
 }
+
+function load(category = undefined, count = undefined, offset = undefined) {
+  return fetch('/wp-content/themes/jasonwebb.io-theme/php/getItems.php', {
+    method: 'POST',
+    body: JSON.stringify({
+      category: category,
+      count: count,
+      offset: offset
+    })
+  })
+    .then(response => {
+      if (response.ok) {
+        return Promise.resolve(response);
+      } else {
+        return Promise.reject(new Error('Failed to load'));
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      return data;
+    })
+    .catch(function (error) {
+      console.log(`Error: ${error.message}`);
+    });
+  }
