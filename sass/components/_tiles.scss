@@ -163,6 +163,7 @@
     }
 
     &:focus {
+      outline-offset: 4px;
       box-shadow: none;
 
       &:before {
