@@ -13,7 +13,7 @@
 		if( is_front_page() ) {
 			echo "Jason Webb";
 		} else {
-			the_title('','- Jason Webb',true);
+			the_title('',' - Jason Webb',true);
 		}
 	?>
   </title>
