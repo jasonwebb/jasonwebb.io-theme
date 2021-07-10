@@ -16,13 +16,14 @@
       padding: 8px 20px;
       height: auto;
       cursor: pointer;
-      border: 1px solid rgba(0,0,0,.1);
+      border: 2px solid rgba(0,0,0,.1);
       border-radius: 100px;
 
       font-family: 'Roboto Mono', monospace;
       font-size: 1rem;
       color: rgba(0,0,0,.7);
       background-color: transparent;
+      transition: border .1s linear;
 
       &[aria-selected="true"] {
         background-color: rgba(0,0,0,1);
@@ -30,19 +31,16 @@
         text-decoration: underline;
       }
 
-      &:hover:not([aria-selected="true"]) {
-        background-color: rgba(0,0,0,.05);
+      &:hover:not([aria-selected="true"]),
+      &:focus:not([aria-selected="true"]) {
+        border-color: rgba(0,0,0,.6);
+        color: rgba(0,0,0,1);
         text-decoration: underline;
       }
 
       &:focus {
-        box-shadow: 0 0 0 2px black;
-        outline: none;
         text-decoration: underline;
-
-        &[aria-selected="true"] {
-          box-shadow: inset 0 0 0 2px #fff, 0 0 0 3px hsl(204, 86%, 53%);
-        }
+        outline-offset: 5px;
       }
     }
   }
