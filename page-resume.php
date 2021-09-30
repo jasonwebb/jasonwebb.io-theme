@@ -495,6 +495,16 @@
     </div>
   </section>
 
+  <section id="talks" class="is-non-web">
+    <h2>Talks</h2>
+
+    <ul>
+      <li><i>What We Learned From Trying to Build an Accessible Carousel</i> at <a href="https://opensourcenorth.com/" target="_blank">Open Source North</a> (May 2021), with co-presenter Aaron Page.</li>
+      <li><i>Accessibility in Action -- a live coding adventure!</i> at <a href="https://mplsjrdevs.com" target="_blank">Mpls Jr Devs</a> (September 2020).</li>
+      <li><i>Making the Web Work for Everyone</i> at <a href="https://javascriptmn.com" target="_blank">JavaScriptMN</a> (October 2019).</li>
+    </ul>
+  </section>
+
   <section id="exhibitions" class="is-non-web">
     <h2>Exhibitions</h2>
 
