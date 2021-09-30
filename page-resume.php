@@ -505,6 +505,18 @@
     </ul>
   </section>
 
+  <section id="writing" class="is-non-web">
+    <h2>Writing</h2>
+
+    <ul>
+      <li><a href="https://medium.com/@jason.webb/space-colonization-algorithm-in-javascript-6f683b743dc5" target="_blank">Modeling organic branching structures with the space colonization algorithm and JavaScript</a> on Medium</li>
+      <li><a href="https://medium.com/@jason.webb/simulating-dla-in-js-f1914eb04b1d" target="_blank">Simulating 2D diffusion-limited aggregation (DLA) with JavaScript</a> on Medium</li>
+      <li><a href="https://medium.com/@jason.webb/2d-differential-growth-in-js-1843fd51b0ce" target="_blank">Exploring 2D differential growth with JavaScript</a> on Medium</li>
+      <li><a href="https://dev.to/jasonwebb/how-to-build-a-more-accessible-carousel-or-slider-35lp" target="_blank">How to build a more accessible carousel or slider</a> on DEV</li>
+      <li><a href="https://medium.com/@jason.webb/building-an-accessible-iot-dashboard-67a1633398a3" target="_blank">How I built an accessible IoT dashboard</a> on Medium</li>
+    </ul>
+  </section>
+
   <section id="exhibitions" class="is-non-web">
     <h2>Exhibitions</h2>
 
