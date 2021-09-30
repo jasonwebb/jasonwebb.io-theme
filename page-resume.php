@@ -370,8 +370,14 @@
     <h2>Experience</h2>
 
     <div class="job">
+      <h3 class="title">Creative Developer at Bluecadet</h3>
+      <div class="details">Remote &mdash; September 2021 to present</div>
+      <p>Prototyping and building of websites, online 3D experiences, AR, data visualizations, and interactive touch/projection applications in close collaboration with designers, art directors, and other disciplines.</p>
+    </div>
+
+    <div class="job">
       <h3 class="title">Developer Advocate at Accessible360</h3>
-      <div class="details">Minneapolis, MN &mdash; July 2019 to present</div>
+      <div class="details">Minneapolis, MN &mdash; July 2019 to September 2021</div>
       <ul class="highlights">
         <li>Provide personalized technical and strategic accessibility consultation for clients with complex products.</li>
         <li>Redesigned customer-facing Knowledge Base to improve readability and overall developer experience.</li>
