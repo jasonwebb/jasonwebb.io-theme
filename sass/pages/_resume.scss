@@ -188,14 +188,13 @@
 
     .details {
       margin: 0;
+      margin-bottom: 15px;
       // opacity: .5;
       font-style: italic;
       color: $body-text-color;
     }
 
     .highlights {
-      margin-top: 15px;
-
       @media(max-width: $tablet-breakpoint) {
         margin-left: 35px;
       }
