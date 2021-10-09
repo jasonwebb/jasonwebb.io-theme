@@ -69,13 +69,13 @@
 
   &:focus {
     outline: none;
-    outline: 6px dashed black;
-    outline-offset: 2px;
+    outline: 4px dashed black;
+    outline-offset: 3px;
 
     &.is-info,
     &.is-light {
       outline: 4px dashed black;
-      outline-offset: 2px;
+      outline-offset: 3px;
     }
 
     &.is-light {
