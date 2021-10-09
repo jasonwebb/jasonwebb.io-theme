@@ -15,7 +15,9 @@
             color: $body-text-color;
             text-decoration: none;
             background-color: white;
-            transition: all .3s ease;
+            transition: color .3s ease, 
+                        background-color .3s ease,
+                        border-color .3s ease;
 
             &.is-current {
                 background-color: rgba(0,0,0,.6);

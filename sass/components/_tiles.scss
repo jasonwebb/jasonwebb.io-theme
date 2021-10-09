@@ -60,7 +60,6 @@
       bottom: 0;
       top: 0;
       z-index: 2;
-      transition: all .2s linear;
     }
 
     .title {
@@ -96,7 +95,7 @@
       h2 {
         z-index: 1;
         opacity: 0;
-        transition: all .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
 
         @media screen and (max-width: $tablet-breakpoint) {
           opacity: 1;
@@ -109,7 +108,8 @@
           background-color: white;
           box-shadow: 0 0 0 8px white;
           box-decoration-break: clone;
-          transition: all .2s linear;
+          transition: background-color .2s linear,
+                      color .2s linear;
 
           @media screen and (max-width: $mobile-breakpoint) {
             font-size: 2.4rem;

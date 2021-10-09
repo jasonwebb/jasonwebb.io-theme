@@ -54,7 +54,8 @@
             border-radius: 3px;
             font-size: 1.4rem;
             color: rgba(0, 0, 0, .55);
-            transition: .2s all ease-in-out;
+            transition: color .2s ease-in-out,
+                        background-color .2s ease-in-out;
 
             &:hover {
               text-decoration: none;
