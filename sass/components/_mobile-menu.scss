@@ -28,7 +28,7 @@
     left: $mobile-menu-width;
     top: -100px;
     background-color: #333;
-    font-size: 36px;
+    font-size: 3.6rem;
     color: rgba(255,255,255,.6);
     padding: 10px;
     cursor: pointer;
@@ -62,7 +62,7 @@
     &.primary-pages {
       a {
         font-weight: 600;
-        font-size: 26px;
+        font-size: 2.6rem;
 
         span {
           border-bottom: 5px dashed transparent;
@@ -81,7 +81,7 @@
       a {
         opacity: .7;
         padding: 10px 30px;
-        font-size: 18px;
+        font-size: 1.8rem;
 
         span {
           margin-right: 10px;

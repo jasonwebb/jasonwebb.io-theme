@@ -1,12 +1,13 @@
 .button {
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 2.4rem;
   height: 46px;
+  font-size: 1.6rem;
   transition: box-shadow .1s linear, outline .1s ease-in-out;
 
   .icon {
     width: auto;
     height: auto;
-    font-size: 28px;
+    font-size: 2.8rem;
 
     &:first-child {
       margin-left: calc(-.375em - 1px);
@@ -19,7 +20,7 @@
   }
 
   &.is-ghost {
-    font-size: 18px;
+    font-size: 1.8rem;
     border: 2px solid black;
     border-radius: 0;
     background-color: transparent;

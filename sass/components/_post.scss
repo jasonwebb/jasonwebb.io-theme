@@ -34,14 +34,14 @@
 
     .title {
       margin: 0;
-      font-size: 32px !important;
+      font-size: 3.2rem !important;
       font-weight: 700 !important;
     }
 
     .details {
       margin: 20px 0;
       color: $body-text-color;
-      font-size: 16px;
+      font-size: 1.6rem;
 
       ul {
         display: inline;
@@ -52,7 +52,7 @@
 
           .tag {
             border-radius: 3px;
-            font-size: 14px;
+            font-size: 1.4rem;
             color: rgba(0, 0, 0, .55);
             transition: .2s all ease-in-out;
 
@@ -69,7 +69,7 @@
 
   .content {
     h2 {
-      font-size: 1.6rem;
+      font-size: 2.6rem;
       font-weight: 700;
       border-bottom: 1px solid rgba(0, 0, 0, .1);
       padding-bottom: 4px;
@@ -79,7 +79,7 @@
 
     h3 {
       color: black;
-      font-size: 1.3rem;
+      font-size: 2.0rem;
       font-weight: 600;
       margin-top: 60px;
       margin-bottom: 20px;
@@ -121,10 +121,10 @@
       color: $body-text-color;
 
       &.is-large {
-        font-size: 40px;
+        font-size: 4.0rem;
         font-weight: bold;
         font-style: italic;
-        line-height: 48px;
+        line-height: 4.8rem;
 
         background: none;
         border: 0;
