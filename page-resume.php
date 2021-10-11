@@ -37,7 +37,7 @@
   <section id="skills">
     <h2>Skills</h2>
 
-    <div class="columns is-gapless is-multiline is-full-width">
+    <div class="columns is-gapless is-multiline">
       <div class="column is-half">
         <div class="skill-group">
           <h3 class="has-text-centered">Code (web)</h3>

@@ -94,6 +94,7 @@
 
     h2 {
       font-size: 2.4rem;
+      color: black;
 
       // Tablets and smaller
       // - Increase weight of all headings
@@ -108,8 +109,6 @@
   //===========================================================================================
   #skills {
     .columns {
-      margin-left: -50px;
-
       @media(max-width: $tablet-breakpoint) {
         margin-left: 0;
       }
@@ -133,7 +132,7 @@
       }
 
       h3 {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 2.2rem;
         font-style: normal;
         color: $body-text-color;
@@ -145,7 +144,7 @@
         margin: 0;
         padding: 15px 25px;
 
-        border-bottom: 1px solid rgba(0, 0, 0, .08);
+        border-bottom: 1px solid $border-color;
 
         &:first-of-type {
           padding-top: 10px;
