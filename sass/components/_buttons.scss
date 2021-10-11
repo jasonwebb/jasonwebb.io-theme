@@ -1,7 +1,7 @@
 .button {
   padding: 0.8rem 2.4rem;
   height: 46px;
-  font-size: 1.6rem;
+  font-size: $body-font-size;
   border-radius: 0;
 
   .icon {
@@ -16,7 +16,6 @@
   }
 
   &.is-ghost {
-    font-size: 1.8rem;
     border: 2px solid black;
     border-radius: 0;
     background-color: transparent;

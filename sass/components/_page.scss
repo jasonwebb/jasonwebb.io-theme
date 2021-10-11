@@ -1,6 +1,7 @@
 .page {
   width: $content-width-desktop;
   margin: 0 auto 100px auto;
+  color: $body-text-color;
 
   @media screen and (max-width: $tablet-breakpoint) {
     width: 90%;
@@ -8,8 +9,8 @@
 
   h2 {
     font-size: 2.6rem;
-    font-weight: 500;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font-weight: 700;
+    border-bottom: 1px solid $border-color;
     padding-bottom: 4px;
     margin-bottom: 30px;
     margin-top: 60px !important;
@@ -21,16 +22,11 @@
 
   p {
     margin-bottom: 25px;
-    color: rgba(0,0,0,.6);
-  }
-
-  li {
-    color: rgba(0,0,0,.6);
   }
 
   a {
     color: black;
-    font-weight: 500;
+    font-weight: $body-bold-weight;
     text-decoration: underline;
 
     &:hover {

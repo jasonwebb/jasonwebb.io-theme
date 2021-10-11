@@ -20,10 +20,11 @@
 
 
 	<?php wp_head(); ?>
-
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto%20Mono:400,500&display=block">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono:400,500&display=block">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&display=swap" rel="stylesheet">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" rel="stylesheet">
   <link href="<?= get_template_directory_uri(); ?>/dist/styles.min.css" rel="stylesheet">

@@ -7,7 +7,7 @@
   }
 
   .header {
-    border-bottom: 1px solid rgba(0, 0, 0, .06);
+    border-bottom: 1px solid $border-color;
     margin-bottom: 25px;
 
     .banner {
@@ -34,14 +34,15 @@
 
     .title {
       margin: 0;
-      font-size: 3.2rem !important;
-      font-weight: 700 !important;
+      font-size: 3.6rem !important;
+      font-weight: $heading-weight !important;
+      color: black !important;
     }
 
     .details {
       margin: 20px 0;
       color: $body-text-color;
-      font-size: 1.6rem;
+      font-size: $body-font-size;
 
       ul {
         display: inline;
@@ -72,7 +73,7 @@
     h2 {
       font-size: 2.6rem;
       font-weight: 700;
-      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      border-bottom: 1px solid $border-color;
       padding-bottom: 4px;
       margin-bottom: 30px;
       margin-top: 60px;
@@ -109,7 +110,7 @@
     }
 
     a:not(.button) {
-      font-weight: 500;
+      font-weight: $body-bold-weight;
       color: black;
       text-decoration: underline;
 

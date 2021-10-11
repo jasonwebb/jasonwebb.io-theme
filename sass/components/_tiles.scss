@@ -106,7 +106,7 @@
           line-height: 4.8rem;
           color: black;
           background-color: white;
-          box-shadow: 0 0 0 8px white;
+          box-shadow: 0 0 0 10px white;
           box-decoration-break: clone;
           transition: background-color .2s linear,
                       color .2s linear;
@@ -116,8 +116,14 @@
             line-height: 3.6rem;
           }
 
+          b {
+            font-weight: 700;
+            color: black;
+          }
+
           small {
             font-size: 2.6rem;
+            font-weight: 500;
             opacity: .6;
             text-shadow: none;
 

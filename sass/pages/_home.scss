@@ -31,12 +31,6 @@
       }
     }
 
-    ul {
-      li {
-        color: rgba(0,0,0,.6);
-      }
-    }
-
     .button {
       font-size: 2.0rem;
       height: auto;
@@ -146,6 +140,7 @@
 
           b, strong {
             color: white;
+            font-weight: 900;
 
             @media screen and (max-width: $small-desktop-breakpoint) {
               color: black;
