@@ -11,7 +11,7 @@ body {
 
     @media screen and (max-width: $tablet-breakpoint) {
       width: 90%;
-      padding-top: 20px;
+      padding: 20px 0;
     }
 
     // "Jason Webb" on left
@@ -109,7 +109,7 @@ body {
 
     .hamburger-icon {
       font-size: 3.6rem;
-      color: rgba(0,0,0,.3);
+      color: $body-text-color;
       cursor: pointer;
       background: none;
       border: 0;
