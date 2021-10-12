@@ -4,6 +4,10 @@
   font-size: $body-font-size;
   border-radius: 0;
 
+  @media(max-width: $mobile-breakpoint) {
+    width: 100%;
+  }
+
   .icon {
     width: auto;
     height: auto;
@@ -67,12 +71,26 @@
   display: flex;
   margin: 4.2rem 0 !important;
 
+  @media(max-width: $mobile-breakpoint) {
+    flex-direction: column;
+  }
+
   .button {
     flex: 1 1 auto;
     padding: 2.8rem 3.6rem;
 
+    @media(max-width: $mobile-breakpoint) {
+      flex: none;
+      width: 100%;
+      margin: 10px 0;
+    }
+
     &:not(:last-of-type) {
       margin-right: 10px;
+
+      @media(max-width: $mobile-breakpoint) {
+        margin-right: 0;
+      }
     }
 
     &:only-child {
