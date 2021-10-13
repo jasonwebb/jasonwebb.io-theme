@@ -53,7 +53,7 @@
         padding: 10px 30px;
 
         &:focus {
-          box-shadow: 0 0 0 3px hsl(204, 86%, 53%);
+          outline-offset: -4px;
         }
       }
     }
@@ -63,14 +63,6 @@
       a {
         font-weight: 600;
         font-size: 2.6rem;
-
-        span {
-          border-bottom: 5px dashed transparent;
-        }
-
-        &:focus span {
-          border-color: white;
-        }
       }
     }
 
@@ -79,24 +71,14 @@
       margin-top: 10px;
 
       a {
-        opacity: .7;
         padding: 10px 30px;
         font-size: 1.8rem;
+        opacity: .7;
 
-        span {
-          margin-right: 10px;
-        }
-
-        span:last-of-type {
-          border-bottom: 3px dashed transparent
-        }
-
-        &:focus {
-          opacity: 1;
-
-          & > span:last-of-type {
-            border-color: white;
-          }
+        .fa {
+          margin-right: 15px;
+          font-size: 2.4rem;
+          vertical-align: text-top;
         }
       }
     }
