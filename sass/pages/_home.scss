@@ -7,11 +7,18 @@
 
     @media screen and (max-width: $small-desktop-breakpoint) {
       margin-bottom: 60px;
+    }
 
-      ul {
-        margin-left: 25px;
+    ul {
+      @media screen and (max-width: $mobile-breakpoint) {
+        margin-left: 20px;
+      }
 
-        li {
+      li {
+        margin-bottom: 10px;
+
+        @media screen and (max-width: $small-desktop-breakpoint) {
+          margin-bottom: 10px;
           padding-left: 0;
         }
       }
