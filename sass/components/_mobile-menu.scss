@@ -23,8 +23,9 @@
     }
   }
 
+  // Close button =============================================================
   .close-button {
-    position: absolute;
+    position: fixed;
     left: $mobile-menu-width;
     top: -100px;
     background-color: #333;
@@ -34,6 +35,16 @@
     cursor: pointer;
     transition: top .5s ease-in-out;
     border: 0;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  // Scrollable inner wrapper ================================================
+  .inner-wrapper {
+    height: 100%;
+    overflow-y: auto;
   }
 
   // All menus ===============================================================

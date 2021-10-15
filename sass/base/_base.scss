@@ -6,13 +6,20 @@ body {
     left: 0;
     transition: left .3s ease-in-out;
 
-    &.is-mobile-menu-open {
-      left: $mobile-menu-width;
-      opacity: .4;
-    }
-
     &:focus {
       outline: none;
+    }
+  }
+
+  &.mobile-menu-is-open {
+    height: 100vh;
+    overflow: hidden;
+
+    & > header,
+    & > main,
+    #main {
+      left: $mobile-menu-width;
+      opacity: .4;
     }
   }
 }

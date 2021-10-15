@@ -36,49 +36,53 @@
     <span>Skip to main content</span>
   </a>
 
-  <nav class="mobile-menu" aria-label="mobile menu" role="dialog" aria-modal="true">
-    <button class="close-button first-focusable-element">
-      <span class="fa fa-times" aria-hidden="true"></span>
-      <span class="visually-hidden">Close menu</span>
-    </button>
+  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <nav>
+      <button class="close-button first-focusable-element">
+        <span class="fa fa-times" aria-hidden="true"></span>
+        <span class="visually-hidden">Close menu</span>
+      </button>
 
-    <ul class="primary-pages" aria-label="pages">
-      <li><a href="/about"><span>About</span></a></li>
-      <li><a href="/work"><span>Work</span></a></li>
-      <li><a href="/resume"><span>Resum&eacute;</span></a></li>
-      <li><a href="/contact"><span>Contact</span></a></li>
-    </ul>
+      <div class="inner-wrapper">
+        <ul class="primary-pages" aria-label="pages">
+          <li><a href="/about"><span>About</span></a></li>
+          <li><a href="/work"><span>Work</span></a></li>
+          <li><a href="/resume"><span>Resum&eacute;</span></a></li>
+          <li><a href="/contact"><span>Contact</span></a></li>
+        </ul>
 
-    <ul class="external-sites" aria-label="social media">
-      <li>
-        <a href="http://twitter.com/jasonwebb" target="_blank">
-          <span class="fa fa-twitter" aria-hidden="true"></span>
-          <span>Twitter</span>
-        </a>
-      </li>
+        <ul class="external-sites" aria-label="social media">
+          <li>
+            <a href="http://twitter.com/jasonwebb" target="_blank">
+              <span class="fa fa-twitter" aria-hidden="true"></span>
+              <span>Twitter</span>
+            </a>
+          </li>
 
-      <li>
-        <a href="https://www.instagram.com/zenwebb/" target="_blank">
-          <span class="fa fa-instagram" aria-hidden="true"></span>
-          <span>Instagram</span>
-        </a>
-      </li>
+          <li>
+            <a href="https://www.instagram.com/zenwebb/" target="_blank">
+              <span class="fa fa-instagram" aria-hidden="true"></span>
+              <span>Instagram</span>
+            </a>
+          </li>
 
-      <li>
-        <a href="http://github.com/jasonwebb" target="_blank">
-          <span class="fa fa-github" aria-hidden="true"></span>
-          <span>Github</span>
-        </a>
-      </li>
+          <li>
+            <a href="http://github.com/jasonwebb" target="_blank">
+              <span class="fa fa-github" aria-hidden="true"></span>
+              <span>Github</span>
+            </a>
+          </li>
 
-      <li>
-        <a href="https://medium.com/@jason.webb" target="_blank" class="last-focusable-element">
-          <span class="fa fa-medium" aria-hidden="true"></span>
-          <span>Medium</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+          <li>
+            <a href="https://medium.com/@jason.webb" target="_blank" class="last-focusable-element">
+              <span class="fa fa-medium" aria-hidden="true"></span>
+              <span>Medium</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <header>
     <?php echo '<a href="/" class="name" aria-label="go to home page"', (is_home() ? ' aria-current="page"' : ''), '>Jason Webb</a>'; ?>

@@ -10,32 +10,27 @@ let tabPanels = document.querySelectorAll('[role="tabpanel"]');
 //======================================
 
 let mobileMenuOpenButton = document.querySelector('body > header .hamburger-icon');
-let mobileMenuCloseButton = document.querySelector('body > .mobile-menu > .close-button');
+let mobileMenuCloseButton = document.querySelector('body > .mobile-menu .close-button');
 let mobileMenu = document.querySelector('body > .mobile-menu');
-let mainAppEl = document.querySelector('body > main');
-let headerEl = document.querySelector('body > header');
 let firstFocusableElement = mobileMenu.querySelector('.first-focusable-element');
 let lastFocusableElement = mobileMenu.querySelector('.last-focusable-element');
 
 mobileMenuOpenButton.addEventListener('click', () => {
   mobileMenu.classList.add('is-open');
-  mainAppEl.classList.add('is-mobile-menu-open');
-  headerEl.classList.add('is-mobile-menu-open');
+  document.body.classList.add('mobile-menu-is-open');
   mobileMenuCloseButton.focus();
 });
 
 mobileMenuCloseButton.addEventListener('click', () => {
   mobileMenu.classList.remove('is-open');
-  mainAppEl.classList.remove('is-mobile-menu-open');
-  headerEl.classList.remove('is-mobile-menu-open');
+  document.body.classList.remove('mobile-menu-is-open');
   mobileMenuOpenButton.focus();
 });
 
 mobileMenu.addEventListener('keyup', (e) => {
   if(e.key == 'Escape') {
     mobileMenu.classList.remove('is-open');
-    mainAppEl.classList.remove('is-mobile-menu-open');
-    headerEl.classList.remove('is-mobile-menu-open');
+    document.body.classList.remove('mobile-menu-is-open');
     mobileMenuOpenButton.focus();
   }
 });
