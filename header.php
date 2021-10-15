@@ -44,14 +44,14 @@
       </button>
 
       <div class="inner-wrapper">
-        <ul class="primary-pages" aria-label="pages">
-          <li><a href="/about"><span>About</span></a></li>
-          <li><a href="/work"><span>Work</span></a></li>
-          <li><a href="/resume"><span>Resum&eacute;</span></a></li>
-          <li><a href="/contact"><span>Contact</span></a></li>
+        <ul class="primary-pages" aria-label="Pages">
+          <li><a href="/about" <?php echo is_page('about') ? ' aria-current="page"' : ''; ?> ><span>About</span></a></li>
+          <li><a href="/work" <?php echo is_page('work') ? ' aria-current="page"' : ''; ?> ><span>Work</span></a></li>
+          <li><a href="/resume" <?php echo is_page('resume') ? ' aria-current="page"' : ''; ?> ><span>Resum&eacute;</span></a></li>
+          <li><a href="/contact" <?php echo is_page('contact') ? ' aria-current="page"' : ''; ?> ><span>Contact</span></a></li>
         </ul>
 
-        <ul class="external-sites" aria-label="social media">
+        <ul class="external-sites" aria-label="Social media profiles">
           <li>
             <a href="http://twitter.com/jasonwebb" target="_blank">
               <span class="fa fa-twitter" aria-hidden="true"></span>
@@ -85,10 +85,10 @@
   </div>
 
   <header>
-    <?php echo '<a href="/" class="name" aria-label="go to home page"', (is_home() ? ' aria-current="page"' : ''), '>Jason Webb</a>'; ?>
+    <a href="/" class="name" <?php echo is_home() ? ' aria-current="page"' : '' ?> >Jason Webb</a>
 
-    <nav role="navigation">
-      <ul class="social" aria-label="social media">
+    <nav>
+      <ul class="social" aria-label="Social media profiles">
         <li>
           <a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter">
             <span class="fa fa-twitter" aria-hidden="true"></span>
@@ -118,27 +118,27 @@
         </li>
       </ul>
 
-      <ul class="pages" aria-label="pages">
-        <?php echo '<li', (is_page('about') ? ' aria-current="page"' : ''), '>'; ?>
-          <a href="/about">
+      <ul class="pages" aria-label="Pages">
+        <li>
+          <a href="/about" <?php echo is_page('about') ? ' aria-current="page"' : ''; ?> >
             <span>About</span>
           </a>
         </li>
 
-        <?php echo '<li', (is_page('work') ? ' aria-current="page"' : ''), '>'; ?>
-          <a href="/work">
+        <li>
+          <a href="/work" <?php echo is_page('work') ? ' aria-current="page"' : ''; ?> >
             <span>Work</span>
           </a>
         </li>
 
-        <?php echo '<li', (is_page('resume') ? ' aria-current="page"' : ''), '>'; ?>
-          <a href="/resume">
+        <li>
+          <a href="/resume" <?php echo is_page('resume') ? ' aria-current="page"' : ''; ?> >
             <span>Resum&eacute;</span>
           </a>
         </li>
 
-        <?php echo '<li', (is_page('contact') ? ' aria-current="page"' : ''), '>'; ?>
-          <a href="/contact">
+        <li>
+          <a href="/contact" <?php echo is_page('contact') ? ' aria-current="page"' : ''; ?> >
             <span>Contact</span>
           </a>
         </li>

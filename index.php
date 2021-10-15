@@ -64,7 +64,7 @@
   }
   ?>
 
-  <ul class="tiles" aria-label="portfolio samples"></ul>
+  <ul class="tiles" aria-label="Portfolio samples"></ul>
 
   <div class="see-more-wrapper">
     <a href="/work" class="button is-ghost">See more of my work</a>

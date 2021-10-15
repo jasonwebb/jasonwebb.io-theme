@@ -4,7 +4,7 @@
   <h1 class="visually-hidden">Work</h1>
 
   <div class="tabs-wrapper">
-    <div class="tabs has-text-centered" role="tablist" aria-label="categories">
+    <div class="tabs has-text-centered" role="tablist" aria-label="Categories">
       <button id="all-button" class="tag is-light" role="tab" aria-selected="true" aria-controls="all-panel">All</button>
       <button id="code-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="code-panel">Code</button>
       <button id="creative-button" class="tag is-light" role="tab" aria-selected="false" aria-controls="creative-panel">Creative</button>

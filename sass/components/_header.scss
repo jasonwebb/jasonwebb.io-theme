@@ -86,21 +86,21 @@ body {
             margin-right: 0;
           }
 
-          // Current page indicator (matches hover/focus styles)
-          &[aria-current="page"] a {
-            color: #2a6cd8;
-
-            span {
-              text-decoration: underline;
-            }
-          }
-
           a {
             padding: 5px 10px;
 
             &:hover span,
             &:focus span {
               text-decoration: underline;
+            }
+
+            // Current page indicator (matches hover/focus styles)
+            &[aria-current="page"] {
+              color: #2a6cd8;
+  
+              span {
+                text-decoration: underline;
+              }
             }
           }
         }
