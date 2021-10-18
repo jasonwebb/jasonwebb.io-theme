@@ -44,125 +44,155 @@
 
           <ul>
             <li>
-              HTML
-              <progress class="progress is-info is-pulled-right" value="10" max="10" aria-hidden="true">10/10</progress>
-              <span class="visually-hidden">(10 out of 10)</span>
+              <div class="text">HTML</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="10" max="10" aria-hidden="true">10/10</progress>
+                <span class="visually-hidden">(10 out of 10)</span>
+              </div>
             </li>
 
-            <li>
+            <li class="has-nested-level">
               CSS
               <ul>
                 <li>
-                  Preprocessors
-                  <small>(Sass/SCSS, LESS)</small>
-                  <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
-                  <span class="visually-hidden">(8 out of 10)</span>
+                  <div class="text">Preprocessors <small>(Sass/SCSS, LESS)</small></div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+                    <span class="visually-hidden">(8 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Frameworks
-                  <small>(Bootstrap, Bulma, more)</small>
-                  <progress class="progress is-info is-pulled-right" value="10" max="10" aria-hidden="true">10/10</progress>
-                  <span class="visually-hidden">(10 out of 10)</span>
+                  <div class="text">Frameworks <small>(Bootstrap, Bulma, more)</small></div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="10" max="10" aria-hidden="true">10/10</progress>
+                    <span class="visually-hidden">(10 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Patterns
-                  <small>(ITCSS, SMACSS, BEM, more)</small>
-                  <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
-                  <span class="visually-hidden">(8 out of 10)</span>
+                  <div class="text">Patterns <small>(ITCSS, SMACSS, BEM, more)</small></div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+                    <span class="visually-hidden">(8 out of 10)</span>
+                  </div>
                 </li>
               </ul>
             </li>
 
-            <li>
+            <li class="has-nested-level">
               JavaScript
               <ul>
                 <li>
-                  Vanilla ES5 / ES6+
-                  <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
+                  <div class="text">Vanilla ES5 / ES6+</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
+                    <span class="visually-hidden">(6 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  ThreeJS and WebGL
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">ThreeJS and WebGL</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  React
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">React</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Angular
-                  <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
-                  <span class="visually-hidden">(2 out of 10)</span>
+                  <div class="text">Angular</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+                    <span class="visually-hidden">(2 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Vue
-                  <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
-                  <span class="visually-hidden">(2 out of 10)</span>
+                  <div class="text">Vue</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+                    <span class="visually-hidden">(2 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  jQuery
-                  <progress class="progress is-info is-pulled-right" value="10" max="10" aria-hidden="true">10/10</progress>
-                  <span class="visually-hidden">(10 out of 10)</span>
+                  <div class="text">jQuery</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="10" max="10" aria-hidden="true">10/10</progress>
+                    <span class="visually-hidden">(10 out of 10)</span>
+                  </div>
                 </li>
               </ul>
             </li>
 
-            <li>
-              Accessibility
-              <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
-              <span class="visually-hidden">(9 out of 10)</span>
+            <li class="has-nested-level">
+              <div class="text">Accessibility</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div>
+
               <ul>
-                <li>WCAG 2.0 and 2.1 interpretation and application</li>
+                <li>WCAG 2.0 and 2.1 level AA interpretation and application</li>
                 <li>Proper usage of ARIA</li>
-                <li>Testing <small>(manual, automated, and usability)</small></li>
+                <li>Testing &nbsp;<small>(manual, automated, and usability)</small></li>
               </ul>
             </li>
 
             <li>
-              Responsive techniques
-              <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
-              <span class="visually-hidden">(9 out of 10)</span>
+              <div class="text">Responsive techniques</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              Build systems
-              <small>(Gulp, Grunt, Webpack)</small>
-              <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
-              <span class="visually-hidden">(8 out of 10)</span>
+              <div class="text">Build systems <small>(Gulp, Grunt, Webpack)</small></div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+                <span class="visually-hidden">(8 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              Wordpress
-              <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-              <span class="visually-hidden">(7 out of 10)</span>
+              <div class="text">Wordpress</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
+                <span class="visually-hidden">(7 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              PHP
-              <small>(incl. Laravel + CodeIgniter)</small>
-              <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-              <span class="visually-hidden">(6 out of 10)</span>
+              <div class="text">PHP <small>(incl. Laravel + CodeIgniter)</small></div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
+                <span class="visually-hidden">(6 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              MySQL
-              <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
-              <span class="visually-hidden">(3 out of 10)</span>
+              <div class="text">MySQL</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
+                <span class="visually-hidden">(3 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              C# ASP.NET MVC
-              <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
-              <span class="visually-hidden">(2 out of 10)</span>
+              <div class="text">C# ASP.NET MVC</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+                <span class="visually-hidden">(2 out of 10)</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -172,27 +202,35 @@
 
           <ul>
             <li>
-              Processing
-              <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
-              <span class="visually-hidden">(9 out of 10)</span>
+              <div class="text">Processing</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              p5.js
-              <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
-              <span class="visually-hidden">(8 out of 10)</span>
+              <div class="text">p5.js</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+                <span class="visually-hidden">(8 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              openFrameworks
-              <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-              <span class="visually-hidden">(5 out of 10)</span>
+              <div class="text">openFrameworks</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
+                <span class="visually-hidden">(5 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              Git
-              <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-              <span class="visually-hidden">(7 out of 10)</span>
+              <div class="text">Git</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
+                <span class="visually-hidden">(7 out of 10)</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -203,48 +241,60 @@
           <h3 class="has-text-centered">Design</h3>
 
           <ul>
-            <li>
+            <li class="has-nested-level">
               2D
               <ul>
                 <li>
-                  Wireframing
-                  <small>(Zeplin, Axure)</small>
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">Wireframing <small>(Zeplin, Axure)</small></div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Photoshop
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">Photoshop</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Illustrator
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">Illustrator</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Inkscape
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">Inkscape</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
               </ul>
             </li>
 
-            <li class="is-non-web">3D
+            <li class="is-non-web has-nested-level">
+              3D
               <ul>
                 <li>
-                  Fusion 360
-                  <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
-                  <span class="visually-hidden">(6 out of 10)</span>
+                  <div class="text">Fusion 360</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
+                    <span class="visually-hidden">(6 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  OpenSCAD
-                  <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-                  <span class="visually-hidden">(7 out of 10)</span>
+                  <div class="text">OpenSCAD</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
+                    <span class="visually-hidden">(7 out of 10)</span>
+                  </div>
                 </li>
               </ul>
             </li>
@@ -256,43 +306,53 @@
 
           <ul>
             <li>
-              Eagle
-              <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-              <span class="visually-hidden">(5 out of 10)</span>
+              <div class="text">Eagle</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
+                <span class="visually-hidden">(5 out of 10)</span>
             </li>
 
             <li>
-              Arduino
-              <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
-              <span class="visually-hidden">(9 out of 10)</span>
+              <div class="text">Arduino</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              Raspberry Pi
-              <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
-              <span class="visually-hidden">(2 out of 10)</span>
+              <div class="text">Raspberry Pi</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+                <span class="visually-hidden">(2 out of 10)</span>
+              </div>
             </li>
 
-            <li>
+            <li class="has-nested-level">
               Circuit board (PCB) ...
               <ul>
                 <li>
-                  Design
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">Design</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Fabrication
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">Fabrication</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
 
                 <li>
-                  Assembly
-                  <small>(incl. SMD)</small>
-                  <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
-                  <span class="visually-hidden">(4 out of 10)</span>
+                  <div class="text">Assembly <small>(incl. SMD)</small></div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
+                    <span class="visually-hidden">(4 out of 10)</span>
+                  </div>
                 </li>
               </ul>
             </li>
@@ -304,34 +364,43 @@
 
           <ul>
             <li>
-              Woodworking
-              <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
-              <span class="visually-hidden">(3 out of 10)</span>
+              <div class="text">Woodworking</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
+                <span class="visually-hidden">(3 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              Welding
-              <small>(MIG)</small>
-              <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
-              <span class="visually-hidden">(2 out of 10)</span>
+              <div class="text">Welding <small>(MIG)</small></div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+                <span class="visually-hidden">(2 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              CNC routing and milling
-              <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-              <span class="visually-hidden">(5 out of 10)</span>
+              <div class="text">CNC routing and milling</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
+                <span class="visually-hidden">(5 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              3D printing <small>(FDM and resin)</small>
-              <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
-              <span class="visually-hidden">(9 out of 10)</span>
+              <div class="text">3D printing <small>(FDM and resin)</small></div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div>
             </li>
 
             <li>
-              Laser cutting
-              <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
-              <span class="visually-hidden">(8 out of 10)</span>
+              <div class="text">Laser cutting</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+                <span class="visually-hidden">(8 out of 10)</span>
+              </div>
             </li>
           </ul>
         </div>
