@@ -99,6 +99,10 @@
   @media (max-width: $tablet-breakpoint) {
     display: block;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 0;
+  }
   
   &[aria-pressed="true"] {
     .moon { transform: scale(0%); }
