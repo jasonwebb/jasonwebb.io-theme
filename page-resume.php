@@ -3,29 +3,6 @@
 <main class="resume-page page" id="main" tabindex="-1">
   <h1 class="visually-hidden">Resum&eacute;</h1>
 
-  <div class="controls">
-    <div class="column">
-      <fieldset class="version">
-        <legend>Version</legend>
-
-        <div class="options">
-          <input type="radio" id="full" class="visually-hidden" name="version" value="full" checked>
-          <label for="full">Full</label>
-
-          <input type="radio" id="web" class="visually-hidden" name="version" value="web">
-          <label for="web">Web only</label>
-        </div>
-      </fieldset>
-    </div>
-
-    <div class="column">
-      <!-- <a href="/wp-content/themes/minimal-for-jasonwebbio/resumes/Jason-Webb-resume.pdf" class="download button is-link">
-        <span class="icon fa fa-file-pdf-o" aria-hidden="true"></span>
-        Download resum&eacute; as PDF
-      </a> -->
-    </div>
-  </div>
-
   <section id="mission">
     <h2>Summary</h2>
 
