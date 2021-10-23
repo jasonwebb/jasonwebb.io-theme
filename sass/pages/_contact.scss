@@ -1,47 +1,5 @@
 .contact-page {
-  display: flex;
-  justify-content: space-between;
-
-  @media(max-width: $mobile-breakpoint) {
-    flex-direction: column;
-  }
-
-  .message {
-    flex: 0 0 47%;
-    margin-top: 2px;
-    background: none;
-
-    @media(max-width: $mobile-breakpoint) {
-      flex-basis: 100%;
-    }
-
-    .message-body {
-      padding: 0;
-      font-size: $body-font-size;
-      color: $body-text-color;
-
-      .is-dark-mode & {
-        color: $body-text-color--dark !important;
-      }
-
-      a {
-        color: $body-text-color-bold !important;
-
-        .is-dark-mode & {
-          color: $body-text-color-bold--dark !important;
-        }
-      }
-    }
-  }
-
   .form {
-    flex: 0 0 47%;
-
-    // Mobile - make full-width
-    @media(max-width: $mobile-breakpoint) {
-      flex-basis: 100%;
-    }
-
     .field {
       margin: 30px 0;
 
@@ -159,9 +117,6 @@
 
   // Hide the form when message is successfully sent so that only the output message is shown
   .sent {
-    h1,
-    .title,
-    .title + p,
     .form {
       display: none;
     }
