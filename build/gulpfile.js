@@ -7,15 +7,18 @@ const concat = require("gulp-concat");
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps');
 
 // Scripts
 function js(cb) {
   gulp.src("../js/entry.js")
+    .pipe(sourcemaps.init())
     .pipe(babel({
       presets: ['@babel/preset-env']
     }))
     .pipe(rename("scripts.min.js"))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("../dist"));
   cb();
 }
@@ -23,6 +26,7 @@ function js(cb) {
 // Compile Sass
 function css(cb) {
   gulp.src("../sass/main.scss")
+    .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: "compressed"
     }).on("error", sass.logError))
@@ -31,6 +35,7 @@ function css(cb) {
       cascade: false
     }))
     .pipe(concat("styles.min.css"))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("../dist"));
   cb();
 }
