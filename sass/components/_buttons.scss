@@ -1,3 +1,6 @@
+//========================================
+//  Buttons
+//========================================
 .button {
   padding: 0.8rem 2.4rem;
   height: 46px;
@@ -19,19 +22,78 @@
     }
   }
 
-  &.is-ghost {
-    border: 2px solid black;
-    border-radius: 0;
-    background-color: transparent;
-    color: rgba(0,0,0,.8);
-    font-weight: bold;
-    padding: 10px 25px;
+  .is-dark-mode & {
+    background-color: $secondary-color;
+  }
+
+  &:focus {
+    box-shadow: none;
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: 4px;
+  }
+
+  // Light ------------------------------------------
+  &.is-light {
+    background-color: $secondary-color;
+    color: $body-text-color;
+
+    .is-dark-mode & {
+      background-color: $secondary-color--dark;
+      color: $body-text-color--dark;
+    }
 
     &:hover,
     &:focus {
-      background-color: black;
-      color: white;
+      color: $body-text-color-bold;
+      box-shadow: none !important;
+
+      .is-dark-mode & {
+        color: $body-text-color-bold--dark;
+      }
+    }
+  }
+
+  // Dark -------------------------------------------
+  &.is-dark {
+    background-color: $background-color--dark;
+    color: $body-text-color-bold--dark;
+
+    .is-dark-mode & {
+      border: 1px solid white;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: lighten($background-color--dark, 10%);
+    }
+  }
+
+  // Ghost ------------------------------------------
+  &.is-ghost {
+    border: 2px solid $body-text-color-bold;
+    border-radius: 0;
+    background-color: $background-color;
+    color: $body-text-color-bold;
+    font-weight: $body-bold-weight;
+    padding: 10px 25px;
+
+    .is-dark-mode & {
+      border-color: $body-text-color-bold--dark;
+      background-color: $background-color--dark;
+      color: $body-text-color-bold--dark;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $body-text-color-bold;
+      color: $background-color;
       text-decoration: underline;
+
+      .is-dark-mode & {
+        background-color: $body-text-color-bold--dark;
+        color: $background-color--dark;
+      }
     }
 
     &:focus {
@@ -39,30 +101,23 @@
     }
   }
 
+  // Info -------------------------------------------
   &.is-info {
     background-color: #0F7BC3;
-  }
 
-  &:hover {
-    &.is-dark { background-color: #363636; }
-    &.is-light { background-color: #f5f5f5; }
-    &.is-info { background-color: #0F7BC3; }
-  }
-
-  &:focus {
-    outline: none;
-    outline: 4px dashed black;
-    outline-offset: 3px;
-    border: 0;
-
-    &.is-info,
-    &.is-light {
-      outline: 4px dashed black;
-      outline-offset: 3px;
+    &:hover,
+    &:focus {
+      background-color: darken(#0f7bc3, 10%);
     }
+  }
 
-    &.is-light {
-      color: black !important;
+  // Link -------------------------------------------
+  &.is-link {
+    background-color: #3273dc;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#3273dc, 10%);
     }
   }
 }

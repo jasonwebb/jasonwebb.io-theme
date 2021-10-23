@@ -1,14 +1,43 @@
-const isHomePage = document.querySelector('.home-page') != undefined ? true : false;
-const isWorkPage = document.querySelector('.work-page') != undefined ? true : false;
-const isResumePage = document.querySelector('.resume-page') != undefined ? true : false;
+//======================================
+//  Dark mode
+//======================================
+let darkModeToggleButtons = document.querySelectorAll('.dark-mode-toggle-button');
+let darkModeToggleButtonDesktop = document.getElementById('dark-mode-toggle-button--desktop');
+let darkModeToggleButtonMobile = document.getElementById('dark-mode-toggle-button--mobile');
 
-let tabs = document.querySelectorAll('[role="tab"]');
-let tabPanels = document.querySelectorAll('[role="tabpanel"]');
+// Set the ARIA button state on page load based on localStorage
+if(window.localStorage.getItem('dark-mode-enabled')) {
+  darkModeToggleButtons.forEach((button) => {
+    button.setAttribute('aria-pressed', true);
+  });
+} else {
+  darkModeToggleButtons.forEach((button) => {
+    button.setAttribute('aria-pressed', false);
+  });
+}
+
+// Toggle dark mode when any of the dark mode toggle buttons are activated.
+darkModeToggleButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const isPressed = button.getAttribute('aria-pressed') === 'true' ? true : false;
+    
+    darkModeToggleButtons.forEach((otherButton) => {
+      otherButton.setAttribute('aria-pressed', !isPressed);
+    });
+    
+    if(isPressed) {
+      document.documentElement.classList.remove('is-dark-mode');
+      window.localStorage.removeItem('dark-mode-enabled');
+    } else {
+      document.documentElement.classList.add('is-dark-mode');
+      window.localStorage.setItem('dark-mode-enabled', true);
+    }
+  });
+});
 
 //======================================
 //  Mobile menu functionality
 //======================================
-
 let mobileMenuOpenButton = document.querySelector('body > header .hamburger-icon');
 let mobileMenuCloseButton = document.querySelector('body > .mobile-menu .close-button');
 let mobileMenu = document.querySelector('body > .mobile-menu');
@@ -53,6 +82,12 @@ lastFocusableElement.addEventListener('keydown', (e) => {
 //======================================
 //  Page functionality
 //======================================
+const isHomePage = document.querySelector('.home-page') != undefined ? true : false;
+const isWorkPage = document.querySelector('.work-page') != undefined ? true : false;
+const isResumePage = document.querySelector('.resume-page') != undefined ? true : false;
+
+let tabs = document.querySelectorAll('[role="tab"]');
+let tabPanels = document.querySelectorAll('[role="tabpanel"]');
 
 // Home page - load all work items
 if(isHomePage) {
@@ -153,7 +188,6 @@ if(isHomePage) {
 //==============================================
 //  Load work items with provided category
 //==============================================
-
 function loadWorkItems(category = undefined, count = undefined, offset = undefined, target = undefined, focus = false) {
   if(target != undefined) {
     target.innerHTML = '';

@@ -1,7 +1,6 @@
 .page {
   width: $content-width-desktop;
-  margin: 0 auto 100px auto;
-  color: $body-text-color;
+  margin: 0 auto;
 
   @media screen and (max-width: $tablet-breakpoint) {
     width: 90%;
@@ -14,6 +13,10 @@
     padding-bottom: 4px;
     margin-bottom: 30px;
     margin-top: 60px !important;
+
+    .is-dark-mode & {
+      border-color: $border-color--dark;
+    }
   }
 
   h3 {
@@ -25,12 +28,20 @@
   }
 
   a {
-    color: black;
+    color: $body-text-color-bold;
     font-weight: $body-bold-weight;
     text-decoration: underline;
 
+    .is-dark-mode & {
+      color: $body-text-color-bold--dark;
+    }
+
     &:hover {
-      color: #3273dc;
+      color: $active-color;
+
+      .is-dark-mode & {
+        color: $active-color--dark;
+      }
     }
   }
 }

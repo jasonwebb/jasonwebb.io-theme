@@ -4,7 +4,11 @@
   border-radius: 0;
   padding: 25px;
   margin: 40px 0;
-  background-color: $light-gray-background-color;
+  background-color: $secondary-color;
+
+  .is-dark-mode & {
+    background-color: $secondary-color--dark;
+  }
 
   h2,
   h4,

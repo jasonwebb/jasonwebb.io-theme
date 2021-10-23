@@ -18,15 +18,27 @@ h1 {
   font-size: 2.2rem !important;
   font-weight: 700 !important;
   color: $heading-text-color !important;
+
+  .is-dark-mode & {
+    color: $heading-text-color--dark !important;
+  }
 }
 
-h2 {
-  color: $heading-text-color;
+h2, h3, h4, h5, h6 {
+  color: $heading-text-color !important;
+
+  .is-dark-mode & {
+    color: $heading-text-color--dark !important;
+  }
 }
 
 strong, b {
-  color: black;
+  color: $body-text-color-bold;
   font-weight: $body-bold-weight;
+
+  .is-dark-mode & {
+    color: $body-text-color-bold--dark;
+  }
 }
 
 ul,

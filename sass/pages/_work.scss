@@ -24,25 +24,41 @@
       border-radius: 100px;
 
       font-size: $body-font-size;
-      color: rgba(0,0,0,.7);
-      background-color: transparent;
+      color: $body-text-color;
+      background-color: $background-color;
       transition: border .1s linear;
 
+      .is-dark-mode & {
+        border-color: $body-text-color--dark;
+        color: $body-text-color--dark;
+        background-color: $background-color--dark;
+      }
+
       &[aria-selected="true"] {
-        background-color: rgba(0,0,0,1);
-        color: #fff;
+        font-weight: $body-bold-weight;
+        color: $background-color;
+        background-color: $body-text-color-bold;
         text-decoration: underline;
+
+        .is-dark-mode & {
+          color: $background-color--dark;
+          background-color: $body-text-color-bold--dark;
+        }
       }
 
       &:hover:not([aria-selected="true"]),
       &:focus:not([aria-selected="true"]) {
-        border-color: rgba(0,0,0,.6);
-        color: rgba(0,0,0,1);
+        border-color: $body-text-color-bold;
+        color: $body-text-color-bold;
         text-decoration: underline;
+
+        .is-dark-mode & {
+          border-color: $body-text-color-bold--dark;
+          color: $body-text-color-bold--dark;
+        }
       }
 
       &:focus {
-        text-decoration: underline;
         outline-offset: 5px;
       }
     }

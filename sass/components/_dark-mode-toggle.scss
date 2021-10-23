@@ -1,0 +1,129 @@
+//=========================================
+//  Desktop toggle button
+//=========================================
+#dark-mode-toggle-button--desktop {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 122px;
+
+  background-color: $secondary-color;
+  border: 1px solid $border-color;
+  border-radius: 100px;
+  padding: 5px 15px 7px 17px;
+  text-align: left;
+  color: $body-text-color;
+  font-weight: $body-bold-weight;
+  cursor: pointer;
+
+  .is-dark-mode & {
+    color: $body-text-color--dark;
+    background: $secondary-color--dark;
+    border-color: $border-color--dark;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $background-color--dark;
+    border-color: $body-text-color-bold--dark;
+    color: $body-text-color-bold--dark;
+
+    .is-dark-mode & {
+      background-color: $background-color;
+      border-color: $body-text-color-bold;
+      color: $body-text-color-bold;
+    }
+
+    svg {
+      stroke: $body-text-color-bold--dark;
+
+      .is-dark-mode & {
+        stroke: $body-text-color-bold;
+      }
+    }
+  }
+
+  &:focus {
+    outline-offset: 4px;
+  }
+
+  &[aria-pressed="true"] {
+    .light-text { display: inline-block; }
+    .dark-text { display: none; }
+    
+    .moon { transform: scale(0%); }
+    .sun { transform: scale(100%); }
+  }
+
+  &[aria-pressed="false"] {
+    .light-text { display: none; }
+    .dark-text { display: inline-block; }
+
+    .moon { transform: scale(100%); }
+    .sun { transform: scale(0%); }
+  }
+
+  svg {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    stroke: $body-text-color-bold;
+
+    .is-dark-mode & {
+      stroke: $body-text-color-bold--dark;
+    }
+
+    .sun,
+    .moon {
+      transform-origin: center;
+      transition: transform .3s ease-in-out;
+    }
+  }
+}
+
+//=========================================
+//  Mobile toggle button
+//=========================================
+#dark-mode-toggle-button--mobile {
+  display: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+  }
+  
+  &[aria-pressed="true"] {
+    .moon { transform: scale(0%); }
+    .sun { transform: scale(100%); }
+  }
+
+  &[aria-pressed="false"] {
+    .moon { transform: scale(100%); }
+    .sun { transform: scale(0%); }
+  }
+
+  svg {
+    width: 23px;
+    height: 23px;
+    margin-bottom: -5px;
+    stroke: $body-text-color-bold;
+
+    .is-dark-mode & {
+      stroke: $body-text-color-bold--dark;
+    }
+
+    .sun,
+    .moon {
+      transform-origin: center;
+      transition: transform .3s ease-in-out;
+    }
+  }
+}

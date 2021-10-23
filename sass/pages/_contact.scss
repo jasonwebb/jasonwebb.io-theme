@@ -20,8 +20,16 @@
       font-size: $body-font-size;
       color: $body-text-color;
 
+      .is-dark-mode & {
+        color: $body-text-color--dark !important;
+      }
+
       a {
-        color: black !important;
+        color: $body-text-color-bold !important;
+
+        .is-dark-mode & {
+          color: $body-text-color-bold--dark !important;
+        }
       }
     }
   }
@@ -45,6 +53,11 @@
       .label {
         font-size: $body-font-size;
         margin-bottom: 5px;
+        color: $body-text-color-bold;
+
+        .is-dark-mode & {
+          color: $body-text-color-bold--dark;
+        }
 
         & + p {
           display: none;
@@ -56,7 +69,11 @@
         font-size: 2.4rem;
         width: auto;
         height: auto;
-        color: rgba(0,0,0,.6);
+        color: $body-text-color;
+
+        .is-dark-mode & {
+          color: $body-text-color--dark;
+        }
 
         &.is-left {
           left: 10px;
@@ -67,12 +84,25 @@
       // "Name" and "Email" fields
       .input {
         font-size: $body-font-size;
-        border-color: rgba(0,0,0,.5);
+        color: $body-text-color;
+        border: 1px solid $body-text-color;
         border-radius: 0;
+        background-color: $background-color;
+
+        .is-dark-mode & {
+          color: $body-text-color--dark;
+          border: 2px solid $body-text-color-bold--dark;
+          background-color: $background-color--dark;
+        }
 
         &:focus {
-          border-color: #3273dc;
-          box-shadow: 0 0 0 1px #3273dc;
+          border-color: $active-color;
+          box-shadow: 0 0 0 1px $active-color;
+
+          .is-dark-mode & {
+            border-color: $active-color--dark;
+            box-shadow: 0 0 0 1px $active-color--dark;
+          }
         }
 
         // "Required" box next to fields when input is invalid
@@ -84,12 +114,25 @@
       // "Message" field
       .textarea {
         font-size: $body-font-size;
-        border-color: rgba(0,0,0,.5);
+        color: $body-text-color;
+        border: 1px solid $body-text-color;
         border-radius: 0;
+        background-color: $background-color;
+
+        .is-dark-mode & {
+          color: $body-text-color--dark;
+          border: 2px solid $body-text-color-bold--dark;
+          background-color: $background-color--dark;
+        }
 
         &:focus {
-          border-color: #3273dc;
-          box-shadow: 0 0 0 1px #3273dc;
+          border-color: $active-color;
+          box-shadow: 0 0 0 1px $active-color;
+
+          .is-dark-mode & {
+            border-color: $active-color--dark;
+            box-shadow: 0 0 0 1px $active-color--dark;
+          }
         }
 
         & + span {

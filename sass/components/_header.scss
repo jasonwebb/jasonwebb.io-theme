@@ -1,125 +1,167 @@
-body {
-  & > header {
-    width: $content-width-desktop;
-    margin: 0 auto;
-    padding: 40px 0;
+.global-header {
+  width: $content-width-desktop;
+  margin: 0 auto;
+  padding: 40px 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    width: 90%;
+    padding: 20px 0;
+  }
+
+  // "Jason Webb" on left
+  .name {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $body-text-color-bold;
+    flex: 0 auto;
+
+    .is-dark-mode & {
+      color: $body-text-color-bold--dark;
+    }
+
+    &:hover,
+    &:focus {
+      color: $active-color;
+      text-decoration: underline;
+
+      .is-dark-mode & {
+        color: $active-color--dark;
+      }
+    }
+
+    &:focus {
+      outline-offset: 6px;
+    }
+  }
+
+  & > nav {
+    flex: 0 auto;
+    margin-top: 10px;
 
     @media screen and (max-width: $tablet-breakpoint) {
-      width: 90%;
-      padding: 20px 0;
+      display: none;
     }
 
-    // "Jason Webb" on left
-    .name {
-      font-size: 3.2rem;
-      font-weight: 700;
-      color: rgba(0,0,0,.9);
-      flex: 0 auto;
+    ul {
+      display: inline-block;
+      margin: 0;
 
-      &:hover,
-      &:focus {
-        color: #3273dc;
-        text-decoration: underline;
-      }
-
-      &:focus {
-        outline-offset: 6px;
-      }
-    }
-
-    & > nav {
-      flex: 0 auto;
-      margin-top: 10px;
-
-      @media screen and (max-width: $tablet-breakpoint) {
-        display: none;
-      }
-
-      ul {
+      li {
         display: inline-block;
-        margin: 0;
+        margin-bottom: 0;
 
-        li {
-          display: inline-block;
-          margin-bottom: 0;
+        a {
+          color: $body-text-color;
 
-          a {
-            color: $body-text-color;
+          .is-dark-mode & {
+            color: $body-text-color--dark;
+          }
 
-            &:hover,
-            &:focus {
-              color: #2a6cd8;
+          &:hover,
+          &:focus {
+            color: $active-color;
+
+            .is-dark-mode & {
+              color: $active-color--dark;
             }
           }
         }
       }
+    }
 
-      // Social media icons
-      .social {
-        margin-right: 10px;
-        padding-right: 30px;
-        border-right: 1px solid $border-color;
+    // Social media icons
+    .social {
+      margin-right: 10px;
+      padding-right: 30px;
+      border-right: 1px solid $border-color;
 
-        li {
-          padding: 0;
+      .is-dark-mode & {
+        border-color: $border-color--dark;
+      }
 
-          a {
-            color: rgba(0,0,0,.54);
-            font-size: 2.8rem;
-            padding: 5px;
+      li {
+        padding: 0;
+
+        a {
+          color: $body-text-color;
+          font-size: 2.8rem;
+          padding: 5px;
+
+          .is-dark-mode & {
+            color: $body-text-color--dark;
           }
         }
       }
+    }
 
-      // Page links
-      .pages {
-        position: relative;
-        top: -3px;
+    // Page links
+    .pages {
+      position: relative;
+      top: -3px;
 
-        li {
-          &:last-of-type {
-            margin-right: 0;
+      li {
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          padding: 5px 10px;
+
+          &:hover span,
+          &:focus span {
+            text-decoration: underline;
           }
 
-          a {
-            padding: 5px 10px;
+          // Current page indicator (matches hover/focus styles)
+          &[aria-current="page"] {
+            color: $active-color;
 
-            &:hover span,
-            &:focus span {
+            .is-dark-mode & {
+              color: $active-color--dark;
+            }
+
+            span {
               text-decoration: underline;
             }
-
-            // Current page indicator (matches hover/focus styles)
-            &[aria-current="page"] {
-              color: #2a6cd8;
-  
-              span {
-                text-decoration: underline;
-              }
-            }
           }
         }
       }
     }
+  }
 
-    .hamburger-icon {
-      font-size: 3.6rem;
-      color: $body-text-color;
+  .mobile-buttons {
+    display: none;
+
+    @media (max-width: $tablet-breakpoint) {
+      display: flex;
+    }
+    
+    button {
       cursor: pointer;
       background: none;
       border: 0;
     }
 
-    // Description under name
-    .tagline {
-      flex: 1 auto;
-      margin-top: 20px;
-      color: rgba(0,0,0,.54);
+    .dark-mode-toggle-button--mobile {
+      display: none;
+
+      @media (max-width: $tablet-breakpoint) {
+        display: inline-block;
+      }
+    }
+
+    .hamburger-icon {
+      font-size: 3.6rem;
+      color: $body-text-color-bold;
+
+      .is-dark-mode & {
+        color: $body-text-color-bold--dark;
+      }
     }
   }
 }

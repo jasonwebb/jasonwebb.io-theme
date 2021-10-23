@@ -94,13 +94,6 @@
 
     h2 {
       font-size: 2.4rem;
-      color: black;
-
-      // Tablets and smaller
-      // - Increase weight of all headings
-      @media(max-width: $tablet-breakpoint) {
-        font-weight: 700;
-      }
     }
   }
 
@@ -120,23 +113,28 @@
     }
 
     .column:first-of-type {
-      border-right: 4px solid white;
+      border-right: 4px solid transparent;
     }
 
     .skill-group {
-      background-color: $light-gray-background-color;
+      background-color: $secondary-color;
       margin-bottom: 4px;
       padding: 25px 0 !important;
 
-      @media(max-width: $tablet-breakpoint) {
+      .is-dark-mode & {
+        background-color: $secondary-color--dark;
       }
 
       h3 {
-        font-weight: 700;
+        font-weight: $body-bold-weight;
         font-size: 2.2rem;
         font-style: normal;
         color: $body-text-color;
         margin-bottom: 10px;
+
+        .is-dark-mode & {
+          color: $body-text-color--dark;
+        }
       }
 
       ul {
@@ -145,6 +143,10 @@
         padding: 15px 25px;
 
         border-bottom: 1px solid $border-color;
+
+        .is-dark-mode & {
+          border-color: $border-color--dark;
+        }
 
         &:first-of-type {
           padding-top: 10px;
@@ -173,11 +175,20 @@
             padding-top: 5px;
 
             progress {
+              appearance: none;
               width: 100%;
               height: 1.6rem;
               border-radius: 0;
               margin: 0;
               margin-top: 6px;
+
+              &::-webkit-progress-bar {
+                background-color: $secondary-color;
+
+                .is-dark-mode & {
+                  background-color: $secondary-color--dark;
+                }
+              }
             }
           }
 
@@ -208,9 +219,14 @@
     .title {
       font-size: 2rem;
       font-style: normal;
+      color: $heading-text-color;
 
       margin-bottom: 3px;
       margin-top: 40px;
+
+      .is-dark-mode & {
+        color: $heading-text-color--dark;
+      }
     }
 
     .details {
@@ -218,6 +234,10 @@
       margin-bottom: 15px;
       font-size: 1.8rem;
       color: $body-text-color;
+
+      .is-dark-mode & {
+        color: $body-text-color--dark;
+      }
     }
 
     .highlights {
@@ -244,7 +264,12 @@
     .year {
       display: inline-block;
       width: 60px;
-      font-weight: bold;
+      font-weight: $body-bold-weight;
+      color: $body-text-color-bold;
+
+      .is-dark-mode & {
+        color: $body-text-color-bold--dark;
+      }
     }
   }
 }

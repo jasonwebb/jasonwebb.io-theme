@@ -9,7 +9,7 @@
   width: $mobile-menu-width;
   height: 100vh;
 
-  background-color: #333;
+  background-color: black;
 
   transition: left .3s ease-in-out;
 
@@ -18,27 +18,32 @@
     display: block;
     left: 0;
 
-    .close-button {
+    .close-button-wrapper {
       top: 0;
     }
   }
 
   // Close button =============================================================
-  .close-button {
+  .close-button-wrapper {
     position: fixed;
     left: $mobile-menu-width;
     top: -100px;
-    background-color: #333;
-    font-size: 3.6rem;
-    color: rgba(255,255,255,.6);
-    padding: 10px;
-    cursor: pointer;
+    background-color: black;
     transition: top .5s ease-in-out;
-    border: 0;
+
+    .close-button {
+      font-size: 3.6rem;
+      color: white;
+      background: $secondary-color--dark;
+      padding: 10px;
+      border: 0;
+      cursor: pointer;
+    }
   }
 
   nav {
     height: 100%;
+    background-color: $secondary-color--dark;
   }
 
   // Scrollable inner wrapper ================================================

@@ -1,20 +1,36 @@
-$content-width-desktop: 1000px;
+//===================================================
+//  Colors
+//===================================================
+$background-color: white;
+$secondary-color: rgba(0,0,0,.02);
+$border-color: rgba(0,0,0,.2);
+$active-color: #3273dc;
 
-$hamburger-box-width: 60px;
-$mobile-menu-width: 250px;
+$background-color--dark: black;
+$secondary-color--dark: rgba(255,255,255,.06);
+$border-color--dark: rgba(255,255,255,.2);
+$active-color--dark: #ffbb00;
 
+//===================================================
+//  Typography
+//===================================================
 $body-text-color: rgba(0,0,0,.65);
+$body-text-color-bold: black;
 $body-font-size: 1.8rem;
 $body-regular-weight: 300;
 $body-bold-weight: 500;
 
-$heading-text-color: rgba(0,0,0,0.7);
+$heading-text-color: black;
 $heading-weight: 700;
 
-$border-color: rgba(0,0,0,.2);
+$body-text-color--dark: rgba(255,255,255,.55);
+$body-text-color-bold--dark: white;
+$heading-text-color--dark: white;
 
-$light-gray-background-color: rgba(0,0,0,.02);
-$dark-gray-background-color: rgba(0,0,0,.9);
+//===================================================
+//  Breakpoints
+//===================================================
+$content-width-desktop: 1000px;
 
 // Responsive breakpoints
 $mobile-breakpoint: 768px;
@@ -24,3 +40,7 @@ $small-desktop-breakpoint: 1366px;
 $tablet-horizontal-padding: 25px;
 
 $media-breakout-offset: 50px;
+
+
+$hamburger-box-width: 60px;
+$mobile-menu-width: 250px;

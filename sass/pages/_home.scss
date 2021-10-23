@@ -233,12 +233,6 @@
       &:focus {
         text-decoration: underline !important;
       }
-
-      &:focus {
-        outline-color: black;
-        outline-width: 6px;
-        outline-offset: 3px;
-      }
     }
   }
 }

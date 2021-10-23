@@ -18,6 +18,20 @@
 	?>
   </title>
 
+  <script>
+  //===============
+  //  Critical JS
+  //===============
+  // Enable dark mode if the user requested it through an OS or UA setting.
+  if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    window.localStorage.setItem('dark-mode-enabled', true);
+  }
+
+  // Apply dark mode to the page, if enabled.
+  if(window.localStorage.getItem('dark-mode-enabled')) {
+    document.documentElement.classList.add('is-dark-mode');
+  }
+  </script>
 
 	<?php wp_head(); ?>
   
@@ -36,12 +50,32 @@
     <span>Skip to main content</span>
   </a>
 
+  <button id="dark-mode-toggle-button--desktop" class="dark-mode-toggle-button">
+    <div class="visually-hidden">Dark mode</div>
+
+    <div class="light-text" aria-hidden="true">Light mode</div>
+    <div class="dark-text" aria-hidden="true">Dark mode</div>
+
+    <!-- SVG from Tom Miller on CodePen: https://codepen.io/creativeocean/pen/NWNrRdN -->
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="25" height="25" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#fff">
+      <mask id="m">
+        <circle class="masker" cx="7.5" cy="7.5" r="8.5" fill="#fff" />
+      </mask>
+      <g mask="url(#m)">
+        <path class="sun" d="M7.5 1.5v-1m0 13.99v-.998m6-5.997h1m-13 0h-1m2-4.996l-1-1m12 0l-1 1m-10 9.993l-1 1m12 0l-1-1m-2-4.997a2.999 2.999 0 01-3 2.998 2.999 2.999 0 113-2.998z" />  
+      </g>
+      <path class="moon" d="M1.66 11.362A6.5 6.5 0 007.693.502a7 7 0 11-6.031 10.86z" />  
+    </svg>
+  </button>
+
   <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu">
     <nav>
-      <button class="close-button first-focusable-element">
-        <span class="fa fa-times" aria-hidden="true"></span>
-        <span class="visually-hidden">Close menu</span>
-      </button>
+      <div class="close-button-wrapper">
+        <button class="close-button first-focusable-element">
+          <span class="fa fa-times" aria-hidden="true"></span>
+          <span class="visually-hidden">Close menu</span>
+        </button>
+      </div>
 
       <div class="inner-wrapper">
         <ul class="primary-pages" aria-label="Pages">
@@ -84,7 +118,7 @@
     </nav>
   </div>
 
-  <header>
+  <header class="global-header">
     <a href="/" class="name" <?php echo is_home() ? ' aria-current="page"' : '' ?> >Jason Webb</a>
 
     <nav>
@@ -145,8 +179,25 @@
       </ul>
     </nav>
 
-    <button class="hamburger-icon is-hidden-desktop">
-      <span class="fa fa-bars" aria-hidden="true"></span>
-      <span class="visually-hidden">Open mobile menu</span>
-    </button>
+    <div class="mobile-buttons">
+      <button id="dark-mode-toggle-button--mobile" class="dark-mode-toggle-button">
+        <div class="visually-hidden">Dark mode</div>
+
+        <!-- SVG from Tom Miller on CodePen: https://codepen.io/creativeocean/pen/NWNrRdN -->
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="25" height="25" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#fff">
+          <mask id="m">
+            <circle class="masker" cx="7.5" cy="7.5" r="8.5" fill="#fff" />
+          </mask>
+          <g mask="url(#m)">
+            <path class="sun" d="M7.5 1.5v-1m0 13.99v-.998m6-5.997h1m-13 0h-1m2-4.996l-1-1m12 0l-1 1m-10 9.993l-1 1m12 0l-1-1m-2-4.997a2.999 2.999 0 01-3 2.998 2.999 2.999 0 113-2.998z" />  
+          </g>
+          <path class="moon" d="M1.66 11.362A6.5 6.5 0 007.693.502a7 7 0 11-6.031 10.86z" />  
+        </svg>
+      </button>
+
+      <button class="hamburger-icon is-hidden-desktop">
+        <span class="fa fa-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Open mobile menu</span>
+      </button>
+    </div>
   </header>

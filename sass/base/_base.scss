@@ -1,4 +1,19 @@
+html {
+  background-color: $background-color;
+  
+  &.is-dark-mode {
+    background-color: $background-color--dark;
+  }
+}
+
 body {
+  min-height: 100vh;
+  color: $body-text-color;
+
+  .is-dark-mode & {
+    color: $body-text-color--dark;
+  }
+
   & > header,
   & > main,
   #main {

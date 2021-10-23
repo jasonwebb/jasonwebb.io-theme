@@ -4,10 +4,10 @@
   top: -80px;
   z-index: 100;
   padding: 20px !important;
-  background-color: rgba(0,0,0,1);
+  background-color: $body-text-color-bold;
   font-size: 2.4rem;
   font-weight: 600;
-  color: white;
+  color: $background-color;
   transition: top .2s linear;
 }
 

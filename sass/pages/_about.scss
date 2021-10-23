@@ -35,11 +35,15 @@
   //  Logo box
   //==================================================================================================
   .logos {
-    background-color: $light-gray-background-color;
+    background-color: $secondary-color;
     border: 0;
 
     padding: 20px;
     margin-top: 50px;
+
+    .is-dark-mode & {
+      background-color: $secondary-color--dark;
+    }
 
     h2 {
       margin-top: 10px !important;
