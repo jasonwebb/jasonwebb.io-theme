@@ -53,6 +53,14 @@
           background-color: $background-color--dark;
         }
 
+        &.wpcf7-not-valid {
+          border-width: 3px;
+
+          .is-dark-mode & {
+            border-width: 2px;
+          }
+        }
+
         &:focus {
           border-color: $active-color;
           box-shadow: 0 0 0 1px $active-color;
@@ -61,11 +69,6 @@
             border-color: $active-color--dark;
             box-shadow: 0 0 0 1px $active-color--dark;
           }
-        }
-
-        // "Required" box next to fields when input is invalid
-        & + span {
-          display: inline-block;
         }
       }
 
@@ -83,6 +86,14 @@
           background-color: $background-color--dark;
         }
 
+        &.wpcf7-not-valid {
+          border-width: 3px;
+
+          .is-dark-mode & {
+            border-width: 2px;
+          }
+        }
+
         &:focus {
           border-color: $active-color;
           box-shadow: 0 0 0 1px $active-color;
@@ -92,25 +103,19 @@
             box-shadow: 0 0 0 1px $active-color--dark;
           }
         }
-
-        & + span {
-          display: inline-block;
-          margin-left: 0;
-          margin-top: 10px;
-        }
       }
 
       // Invalid fields get red border
       .wpcf7-not-valid {
-        border-color: hsl(348, 80%, 61%);
+        border-color: $error-color !important;
       }
 
       // All "Required" boxes next to fields
       .wpcf7-not-valid-tip {
-        background-color: hsl(348, 100%, 61%);
-        margin-left: 10px;
+        background-color: $error-color;
         color: white;
-        padding: 5px 15px;
+        padding: 0 15px;
+        font-size: 1.4rem;
       }
     }
   }
