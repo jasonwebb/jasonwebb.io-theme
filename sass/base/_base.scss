@@ -1,6 +1,6 @@
 html {
   background-color: $background-color;
-  
+
   &.is-dark-mode {
     background-color: $background-color--dark;
   }
@@ -35,6 +35,14 @@ body {
     #main {
       left: $mobile-menu-width;
       opacity: .4;
+    }
+  }
+
+  hr {
+    background-color: $border-color;
+
+    .is-dark-mode & {
+      background-color: $border-color--dark;
     }
   }
 }
