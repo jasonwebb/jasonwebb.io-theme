@@ -5,7 +5,7 @@
 
   .tabs {
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     padding: 0 100px;
     overflow: visible;
     white-space: normal;
@@ -69,10 +69,6 @@
 
     &.is-active {
       display: block;
-    }
-
-    .tiles {
-      margin-top: 30px;
     }
   }
 }
