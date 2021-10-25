@@ -4,13 +4,27 @@
 let darkModeToggleButtons = document.querySelectorAll('.dark-mode-toggle-button');
 let darkModeToggleButtonDesktop = document.getElementById('dark-mode-toggle-button--desktop');
 let darkModeToggleButtonMobile = document.getElementById('dark-mode-toggle-button--mobile');
+let activeColorScheme = window.sessionStorage.getItem('active-color-scheme');
 
-// Set the ARIA button state on page load based on localStorage
-if(window.localStorage.getItem('dark-mode-enabled')) {
+// Enable dark mode if the user requested it through an OS or UA setting.
+if(activeColorScheme === null) {
+  if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    window.sessionStorage.setItem('active-color-scheme', 'dark');
+  } else {
+    window.sessionStorage.setItem('active-color-scheme', 'light');
+  }
+
+  activeColorScheme = window.sessionStorage.getItem('active-color-scheme');
+}
+
+// Set the ARIA button state on page load based on sessionStorage
+if(activeColorScheme === 'dark') {
+  document.documentElement.classList.add('is-dark-mode');
+
   darkModeToggleButtons.forEach((button) => {
     button.setAttribute('aria-pressed', true);
   });
-} else {
+} else if(activeColorScheme === 'light') {
   darkModeToggleButtons.forEach((button) => {
     button.setAttribute('aria-pressed', false);
   });
@@ -20,17 +34,17 @@ if(window.localStorage.getItem('dark-mode-enabled')) {
 darkModeToggleButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const isPressed = button.getAttribute('aria-pressed') === 'true' ? true : false;
-    
+
     darkModeToggleButtons.forEach((otherButton) => {
       otherButton.setAttribute('aria-pressed', !isPressed);
     });
-    
+
     if(isPressed) {
       document.documentElement.classList.remove('is-dark-mode');
-      window.localStorage.removeItem('dark-mode-enabled');
+      window.sessionStorage.setItem('active-color-scheme', 'light');
     } else {
       document.documentElement.classList.add('is-dark-mode');
-      window.localStorage.setItem('dark-mode-enabled', true);
+      window.sessionStorage.setItem('active-color-scheme', 'dark');
     }
   });
 });

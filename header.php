@@ -18,23 +18,8 @@
 	?>
   </title>
 
-  <script>
-  //===============
-  //  Critical JS
-  //===============
-  // Enable dark mode if the user requested it through an OS or UA setting.
-  if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    window.localStorage.setItem('dark-mode-enabled', true);
-  }
-
-  // Apply dark mode to the page, if enabled.
-  if(window.localStorage.getItem('dark-mode-enabled')) {
-    document.documentElement.classList.add('is-dark-mode');
-  }
-  </script>
-
 	<?php wp_head(); ?>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&display=swap">
@@ -62,9 +47,9 @@
         <circle class="masker" cx="7.5" cy="7.5" r="8.5" fill="#fff" />
       </mask>
       <g mask="url(#m)">
-        <path class="sun" d="M7.5 1.5v-1m0 13.99v-.998m6-5.997h1m-13 0h-1m2-4.996l-1-1m12 0l-1 1m-10 9.993l-1 1m12 0l-1-1m-2-4.997a2.999 2.999 0 01-3 2.998 2.999 2.999 0 113-2.998z" />  
+        <path class="sun" d="M7.5 1.5v-1m0 13.99v-.998m6-5.997h1m-13 0h-1m2-4.996l-1-1m12 0l-1 1m-10 9.993l-1 1m12 0l-1-1m-2-4.997a2.999 2.999 0 01-3 2.998 2.999 2.999 0 113-2.998z" />
       </g>
-      <path class="moon" d="M1.66 11.362A6.5 6.5 0 007.693.502a7 7 0 11-6.031 10.86z" />  
+      <path class="moon" d="M1.66 11.362A6.5 6.5 0 007.693.502a7 7 0 11-6.031 10.86z" />
     </svg>
   </button>
 
@@ -189,9 +174,9 @@
             <circle class="masker" cx="7.5" cy="7.5" r="8.5" fill="#fff" />
           </mask>
           <g mask="url(#m)">
-            <path class="sun" d="M7.5 1.5v-1m0 13.99v-.998m6-5.997h1m-13 0h-1m2-4.996l-1-1m12 0l-1 1m-10 9.993l-1 1m12 0l-1-1m-2-4.997a2.999 2.999 0 01-3 2.998 2.999 2.999 0 113-2.998z" />  
+            <path class="sun" d="M7.5 1.5v-1m0 13.99v-.998m6-5.997h1m-13 0h-1m2-4.996l-1-1m12 0l-1 1m-10 9.993l-1 1m12 0l-1-1m-2-4.997a2.999 2.999 0 01-3 2.998 2.999 2.999 0 113-2.998z" />
           </g>
-          <path class="moon" d="M1.66 11.362A6.5 6.5 0 007.693.502a7 7 0 11-6.031 10.86z" />  
+          <path class="moon" d="M1.66 11.362A6.5 6.5 0 007.693.502a7 7 0 11-6.031 10.86z" />
         </svg>
       </button>
 
