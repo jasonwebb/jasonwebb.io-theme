@@ -3,14 +3,14 @@
 //=========================================
 #dark-mode-toggle-button--desktop {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 122px;
+  top: 2.0rem;
+  right: 2.0rem;
+  width: 12.4rem;
 
   background-color: $secondary-color;
   border: 1px solid $border-color;
   border-radius: 100px;
-  padding: 5px 15px 7px 17px;
+  padding: 0.5rem 1.5rem 0.7rem 1.7rem;
   text-align: left;
   color: $body-text-color;
   font-weight: $body-bold-weight;
@@ -54,7 +54,7 @@
   &[aria-pressed="true"] {
     .light-text { display: inline-block; }
     .dark-text { display: none; }
-    
+
     .moon { transform: scale(0%); }
     .sun { transform: scale(100%); }
   }
@@ -69,10 +69,10 @@
 
   svg {
     position: absolute;
-    right: 10px;
-    top: 7px;
-    width: 15px;
-    height: 15px;
+    right: 1rem;
+    top: .7rem;
+    width: 1.5rem;
+    height: 1.5rem;
     stroke: $body-text-color-bold;
 
     .is-dark-mode & {
@@ -92,9 +92,9 @@
 //=========================================
 #dark-mode-toggle-button--mobile {
   display: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 20px;
+  padding-left: 1.0rem;
+  padding-right: 1.0rem;
+  margin-right: 2.0rem;
 
   @media (max-width: $tablet-breakpoint) {
     display: block;
@@ -103,7 +103,7 @@
   @media (max-width: $mobile-breakpoint) {
     margin-right: 0;
   }
-  
+
   &[aria-pressed="true"] {
     .moon { transform: scale(0%); }
     .sun { transform: scale(100%); }
@@ -115,9 +115,9 @@
   }
 
   svg {
-    width: 23px;
-    height: 23px;
-    margin-bottom: -5px;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-bottom: -0.5rem;
     stroke: $body-text-color-bold;
 
     .is-dark-mode & {
