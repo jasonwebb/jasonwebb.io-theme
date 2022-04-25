@@ -4,20 +4,20 @@
 let darkModeToggleButtons = document.querySelectorAll('.dark-mode-toggle-button');
 let darkModeToggleButtonDesktop = document.getElementById('dark-mode-toggle-button--desktop');
 let darkModeToggleButtonMobile = document.getElementById('dark-mode-toggle-button--mobile');
-let activeColorScheme = window.sessionStorage.getItem('active-color-scheme');
+let activeColorScheme = window.localStorage.getItem('active-color-scheme');
 
 // Enable dark mode if the user requested it through an OS or UA setting.
 if(activeColorScheme === null) {
   if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    window.sessionStorage.setItem('active-color-scheme', 'dark');
+    window.localStorage.setItem('active-color-scheme', 'dark');
   } else {
-    window.sessionStorage.setItem('active-color-scheme', 'light');
+    window.localStorage.setItem('active-color-scheme', 'light');
   }
 
-  activeColorScheme = window.sessionStorage.getItem('active-color-scheme');
+  activeColorScheme = window.localStorage.getItem('active-color-scheme');
 }
 
-// Set the ARIA button state on page load based on sessionStorage
+// Set the ARIA button state on page load based on localStorage
 if(activeColorScheme === 'dark') {
   document.documentElement.classList.add('is-dark-mode');
 
@@ -41,10 +41,10 @@ darkModeToggleButtons.forEach((button) => {
 
     if(isPressed) {
       document.documentElement.classList.remove('is-dark-mode');
-      window.sessionStorage.setItem('active-color-scheme', 'light');
+      window.localStorage.setItem('active-color-scheme', 'light');
     } else {
       document.documentElement.classList.add('is-dark-mode');
-      window.sessionStorage.setItem('active-color-scheme', 'dark');
+      window.localStorage.setItem('active-color-scheme', 'dark');
     }
   });
 });
