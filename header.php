@@ -35,7 +35,7 @@
     <span>Skip to main content</span>
   </a>
 
-  <button id="dark-mode-toggle-button--desktop" class="dark-mode-toggle-button">
+  <button id="dark-mode-toggle-button--desktop" class="dark-mode-toggle-button" hidden>
     <div class="visually-hidden">Dark mode</div>
 
     <div class="light-text" aria-hidden="true">Light mode</div>
