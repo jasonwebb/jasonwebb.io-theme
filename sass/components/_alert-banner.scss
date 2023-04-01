@@ -1,5 +1,5 @@
 .alert-banner {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 5;
@@ -8,9 +8,12 @@
   background-color: #efefef;
   padding: 20px 30px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: $mobile-breakpoint) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .is-dark-mode & {
     background-color: rgb(20,20,20);
@@ -21,15 +24,26 @@
   }
 
   .buttons {
-    flex-wrap: nowrap;
-    flex-direction: row;
+    display: block;
     margin: 0 !important;
+    margin-top: 10px !important;
+
+    @media (min-width: $mobile-breakpoint) {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      margin: 0 !important;
+    }
   }
 
   .button {
-    flex: 1 1 calc(50% - 10px);
+    width: auto;
     padding: 5px 20px;
     border-radius: 5px;
+
+    @media (min-width: $mobile-breakpoint) {
+      flex: 1 1 calc(50% - 10px);
+    }
 
     &:hover,
     &:focus {
