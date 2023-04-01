@@ -104,6 +104,17 @@
   </div>
 
   <header class="global-header">
+    <div class="alert-banner">
+      <div class="alert-banner__message">
+        <b>Currently available</b> for full-time roles in the experiential media space!
+      </div>
+
+      <div class="buttons">
+        <a href="/resume" class="button is-ghost">Resum&eacute;</a>
+        <a href="/contact" class="button is-info">Contact</a>
+      </div>
+    </div>
+
     <a href="/" class="name" <?php echo is_home() ? ' aria-current="page"' : '' ?> >Jason Webb</a>
 
     <nav>

@@ -1,6 +1,7 @@
 .global-header {
   width: $content-width-desktop;
   margin: 0 auto;
+  margin-top: 70px;
   padding: 40px 0;
 
   display: flex;
@@ -140,7 +141,7 @@
     @media (max-width: $tablet-breakpoint) {
       display: flex;
     }
-    
+
     button {
       cursor: pointer;
       background: none;

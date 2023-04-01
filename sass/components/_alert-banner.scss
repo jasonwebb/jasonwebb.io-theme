@@ -1,0 +1,45 @@
+.alert-banner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+
+  background-color: #efefef;
+  padding: 20px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .alert-banner__message {
+    padding-right: 20px;
+  }
+
+  .buttons {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 !important;
+  }
+
+  .button {
+    flex: 1 1 calc(50% - 10px);
+    padding: 5px 20px;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &.is-ghost {
+      background: transparent;
+      margin-right: 10px;
+
+      &:hover,
+      &:focus {
+        color: black;
+      }
+    }
+  }
+}
