@@ -63,7 +63,7 @@
 
         &:focus {
           outline-offset: 4px;
-          
+
           &:after {
             box-shadow: inset 0 0 0 5px hsl(204, 86%, 53%);
           }
@@ -72,9 +72,10 @@
     }
 
     dd.gallery-caption {
+      padding: 0 15px 30px 15px;
       text-align: center;
-      margin-top: 5px;
-      margin-bottom: 30px;
+      font-size: 1.5rem;
+      line-height: 130%;
       font-style: italic;
       color: $body-text-color;
     }
