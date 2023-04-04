@@ -1,0 +1,44 @@
+// Used in Met Chroma AR article
+
+.press-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 60px;
+  margin-bottom: 80px;
+
+  p, br {
+    display: none;
+  }
+
+  .press-item {
+    flex: 1 1 30%;
+    text-align: center;
+
+    &:hover img,
+    &:focus-within img {
+      filter: saturate(1);
+    }
+
+    & > a {
+      display: inline-block;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      height: 100%;
+      object-fit: scale-down;
+      filter: saturate(0);
+      transition: filter .5s linear;
+    }
+
+    .press-item-caption {
+      font-size: 1.5rem;
+      line-height: 150%;
+    }
+  }
+}
