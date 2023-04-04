@@ -104,6 +104,11 @@
               border-radius: 0;
               margin: 0;
               margin-top: 6px;
+              border: 2px solid #3273dc;
+
+              &::-webkit-progress-value {
+                background: #3273dc;
+              }
 
               &::-webkit-progress-bar {
                 background-color: $secondary-color;

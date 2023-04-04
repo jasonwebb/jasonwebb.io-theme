@@ -4,9 +4,7 @@
   <h1 class="visually-hidden">Resum&eacute;</h1>
 
   <section id="mission">
-    <h2>Summary</h2>
-
-    <p class="is-web-only is-hidden">Front-end and UI developer with a passion for design, armed with a background in computer science and the arts. Seeking to work at the intersection of technical and creative perspectives to realize meaningful and modern interfaces and experiences using state-of-the-art skills and tools.</p>
+    <p class="is-web-only is-hidden">Front-end developer and creative technologist with a passion for design, armed with a background in computer science and the arts. Seeking to work at the intersection of technical and creative perspectives to realize meaningful and modern interfaces and experiences using state-of-the-art skills and tools.</p>
 
     <p class="is-non-web-only is-non-web">Creative coder and front-end developer focused on the intersection of art, science, and technology. With a formal background in both computer science and education, along with strong real-world experience in the arts and accessibility, I am uniquely positioned for and keenly interested in crafting world-class experiences that everyone can enjoy.</p>
   </section>
@@ -17,7 +15,7 @@
     <div class="columns is-gapless is-multiline">
       <div class="column is-half">
         <div class="skill-group">
-          <h3 class="has-text-centered">Code (web)</h3>
+          <h3 class="has-text-centered">Web</h3>
 
           <ul>
             <li>
@@ -32,7 +30,7 @@
               CSS
               <ul>
                 <li>
-                  <div class="text">Preprocessors <small>(Sass/SCSS, LESS)</small></div>
+                  <div class="text">Preprocessors <small>(PostCSS, others)</small></div>
                   <div class="meter">
                     <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
                     <span class="visually-hidden">(8 out of 10)</span>
@@ -77,36 +75,49 @@
                 </li>
 
                 <li>
-                  <div class="text">React</div>
+                  <div class="text">React <small>(Next.js, vanilla)</small></div>
                   <div class="meter">
                     <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
                     <span class="visually-hidden">(4 out of 10)</span>
                   </div>
                 </li>
 
-                <li>
+                <!-- <li>
                   <div class="text">Angular</div>
                   <div class="meter">
                     <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
                     <span class="visually-hidden">(2 out of 10)</span>
                   </div>
-                </li>
+                </li> -->
 
-                <li>
+                <!-- <li>
                   <div class="text">Vue</div>
                   <div class="meter">
                     <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
                     <span class="visually-hidden">(2 out of 10)</span>
                   </div>
-                </li>
+                </li> -->
 
-                <li>
+                <!-- <li>
                   <div class="text">jQuery</div>
                   <div class="meter">
                     <progress class="progress is-info is-pulled-right" value="10" max="10" aria-hidden="true">10/10</progress>
                     <span class="visually-hidden">(10 out of 10)</span>
                   </div>
-                </li>
+                </li> -->
+              </ul>
+            </li>
+
+            <li class="has-nested-level">
+              <div class="text">Motion</div>
+              <!-- <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div> -->
+
+              <ul>
+                <li>Framer Motion</li>
+                <li>GSAP</li>
               </ul>
             </li>
 
@@ -117,39 +128,76 @@
                 <span class="visually-hidden">(9 out of 10)</span>
               </div>
 
-              <ul>
+              <!-- <ul>
                 <li>WCAG 2.0 and 2.1 level AA interpretation and application</li>
                 <li>Proper usage of ARIA</li>
                 <li>Testing &nbsp;<small>(manual, automated, and usability)</small></li>
+              </ul> -->
+            </li>
+
+            <li class="has-nested-level">
+              Serverless
+              <ul>
+                <li>
+                  <div class="text">Vercel, Netlify</div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+                    <span class="visually-hidden">(8 out of 10)</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="text">AWS <small>(Amplify, Lambda, DynamoDB)</small></div>
+                  <div class="meter">
+                    <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">8/10</progress>
+                    <span class="visually-hidden">(2 out of 10)</span>
+                  </div>
+                </li>
               </ul>
             </li>
 
             <li>
+              <div class="text">Browser APIs <small>(Canvas, WebMIDI, Websockets, others)</small></div>
+              <!-- <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div> -->
+            </li>
+
+            <!-- <li>
               <div class="text">Responsive techniques</div>
               <div class="meter">
                 <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
                 <span class="visually-hidden">(9 out of 10)</span>
               </div>
-            </li>
+            </li> -->
 
-            <li>
-              <div class="text">Build systems <small>(Gulp, Grunt, Webpack)</small></div>
+            <!-- <li>
+              <div class="text">Build systems <small>(Webpack, Gulp, Grunt)</small></div>
               <div class="meter">
                 <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
                 <span class="visually-hidden">(8 out of 10)</span>
               </div>
-            </li>
+            </li> -->
 
             <li>
-              <div class="text">Wordpress</div>
+              <div class="text">CMSs <small>(Sanity, Contentful, Airtable, Wordpress)</small></div>
               <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-                <span class="visually-hidden">(7 out of 10)</span>
+                <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
+                <span class="visually-hidden">(6 out of 10)</span>
               </div>
             </li>
 
+            <!-- <li>
+              <div class="text">Wordpress</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
+                <span class="visually-hidden">(6 out of 10)</span>
+              </div>
+            </li> -->
+
             <li>
-              <div class="text">PHP <small>(incl. Laravel + CodeIgniter)</small></div>
+              <div class="text">PHP <!--<small>(incl. Laravel + CodeIgniter)</small>--></div>
               <div class="meter">
                 <progress class="progress is-info is-pulled-right" value="6" max="10" aria-hidden="true">6/10</progress>
                 <span class="visually-hidden">(6 out of 10)</span>
@@ -164,57 +212,19 @@
               </div>
             </li>
 
-            <li>
+            <!-- <li>
               <div class="text">C# ASP.NET MVC</div>
               <div class="meter">
                 <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
                 <span class="visually-hidden">(2 out of 10)</span>
               </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group is-non-web">
-          <h3 class="has-text-centered">Code (non-web)</h3>
-
-          <ul>
-            <li>
-              <div class="text">Processing</div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
-                <span class="visually-hidden">(9 out of 10)</span>
-              </div>
-            </li>
-
-            <li>
-              <div class="text">p5.js</div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
-                <span class="visually-hidden">(8 out of 10)</span>
-              </div>
-            </li>
-
-            <li>
-              <div class="text">openFrameworks</div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-                <span class="visually-hidden">(5 out of 10)</span>
-              </div>
-            </li>
-
-            <li>
-              <div class="text">Git</div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-                <span class="visually-hidden">(7 out of 10)</span>
-              </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
 
       <div class="column is-half">
-        <div class="skill-group">
+        <!-- <div class="skill-group">
           <h3 class="has-text-centered">Design</h3>
 
           <ul>
@@ -267,14 +277,68 @@
                 </li>
 
                 <li>
-                  <div class="text">OpenSCAD</div>
+                  <div class="text">Blender</div>
                   <div class="meter">
                     <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
-                    <span class="visually-hidden">(7 out of 10)</span>
+                    <span class="visually-hidden">(2 out of 10)</span>
                   </div>
                 </li>
               </ul>
             </li>
+          </ul>
+        </div> -->
+
+        <div class="skill-group is-non-web">
+          <h3 class="has-text-centered">Creative coding</h3>
+
+          <ul>
+            <li>
+              <div class="text">Processing</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="9" max="10" aria-hidden="true">9/10</progress>
+                <span class="visually-hidden">(9 out of 10)</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="text">p5.js</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
+                <span class="visually-hidden">(8 out of 10)</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="text">openFrameworks</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
+                <span class="visually-hidden">(5 out of 10)</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="text">WebAR <small>(8th Wall)</small></div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">5/10</progress>
+                <span class="visually-hidden">(7 out of 10)</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="text">Shaders <small>(GLSL)</small></div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">5/10</progress>
+                <span class="visually-hidden">(2 out of 10)</span>
+              </div>
+            </li>
+
+            <!-- <li>
+              <div class="text">Git</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="7" max="10" aria-hidden="true">7/10</progress>
+                <span class="visually-hidden">(7 out of 10)</span>
+              </div>
+            </li> -->
           </ul>
         </div>
 
@@ -416,14 +480,21 @@
     <h2>Experience</h2>
 
     <div class="job">
-      <h3 class="title">Creative Developer at Bluecadet</h3>
-      <div class="details">Remote &mdash; September 2021 to present</div>
-      <p>Prototyping and building of websites, online 3D experiences, AR, data visualizations, and interactive touch/projection applications in close collaboration with designers, art directors, and other disciplines.</p>
+      <h3 class="title">Senior Developer at Bluecadet</h3>
+      <div class="details">Remote &mdash; September 2021 to April 2023 (1.5 years)</div>
+      <ul class="highlights">
+        <li>Prototyping and building of websites, online 3D experiences, AR, data visualizations, and interactive touch/projection applications in close collaboration with designers, art directors, and other disciplines.</li>
+        <li>Owned the development side of multiple projects for clients including the Met, LACMA, and Gore.</li>
+        <li>Contributed code and support to projects for clients including the MIT Museum, Martin Luther King Jr. Memorial Library.</li>
+        <li>Served as internal SME for digital accessibility. Duties included advising teams during design and concept phases, fixing accessibility issues in current and prior projects, assessing third-party audit results, and advocating for inclusion throughout all project build phases.</li>
+        <li>Mentored junior developers on front-end coding fundamentals, with an emphasis on accessibility.</li>
+        <li>Took initiative to start an internal Storybook-based component library of custom solutions for touchscreen-based React projects.
+      </ul>
     </div>
 
     <div class="job">
       <h3 class="title">Developer Advocate at Accessible360</h3>
-      <div class="details">Minneapolis, MN &mdash; July 2019 to September 2021</div>
+      <div class="details">Minneapolis, MN &mdash; July 2019 to September 2021 (2 years)</div>
       <ul class="highlights">
         <li>Provide personalized technical and strategic accessibility consultation for clients with complex products.</li>
         <li>Redesigned customer-facing Knowledge Base to improve readability and overall developer experience.</li>
@@ -545,9 +616,10 @@
     <h2>Talks</h2>
 
     <ul>
-      <li><i>What We Learned From Trying to Build an Accessible Carousel</i> at <a href="https://opensourcenorth.com/" target="_blank">Open Source North</a> (May 2021), with co-presenter Aaron Page.</li>
-      <li><i>Accessibility in Action -- a live coding adventure!</i> at <a href="https://mplsjrdevs.com" target="_blank">Mpls Jr Devs</a> (September 2020).</li>
-      <li><i>Making the Web Work for Everyone</i> at <a href="https://javascriptmn.com" target="_blank">JavaScriptMN</a> (October 2019).</li>
+      <li>"Digital morphogenesis - exploring the creative power of nature through code and simulation" at <a href="https://www.math.ksu.edu/research/artandmathseminar.html">Art and Math Seminar</a> hosted by KSU's Math department (March 2023).</li>
+      <li>"What We Learned From Trying to Build an Accessible Carousel" at <a href="https://opensourcenorth.com/" target="_blank">Open Source North</a> (May 2021), with co-presenter Aaron Page.</li>
+      <li>"Accessibility in Action - a live coding adventure!" at <a href="https://mplsjrdevs.com" target="_blank">Mpls Jr Devs</a> (September 2020).</li>
+      <li>"Making the Web Work for Everyone" at <a href="https://javascriptmn.com" target="_blank">JavaScriptMN</a> (October 2019).</li>
     </ul>
   </section>
 
