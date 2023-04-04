@@ -483,11 +483,11 @@
       <h3 class="title">Senior Developer at Bluecadet</h3>
       <div class="details">Remote &mdash; September 2021 to April 2023 (1.5 years)</div>
       <ul class="highlights">
-        <li>Prototyping and building of websites, online 3D experiences, AR, data visualizations, and interactive touch/projection applications in close collaboration with designers, art directors, and other disciplines.</li>
+        <li>Prototyped and built websites, online 3D experiences, WebAR apps, and interactive touch/projection applications in close collaboration with designers, art directors, and other disciplines.</li>
         <li>Owned the development side of multiple projects for clients including the Met, LACMA, and Gore.</li>
-        <li>Contributed code and support to projects for clients including the MIT Museum, Martin Luther King Jr. Memorial Library.</li>
+        <li>Contributed code and support to projects for clients including Harvard, the MIT Museum, Martin Luther King Jr. Memorial Library, and more.</li>
         <li>Served as internal SME for digital accessibility. Duties included advising teams during design and concept phases, fixing accessibility issues in current and prior projects, assessing third-party audit results, and advocating for inclusion throughout all project build phases.</li>
-        <li>Mentored junior developers on front-end coding fundamentals, with an emphasis on accessibility.</li>
+        <li>Mentored junior developers on front-end coding fundamentals with an emphasis on accessibility.</li>
         <li>Took initiative to start an internal Storybook-based component library of custom solutions for touchscreen-based React projects.
       </ul>
     </div>
@@ -496,13 +496,13 @@
       <h3 class="title">Developer Advocate at Accessible360</h3>
       <div class="details">Minneapolis, MN &mdash; July 2019 to September 2021 (2 years)</div>
       <ul class="highlights">
-        <li>Provide personalized technical and strategic accessibility consultation for clients with complex products.</li>
+        <li>Provided personalized technical and strategic accessibility consultation for clients with complex products.</li>
         <li>Redesigned customer-facing Knowledge Base to improve readability and overall developer experience.</li>
-        <li>Contribute high-quality documentation and code samples explaining how to design and build common web components (like autocompletes and carousels) with accessibility considerations. These docs were informed heavily by research and hands-on testing with live users with disabilities.</li>
-        <li>Provide individualized support and guidance to testers around advanced troubleshooting, technical solutioning, and customer service.</li>
-        <li>Work closely with entire team of Customer Success Managers (CSMs) to help boost client satisfaction.</li>
-        <li>Identify internal process gaps affecting client satisfaction and facilitate cross-disciplinary discussions to resolve them.</li>
-        <li>Engage with the development community both locally and beyond to advocate for accessibility through talks and workshops at conferences, meetups, and more.</li>
+        <li>Contributed high-quality documentation and code samples explaining how to design and build common web components with accessibility considerations. These docs were informed heavily by research and hands-on testing with live users with disabilities.</li>
+        <li>Provided individualized support and guidance to auditors around advanced troubleshooting, technical solutioning, and customer service.</li>
+        <li>Worked closely with entire team of Customer Success Managers (CSMs) to help boost client satisfaction.</li>
+        <li>Identified internal process gaps affecting client satisfaction and facilitate cross-disciplinary discussions to resolve them.</li>
+        <li>Engaged with the development community both locally and beyond to advocate for accessibility through talks and workshops at conferences, meetups, and more.</li>
       </ul>
     </div>
 
@@ -521,10 +521,10 @@
       <h3 class="title">UI Developer (consultant) at Concord</h3>
       <div class="details">Minneapolis, MN &mdash; July 2017 to July 2019 (2 years)</div>
       <ul class="highlights">
-        <li>Provide on-going client coaching and support regarding modern CSS architecture and technologies (Sass/SCSS, ITCSS, BEM, etc), software design patterns, source control practices (Gitflow model), and accessibility (Section 508 and WCAG 2.0 AA).</li>
-        <li>Work closely with client designers and downstream developers to evaluate and refine design mockups based on feasibility within existing tooling, project timelines, accessibility and usability implications, and more.</li>
-        <li>Perform deep-dive analysis of CSS, JavaScript, and markup currently in use and provide actionable insight to leadership to inform key decision-making and planning.</li>
-        <li>Helping client to transition to a more cross-functional Agile workflow using the SAFe 4.0 framework by serving as the UI development lead for one of two core feature development scrum teams.</li>
+        <li>Provided coaching and support around modern CSS architecture and technologies (Sass/SCSS, ITCSS, BEM, etc), software design patterns, source control practices, and accessibility.</li>
+        <li>Worked closely with client designers and downstream developers to evaluate and refine design mockups based on feasibility, timelines, accessibility and usability implications, and more.</li>
+        <li>Performed deep-dive analysis of CSS, JavaScript, and HTML currently in use and provided actionable insight to leadership to inform key decision-making and planning.</li>
+        <li>Helped client transition to a more cross-functional Agile workflow using the SAFe 4.0 framework by serving as the UI development lead for one of two core feature development scrum teams.</li>
         <li>Architected, built, and delivered a custom Bootstrap-based design framework for a client in close collaboration with designers. Deliverables included sample templates, documentation, and source code making use of Bootstrap v4, Sass, Gulp, and modern HTML/CSS.</li>
       </ul>
     </div>
@@ -572,8 +572,7 @@
       <div class="details">Omaha, NE &mdash; March 2015 to June 2015 (4 months)</div>
       <ul class="highlights">
         <li>Contract full-stack web development of a custom internal content management system for faculty activity.</li>
-        <li>Responsibilities included designing, architecting and developing a custom solution using PHP, MySQL,
-          CodeIgniter, modern HTML/CSS, Bootstrap 3 and custom Javascript with jQuery.</li>
+        <li>Designed, architected, and built a custom app using PHP, MySQL, CodeIgniter, modern HTML/CSS, Bootstrap 3, and JavaScript.</li>
       </ul>
     </div>
 
