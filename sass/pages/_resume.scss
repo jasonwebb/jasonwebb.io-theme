@@ -1,4 +1,9 @@
 .resume-page {
+  // Hiding progress bars for now to see how it feels (4/5/2023)
+  .meter {
+    display: none !important;
+  }
+
   //===========================================================================================
   //  Section
   //===========================================================================================
@@ -40,9 +45,9 @@
     }
 
     .skill-group {
-      background-color: $secondary-color;
+      // background-color: $secondary-color;
       margin-bottom: 4px;
-      padding: 25px 0 !important;
+      // padding: 25px 0 !important;
 
       .is-dark-mode & {
         background-color: $secondary-color--dark;
@@ -54,6 +59,7 @@
         font-style: normal;
         color: $body-text-color;
         margin-bottom: 10px;
+        text-align: left;
 
         .is-dark-mode & {
           color: $body-text-color--dark;
@@ -80,7 +86,7 @@
         }
 
         ul {
-          padding: 5px 0 5px 15px;
+          padding: 5px 0 5px 25px;
         }
 
         li {

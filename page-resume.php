@@ -3,9 +3,13 @@
 <main class="resume-page page" id="main" tabindex="-1">
   <h1 class="visually-hidden">Resum&eacute;</h1>
 
+  <a href="https://jasonwebb.io/wp-content/uploads/2023/04/Jason-Webb-Resume.pdf" class="button is-info" style="margin-bottom: 40px; text-decoration: none" download>
+    <i class="fa fa-download" style="margin-right: 10px;"></i>
+    <span>Download as PDF</span>
+  </a>
+
   <section id="mission">
     <p class="is-web-only is-hidden">Front-end developer and creative technologist with a passion for design, armed with a background in computer science and the arts. Seeking to work at the intersection of technical and creative perspectives to realize meaningful and modern interfaces and experiences using state-of-the-art skills and tools.</p>
-
     <p class="is-non-web-only is-non-web">Creative coder and front-end developer focused on the intersection of art, science, and technology. With a formal background in both computer science and education, along with strong real-world experience in the arts and accessibility, I am uniquely positioned for and keenly interested in crafting world-class experiences that everyone can enjoy.</p>
   </section>
 
@@ -15,7 +19,7 @@
     <div class="columns is-gapless is-multiline">
       <div class="column is-half">
         <div class="skill-group">
-          <h3 class="has-text-centered">Web</h3>
+          <h3>Web</h3>
 
           <ul>
             <li>
@@ -225,7 +229,7 @@
 
       <div class="column is-half">
         <!-- <div class="skill-group">
-          <h3 class="has-text-centered">Design</h3>
+          <h3>Design</h3>
 
           <ul>
             <li class="has-nested-level">
@@ -289,7 +293,7 @@
         </div> -->
 
         <div class="skill-group is-non-web">
-          <h3 class="has-text-centered">Creative coding</h3>
+          <h3>Creative coding</h3>
 
           <ul>
             <li>
@@ -343,16 +347,9 @@
         </div>
 
         <div class="skill-group is-non-web">
-          <h3 class="has-text-centered">Hardware</h3>
+          <h3>Hardware</h3>
 
           <ul>
-            <li>
-              <div class="text">Eagle</div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-                <span class="visually-hidden">(5 out of 10)</span>
-            </li>
-
             <li>
               <div class="text">Arduino</div>
               <div class="meter">
@@ -373,7 +370,7 @@
               Circuit board (PCB) ...
               <ul>
                 <li>
-                  <div class="text">Design</div>
+                  <div class="text">Design <small>(Eagle)</small></div>
                   <div class="meter">
                     <progress class="progress is-info is-pulled-right" value="4" max="10" aria-hidden="true">4/10</progress>
                     <span class="visually-hidden">(4 out of 10)</span>
@@ -401,33 +398,9 @@
         </div>
 
         <div class="skill-group is-non-web">
-          <h3 class="has-text-centered">Fabrication</h3>
+          <h3>Fabrication</h3>
 
           <ul>
-            <li>
-              <div class="text">Woodworking</div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
-                <span class="visually-hidden">(3 out of 10)</span>
-              </div>
-            </li>
-
-            <li>
-              <div class="text">Welding <small>(MIG)</small></div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
-                <span class="visually-hidden">(2 out of 10)</span>
-              </div>
-            </li>
-
-            <li>
-              <div class="text">CNC routing and milling</div>
-              <div class="meter">
-                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
-                <span class="visually-hidden">(5 out of 10)</span>
-              </div>
-            </li>
-
             <li>
               <div class="text">3D printing <small>(FDM and resin)</small></div>
               <div class="meter">
@@ -441,6 +414,30 @@
               <div class="meter">
                 <progress class="progress is-info is-pulled-right" value="8" max="10" aria-hidden="true">8/10</progress>
                 <span class="visually-hidden">(8 out of 10)</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="text">CNC routing and milling</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="5" max="10" aria-hidden="true">5/10</progress>
+                <span class="visually-hidden">(5 out of 10)</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="text">Woodworking</div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="3" max="10" aria-hidden="true">3/10</progress>
+                <span class="visually-hidden">(3 out of 10)</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="text">Welding <small>(MIG)</small></div>
+              <div class="meter">
+                <progress class="progress is-info is-pulled-right" value="2" max="10" aria-hidden="true">2/10</progress>
+                <span class="visually-hidden">(2 out of 10)</span>
               </div>
             </li>
           </ul>
