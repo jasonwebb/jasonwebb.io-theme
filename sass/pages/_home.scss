@@ -202,7 +202,7 @@
       }
     }
 
-    &:focus {
+    &:focus-visible {
       box-shadow: none;
 
       &:before {
