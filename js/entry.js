@@ -105,7 +105,7 @@ let tabPanels = document.querySelectorAll('[role="tabpanel"]');
 
 // Home page - load all work items
 if(isHomePage) {
-  loadWorkItems(undefined, 8, 1);
+  loadWorkItems(undefined, 10, 1);
 
 // Work page = load work items by category based on selected tag
 } else if(isWorkPage) {
