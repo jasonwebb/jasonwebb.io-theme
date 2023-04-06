@@ -480,12 +480,11 @@
       <h3 class="title">Senior Developer at Bluecadet</h3>
       <div class="details">Remote &mdash; September 2021 to April 2023 (1.5 years)</div>
       <ul class="highlights">
-        <li>Prototyped and built websites, online 3D experiences, WebAR apps, and interactive touch/projection applications in close collaboration with designers, art directors, and other disciplines.</li>
-        <li>Owned the development side of multiple projects for clients including the Met, LACMA, and Gore.</li>
-        <li>Contributed code and support to projects for clients including Harvard, the MIT Museum, Martin Luther King Jr. Memorial Library, and more.</li>
-        <li>Served as internal SME for digital accessibility. Duties included advising teams during design and concept phases, fixing accessibility issues in current and prior projects, assessing third-party audit results, and advocating for inclusion throughout all project build phases.</li>
-        <li>Mentored junior developers on front-end coding fundamentals with an emphasis on accessibility.</li>
-        <li>Took initiative to start an internal Storybook-based component library of custom solutions for touchscreen-based React projects.
+        <li>Prototyped and built websites, AR experiences, and interactive touchscreen apps in close collaboration with designers, art directors, and others.</li>
+        <li>Owned the development side of multiple projects for clients including The Met, LACMA, and Gore.</li>
+        <li>Contributed code and support to projects for clients including Harvard, the MIT Museum, and the Martin Luther King Jr. Memorial Library.</li>
+        <li>Served as internal SME for digital accessibility.</li>
+        <li>Mentored junior developers on front-end coding fundamentals, with an emphasis on accessibility.</li>
       </ul>
     </div>
 
@@ -494,12 +493,11 @@
       <div class="details">Minneapolis, MN &mdash; July 2019 to September 2021 (2 years)</div>
       <ul class="highlights">
         <li>Provided personalized technical and strategic accessibility consultation for clients with complex products.</li>
-        <li>Redesigned customer-facing Knowledge Base to improve readability and overall developer experience.</li>
-        <li>Contributed high-quality documentation and code samples explaining how to design and build common web components with accessibility considerations. These docs were informed heavily by research and hands-on testing with live users with disabilities.</li>
-        <li>Provided individualized support and guidance to auditors around advanced troubleshooting, technical solutioning, and customer service.</li>
-        <li>Worked closely with entire team of Customer Success Managers (CSMs) to help boost client satisfaction.</li>
-        <li>Identified internal process gaps affecting client satisfaction and facilitate cross-disciplinary discussions to resolve them.</li>
-        <li>Engaged with the development community both locally and beyond to advocate for accessibility through talks and workshops at conferences, meetups, and more.</li>
+        <li>Redesigned customer-facing Knowledge Base with a focus on readability.</li>
+        <li>Contributed over 40 high-quality articles and hundreds of code samples internally and externally.</li>
+        <li>Provided individualized support and guidance to auditors.</li>
+        <li>Identified internal process gaps affecting client satisfaction and facilitated solutions.</li>
+        <li>Attended and gave talks at meetup groups and conferences.</li>
       </ul>
     </div>
 
@@ -518,15 +516,15 @@
       <h3 class="title">UI Developer (consultant) at Concord</h3>
       <div class="details">Minneapolis, MN &mdash; July 2017 to July 2019 (2 years)</div>
       <ul class="highlights">
-        <li>Provided coaching and support around modern CSS architecture and technologies (Sass/SCSS, ITCSS, BEM, etc), software design patterns, source control practices, and accessibility.</li>
-        <li>Worked closely with client designers and downstream developers to evaluate and refine design mockups based on feasibility, timelines, accessibility and usability implications, and more.</li>
-        <li>Performed deep-dive analysis of CSS, JavaScript, and HTML currently in use and provided actionable insight to leadership to inform key decision-making and planning.</li>
-        <li>Helped client transition to a more cross-functional Agile workflow using the SAFe 4.0 framework by serving as the UI development lead for one of two core feature development scrum teams.</li>
-        <li>Architected, built, and delivered a custom Bootstrap-based design framework for a client in close collaboration with designers. Deliverables included sample templates, documentation, and source code making use of Bootstrap v4, Sass, Gulp, and modern HTML/CSS.</li>
+        <li>Provided client coaching and support on modern CSS architecture and technologies, software design patterns, source control workflows and more.</li>
+        <li>Worked closely with client designers to evaluate designs and advise on feasibility based on tooling, timelines, usability, and more.</li>
+        <li>Performed deep-dive analysis of legacy CSS, JavaScript, and markup currently in use to help leadership make key strategic decisions.</li>
+        <li>As a UI dev team lead, I helped a client transition to a more cross-functional Agile workflow using the SAFe 4.0 framework.</li>
+        <li>Architected, built, and delivered a custom Bootstrap-based design framework in close collaboration with designers.</li>
       </ul>
     </div>
 
-    <div class="job">
+    <!-- <div class="job">
       <h3 class="title">Front End Developer (contractor) at Connexions Loyalty</h3>
       <div class="details">Minneapolis, MN &mdash; February 2017 to May 2017 (4 months)</div>
       <ul class="highlights">
@@ -537,18 +535,14 @@
         <li>Took initiative to optimize and fully document the Grunt-based build system used throughout the company,
           significantly improving compilation times and enabling more rapid UI feature development.</li>
       </ul>
-    </div>
+    </div> -->
 
     <div class="job">
       <h3 class="title">Web Designer/Developer at Securities America, Inc.</h3>
       <div class="details">Omaha, NE &mdash; October 2015 to July 2016 (9 months)</div>
       <ul class="highlights">
-        <li>Designed, wireframed and prototyped web applications in collaboration with developers and business owners
-          using Axure, Photoshop, HTML, CSS, and Javascript.</li>
-        <li>Established and advocated for the use of the company’s first style guide (custom built in .NET MVC 5) and
-          design framework (built on top of Bootstrap 3 using LESS, Gulp, and Javascript).</li>
-        <li>Worked closely with .NET developers to build web applications using .NET MVC 5, Bootstrap 3, KendoUI,
-          jQuery, custom Javascript (ES5) and modern responsive HTML/CSS, often interfacing with .NET web services.</li>
+        <li>Designed, wireframed, and prototyped web applications in collaboration with Axure, Photoshop, HTML, CSS, and JavaScript.</li>
+        <li>Worked closely with .NET developers to build web applications using .NET MVC 5, Bootstrap 3, KendoUI, and more.</li>
       </ul>
     </div>
 
@@ -556,42 +550,39 @@
       <h3 class="title">Adjunct Professor at Metropolitan Community College</h3>
       <div class="details">Omaha, NE &mdash; August 2015 to November 2015 (3 months)</div>
       <ul class="highlights">
-        <li>Designed and taught an intensive 11-week, hands-on, project-based course titled “How to Build Almost
-          Anything” covering topics including Maker culture, 3D printing/scanning, laser cutting, CNC milling, vinyl
-          cutting, hand and power tools and more.</li>
-        <li>Duties also include collaborating with on-campus instructional designers to generate actionable course
-          materials for students to use to engage in relevant content more fully both within and beyond the course.</li>
+        <li>Designed and taught an 11-week, project-based course titled “How to Build Almost Anything”. Topics included 3D printing, laser cutting, CNC, and more.</li>
+        <li>Collaborated with instructional designers to create course materials for students.</li>
       </ul>
     </div>
 
-    <div class="job">
+    <!-- <div class="job">
       <h3 class="title">Web Developer (contractor) at Creighton University</h3>
       <div class="details">Omaha, NE &mdash; March 2015 to June 2015 (4 months)</div>
       <ul class="highlights">
         <li>Contract full-stack web development of a custom internal content management system for faculty activity.</li>
         <li>Designed, architected, and built a custom app using PHP, MySQL, CodeIgniter, modern HTML/CSS, Bootstrap 3, and JavaScript.</li>
       </ul>
-    </div>
+    </div> -->
 
-    <div class="job">
+    <!-- <div class="job">
       <h3 class="title">Graduate Assistant at University of Nebraska at Kearney</h3>
       <div class="details">Kearney, NE &mdash; August 2011 to May 2014 (2 years 10 months)</div>
       <ul class="highlights">
         <li>Digitized educational videos for online distribution using Adobe Premiere.</li>
         <li>Assisted faculty in updating and maintaining online curriculum through Blackboard LMS.</li>
       </ul>
-    </div>
+    </div> -->
 
-    <div class="job">
+    <!-- <div class="job">
       <h3 class="title">Undergraduate Researcher at University of Nebraska at Kearney</h3>
       <div class="details">Kearney, NE &mdash; May 2010 to May 2011 (1 year 1 month)</div>
       <ul class="highlights">
         <li>Designed and taught a full semester-long course to a group of fellow undergraduates entitled “Interactive
           and Generative Art”, culminating in a public exhibition.</li>
       </ul>
-    </div>
+    </div> -->
 
-    <div class="job">
+    <!-- <div class="job">
       <h3 class="title">Web Programmer at Kearney Hub</h3>
       <div class="details">Kearney, NE &mdash; November 2008 to June 2010 (1 year 8 months)</div>
       <ul class="highlights">
@@ -605,7 +596,7 @@
           MySQL, HTML, CSS and Javascript.</li>
         <li>Created interactive and animated web advertisements using Adobe Flash and Actionscript (2 and 3).</li>
       </ul>
-    </div>
+    </div> -->
   </section>
 
   <section id="talks" class="is-non-web">
