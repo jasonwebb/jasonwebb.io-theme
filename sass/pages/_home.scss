@@ -1,14 +1,16 @@
 .home-page {
+  .page {
+    margin-bottom: 100px;
+
+    @media screen and (max-width: $small-desktop-breakpoint) {
+      margin-bottom: 40px;
+    }
+  }
+
   //====================================================
   //  Introduction
   //====================================================
   .introduction {
-    margin-bottom: 100px;
-
-    @media screen and (max-width: $small-desktop-breakpoint) {
-      margin-bottom: 60px;
-    }
-
     ul {
       @media screen and (max-width: $mobile-breakpoint) {
         margin-left: 20px;

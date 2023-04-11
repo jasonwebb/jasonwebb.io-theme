@@ -3,15 +3,34 @@
 <main class="home-page" id="main" tabindex="-1">
   <h1 class="visually-hidden">Home page</h1>
 
-  <div class="introduction page">
-    <?php
-      if ( have_posts() ) {
-        while ( have_posts() ) {
-          the_post();
-          the_content();
+  <div class="page">
+    <div class="introduction">
+      <?php
+        if ( have_posts() ) {
+          while ( have_posts() ) {
+            the_post();
+            the_content();
+          }
         }
-      }
-    ?>
+      ?>
+    </div>
+
+    <div class="home-page-announcement">
+      <p>Looking for my next role as a <b>creative technologist</b> or <b>developer</b>! I thrive in environments where I can collaborate with designers or artists to build next-level immersive experiences.</p>
+      <p>The kinds of projects I'd be most helpful with include:</p>
+      <ul>
+        <li>Media installations</li>
+        <li>Exhibits</li>
+        <li>Public art</li>
+        <li>Brand activations</li>
+        <li>3D on the web</li>
+        <li>WebAR</li>
+        <li>Procedural graphics</li>
+        <li>Immersive experiences</li>
+      </ul>
+      <p>I'm based in Minneapolis, but open to traveling or relocating.</p>
+      <a href="mailto:zen.webb+job@gmail.com" class="button">Contact me</a>
+    </div>
   </div>
 
   <?php
