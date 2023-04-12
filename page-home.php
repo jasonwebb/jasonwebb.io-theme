@@ -16,8 +16,7 @@
     </div>
 
     <div class="home-page-announcement">
-      <p>Looking for my next role as a <b>creative technologist</b> or <b>developer</b>! I thrive in environments where I can collaborate with designers or artists to build next-level immersive experiences.</p>
-      <p>The kinds of projects I'd be most helpful with include:</p>
+      <p>Looking for my next role as a <b>creative technologist</b> or <b>developer</b>! I thrive in environments where I can collaborate with designers or artists to build next-level immersive experiences and/or unconventional art+tech. Projects I'd be most helpful with include:</p>
       <ul>
         <li>Media installations</li>
         <li>Exhibits</li>
