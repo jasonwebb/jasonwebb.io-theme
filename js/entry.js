@@ -215,7 +215,7 @@ function loadWorkItems(category = undefined, count = undefined, offset = undefin
 
   // Templatize and inject items onto page
   itemStream.then(items => {
-    for(const item of items) {
+    items.forEach(function(item, index) {
       let listItem = document.createElement('li');
       listItem.innerHTML = createWorkItem(item);
 
@@ -224,7 +224,35 @@ function loadWorkItems(category = undefined, count = undefined, offset = undefin
       } else {
         document.querySelector('.tiles').appendChild(listItem);
       }
-    }
+
+      gsap.fromTo(
+        listItem,
+        { opacity: 0 },
+        {
+          scrollTrigger: {
+            trigger: listItem,
+            start: 'top 90%'
+          },
+          opacity: 1,
+          duration: 1.2,
+          // ease: 'power4-in'
+        }
+      );
+
+      gsap.fromTo(
+        listItem,
+        { x: index%2 > 0 ? 30 : -30 },
+        {
+          scrollTrigger: {
+            trigger: listItem,
+            start: 'top 90%'
+          },
+          x: 0,
+          duration: 1,
+          ease: 'power-in'
+        }
+      );
+    });
 
     // Set the location hash based on selected category for bookmarking
     if(category == undefined || category == '') {
@@ -350,3 +378,63 @@ function load(category = undefined, count = undefined, offset = undefined) {
       console.log(`Error: ${error.message}`);
     });
   }
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(
+  ".home-page-announcement",
+  {
+    opacity: 0,
+    y: 30
+  },
+  {
+    scrollTrigger: '.home-page-announcement',
+    opacity: 1,
+    y: 0,
+    duration: .5
+  }
+);
+
+
+gsap.fromTo(
+  ".home-page-announcement li",
+  {
+    opacity: 0,
+    x: 30
+  },
+  {
+    // scrollTrigger: '.featured',
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    stagger: {
+      each: .15,
+      repeat: 0
+    }
+  }
+);
+
+gsap.fromTo(
+  ".featured",
+  {
+    opacity: 0,
+    y: 50
+  },
+  {
+    scrollTrigger: '.featured',
+    opacity: 1,
+    y: 0,
+    duration: 1
+  }
+);
+
+gsap.fromTo(
+  ".alert-banner",
+  { y: -120 },
+  {
+    y: 0,
+    delay: .5,
+    duration: 1,
+    ease: 'power4-out'
+  }
+)
