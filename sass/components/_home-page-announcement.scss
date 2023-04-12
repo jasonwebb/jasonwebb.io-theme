@@ -5,8 +5,18 @@
   background: #fcf4dd;
   color: #887747;
 
+  .is-dark-mode & {
+    background: transparent;
+    color: white;
+    border: 1px solid #887747;
+  }
+
   b {
     color: #5d4f29;
+
+    .is-dark-mode & {
+      color: lighten(#887747, 10);
+    }
   }
 
   p {
@@ -34,6 +44,10 @@
       font-size: 1.5rem;
       font-weight: 400;
       margin-right: 5px;
+
+      .is-dark-mode & {
+        color: lighten(#887747, 40);
+      }
     }
   }
 
@@ -48,7 +62,7 @@
     &:hover,
     &:focus {
       text-decoration: underline;
-      color: white;
+      color: white !important;
     }
   }
 }
