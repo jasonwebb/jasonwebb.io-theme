@@ -104,9 +104,16 @@
           </li>
 
           <li>
-            <a href="https://medium.com/@jason.webb" target="_blank" class="last-focusable-element">
+            <a href="https://medium.com/@jason.webb" target="_blank">
               <span class="fa fa-medium" aria-hidden="true"></span>
               <span>Medium</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/zenwebb" target="_blank" class="last-focusable-element">
+              <span class="fa fa-linkedin" aria-hidden="true"></span>
+              <span>LinkedIn</span>
             </a>
           </li>
         </ul>
@@ -120,30 +127,37 @@
     <nav>
       <ul class="social" aria-label="Social media profiles">
         <li>
-          <a href="http://twitter.com/jasonwebb" target="_blank" title="@jasonwebb on Twitter">
+          <a href="http://twitter.com/jasonwebb" target="_blank" title="Twitter">
             <span class="fa fa-twitter" aria-hidden="true"></span>
-            <span class="visually-hidden">@jasonwebb on Twitter</span>
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
 
         <li>
-          <a href="https://www.instagram.com/zenwebb/" target="_blank" title="@zenwebb on Instagram">
+          <a href="https://www.instagram.com/zenwebb/" target="_blank" title="Instagram">
             <span class="fa fa-instagram" aria-hidden="true"></span>
-            <span class="visually-hidden">@zenwebb on Instagram</span>
+            <span class="visually-hidden">Instagram</span>
           </a>
         </li>
 
         <li>
-          <a href="http://github.com/jasonwebb" target="_blank" title="jasonwebb on Github">
+          <a href="http://github.com/jasonwebb" target="_blank" title="Github">
             <span class="fa fa-github" aria-hidden="true"></span>
-            <span class="visually-hidden">jasonwebb on Github</span>
+            <span class="visually-hidden">Github</span>
           </a>
         </li>
 
         <li>
-          <a href="https://medium.com/@jason.webb" target="_blank" title="@jason.webb on Medium">
+          <a href="https://medium.com/@jason.webb" target="_blank" title="Medium">
             <span class="fa fa-medium" aria-hidden="true"></span>
-            <span class="visually-hidden">@jason.webb on Medium</span>
+            <span class="visually-hidden">Medium</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/zenwebb" target="_blank" title="LinkedIn">
+            <span class="fa fa-linkedin" aria-hidden="true"></span>
+            <span class="visually-hidden">LinkedIn</span>
           </a>
         </li>
       </ul>
