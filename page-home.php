@@ -16,7 +16,7 @@
     </div>
 
     <div class="home-page-announcement">
-      <p>Looking for my next role as a <b>creative technologist</b> or <b>developer</b>! I thrive in environments where I can collaborate with designers or artists to build next-level immersive experiences and/or unconventional art+tech. Projects I'd be most helpful with include:</p>
+      <p>Looking for my next role as a <b>creative technologist</b> or <b>developer</b>! I thrive in environments where I can collaborate with designers or artists to build next-level interactive and immersive experiences. Projects I'd be most helpful with include:</p>
       <ul>
         <li>Media installations</li>
         <li>Exhibits</li>
@@ -28,7 +28,7 @@
         <li>Immersive experiences</li>
       </ul>
       <p>I'm based in Minneapolis, but open to traveling or relocating.</p>
-      <a href="mailto:zen.webb+job@gmail.com" class="button">Contact me</a>
+      <a href="mailto:zen.webb+job@gmail.com" class="button is-info">Contact me</a>
     </div>
   </div>
 

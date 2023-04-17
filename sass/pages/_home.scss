@@ -64,10 +64,10 @@
     position: relative;
     overflow: hidden;
     height: 800px;
-    width: calc(100% - 16px);
     max-width: 1920px;
     margin: 0 auto 8px auto;
     padding: 0;
+    width: calc(100% - 16px);
 
     @media screen and (max-width: $small-desktop-breakpoint) {
       height: 500px;
@@ -79,6 +79,7 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
       height: 375px;
+      width: 100%;
     }
 
     // Pseudo-element used for focus indicator (dashed outline)
@@ -223,7 +224,7 @@
     padding: 70px 0;
     margin: 0 auto;
 
-    width: 100%;
+    width: 90%;
     max-width: 1920px;
 
     .button {
