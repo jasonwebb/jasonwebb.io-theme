@@ -22,8 +22,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&display=block">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&display=block" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=block" rel="stylesheet">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" rel="stylesheet">
   <link href="<?= get_template_directory_uri(); ?>/dist/styles.min.css" rel="stylesheet">

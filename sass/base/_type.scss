@@ -3,10 +3,11 @@
 }
 
 body {
-  font-family: 'Lexend', sans-serif;
-  font-size: 2.0rem;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
   font-weight: $body-regular-weight;
-  line-height: 3.4rem;
+  line-height: $body-line-height;
+  color: $body-text-color;
 
   @media screen and (max-width: $mobile-breakpoint) {
     font-size: 1.8rem;
@@ -25,6 +26,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
+  font-family: 'Lexend', sans-serif;
   color: $heading-text-color !important;
 
   .is-dark-mode & {
