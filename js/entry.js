@@ -403,7 +403,7 @@ gsap.fromTo(
     x: 30
   },
   {
-    // scrollTrigger: '.featured',
+    scrollTrigger: '.home-page-announcement li',
     opacity: 1,
     x: 0,
     duration: 1,
